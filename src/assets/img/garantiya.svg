@@ -1,0 +1,32 @@
+<svg width="90.000000" height="90.000000" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_1_288_dd" x="-0.049988" y="-0.310059" width="90.000000" height="90.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="0"/>
+			<feGaussianBlur stdDeviation="0"/>
+			<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0.93333 0 0 0 0 0.93333 0 0 0 0 0.93333 0 0 0 1 0"/>
+			<feBlend mode="normal" in2="shape" result="effect_innerShadow_1"/>
+		</filter>
+		<clipPath id="clip1_289">
+			<rect id="SVG" width="60.000000" height="60.000000" transform="translate(14.950012 14.689941)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip1_288">
+			<rect id="div#iwo95hff1_3" rx="45.000000" width="90.000000" height="90.000000" transform="translate(-0.049988 -0.310059)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g filter="url(#filter_1_288_dd)">
+		<rect id="div#iwo95hff1_3" rx="45.000000" width="90.000000" height="90.000000" transform="translate(-0.049988 -0.310059)" fill="#FFFFFF" fill-opacity="0.002000"/>
+		<g clip-path="url(#clip1_288)">
+			<g clip-path="url(#clip1_289)">
+				<path id="Vector" d="M21.19 25.94L21.19 49.7C21.19 60.86 43.63 73.08 44.95 73.43C46.26 73.08 68.7 60.01 68.7 50.95L68.7 25.94C62.1 25.94 47.27 19.22 44.96 15.94C42.65 19.22 27.24 25.94 21.19 25.94ZM44.95 67.2C45.99 66.92 63.7 56.79 63.7 " stroke="#FFB500" stroke-opacity="1.000000" stroke-width="2.500716" stroke-linejoin="round" stroke-linecap="round"/>
+				<path id="Vector" d="M44.95 22.19C43.12 24.75 30.97 29.69 26.19 29.69L26.19 48.44M42.44 47.19L37.44 42.19L33.69 45.94L42.44 54.7L58.7 38.44L54.95 34.69L42.44 47.19Z" stroke="#FFB500" stroke-opacity="1.000000" stroke-width="2.500716" stroke-linejoin="round" stroke-linecap="round"/>
+			</g>
+		</g>
+	</g>
+</svg>

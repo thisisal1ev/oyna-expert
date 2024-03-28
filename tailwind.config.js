@@ -14,11 +14,17 @@ export default {
         'lightGreen': '#63B700',
         'mainBlack': '#323232',
         'orange': '#FFB500',
-        'grey': '#B3B3B3',
+        'mainGrey': '#B3B3B3',
+        'grey':'#f7f7f7',
       },
       maxWidth: {
         'base': '1440px',
       },
+      fontSize:{
+        '22':'22px',
+        '28':'28px',
+        '30':'30px',
+      }
     },
   },
   plugins: [],

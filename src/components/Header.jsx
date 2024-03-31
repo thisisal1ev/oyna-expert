@@ -123,7 +123,7 @@ const Header = () => {
       </div>
 
       <div className={`hidden lg:block bg-grey`}>
-        <div className="w-full max-w-base mx-auto px-5 flex items-center justify-between relative">
+        <div className="w-full max-w-base mx-auto px-5 flex items-center justify-between">
           <div className='flex items-center justify-between lg:space-x-12 xl:space-x-2 xl:w-full'>
 
             <Link onMouseEnter={() => setOpenDrop(true)} onMouseLeave={() => setOpenDrop(false)} onClick={() => setOpenDrop(true)} to='/plastic-windows' className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 opacity-50 hover:text-lightGreen hover:opacity-100'>

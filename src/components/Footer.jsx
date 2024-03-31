@@ -13,7 +13,9 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
+      delay: 0,
+      once: true,
     })
   }, []);
 

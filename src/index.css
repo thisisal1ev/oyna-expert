@@ -21,12 +21,21 @@
     @apply fixed top-0 left-0 w-full h-full
   }
 
-  .bread li a span::after{
-    content: ' / ';
+  .bread li a span::after {
+    content: "/";
+    margin: 0 15px;
   }
 
   #changeContent:hover::placeholder {
     content: 'Salom';
     color: #63B700;
+  }
+
+  .stageList:last-child {
+    @apply border-orange
+  }
+
+  .stageList:last-child div span {
+    @apply text-orange opacity-100
   }
 }

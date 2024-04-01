@@ -9,6 +9,10 @@ import smeta from './assets/img/okonchatelnaya-smeta.svg'
 import zakaz from './assets/img/oformlenie-zakaza.svg'
 import dostavka from './assets/img/dostavka.svg'
 import sdacha from './assets/img/sdacha-obyekta.svg'
+import moskitnie from './assets/img/moskitnie.jpg'
+import zamki from './assets/img/ramki.jpg'
+import otlivi from './assets/img/otlivi.jpg'
+import shumo from './assets/img/shumoizolyatsa.jpg'
 
 export const service = [
   {
@@ -75,3 +79,30 @@ export const stagesOfWork = [
     context: `Montajchilar eskilarini demontaj qiladilar va yangilarini o'rnatadilar. Barcha axlatlarni olib tashlashadi va kafolat hujjatlarini topshiradilar!`,
   },
 ];
+
+export const komplekt = [
+  {
+    id: 1,
+    img: moskitnie,
+    title: `Chivinga qarshi to'rlar`,
+    text: `Hasharotlar va terak paxmoqlari uchun ishonchli to'siq`,
+  },
+  {
+    id: 2,
+    img: zamki,
+    title: `Bolalar qulfi`,
+    text: `Ular chaqaloqning xavfsizligini himoya qiladi va derazani ochilishdan himoya qiladi`,
+  },
+  {
+    id: 3,
+    img: otlivi,
+    title: `Suv toshishi`,
+    text: `Strukturani va o'rnatish chokini yog'ingarchilikdan himoya qilish uchun tashqi tomondan o'rnatiladi`,
+  },
+  {
+    id: 4,
+    img: shumo,
+    title: `Ovoz o'tkazmaydigan oyna`,
+    text: `Ovoz o'tkazmaydigan xususiyatlarini oshirgan ikki oynali oyna`,
+  },
+]

@@ -31,11 +31,7 @@
     color: #63B700;
   }
 
-  .stageList:last-child {
-    @apply border-orange
-  }
-
   .stageList:last-child div span {
-    @apply text-orange opacity-100
+    @apply text-orange opacity-100 -z-10
   }
 }

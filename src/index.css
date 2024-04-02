@@ -21,7 +21,7 @@
     @apply fixed top-0 left-0 w-full h-full
   }
 
-  .bread li a span::after {
+  .bread li a::after {
     content: "/";
     margin: 0 15px;
   }

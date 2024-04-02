@@ -9,6 +9,7 @@ import Service from '../components/Service'
 import CTA from '../components/CTA'
 import WorkStages from '../components/WorkStages'
 import About from '../components/About'
+import PostComponent from '../components/PostComponent'
 
 const Home = () => {
 
@@ -28,6 +29,8 @@ const Home = () => {
       <WorkStages />
 
       <Complement />
+
+      <PostComponent/>
 
       <About />
 

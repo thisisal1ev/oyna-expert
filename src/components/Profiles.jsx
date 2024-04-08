@@ -13,7 +13,7 @@ const Profiles = () => {
 
         <div className='mb-6' data-aos="fade-up" data-aos-anchor-placement="center" data-aos-easing="ease-in" data-aos-duration="1000">
           <h2 className='text-[22px] font-bold sm:text-[25px] md:text-[30px] mb-2 lg:text-4xl'>Rehau profillaridan birini tanlang</h2>
-          <p className='text-sm font-medium opacity-70 sm:text-base'>Dizayn va issiqlik izolyatsiyasi, tejamkor narxda yuqori sifatli derazalar</p>
+          <p className='text-sm font-medium text-textGrey sm:text-base'>Dizayn va issiqlik izolyatsiyasi, tejamkor narxda yuqori sifatli derazalar</p>
         </div>
 
         <div className='grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3'>
@@ -21,30 +21,30 @@ const Profiles = () => {
           {/* 1 */}
           <div className='p-[30px] my-3 border border-opacity-70 rounded-xl'>
             <img className='overflow-hidden w-full h-full max-w-36 max-h-44 mb-5' src={profile1} alt="Rehau profili" />
-            <Link to='/rehau-thermo' className='inline-block mb-4'>
+            <Link to='/profillar/Rehau Thermo' className='inline-block mb-4'>
               <span className='inline-block mb-2 font-bold text-[22px] sm:text-[22px] md:text-2xl lg:text-[28px]'>Rehau Thermo</span>
               <span className='inline-block font-medium'>An'anaviy chuqurligi 60 mm bo'lgan derazalar 4 kamerali profil tufayli energiya samaradorligini oshadi.</span>
             </Link>
             <ul className='font-montserrat'>
               <li className='py-2 border-b-2 flex flex-col xl:flex-row xl:items-center xl:justify-between xl:space-x-1'>
-                <p className='font-medium opacity-70 mb-2 xl:mb-0'>Profil</p>
+                <p className='font-medium text-textGrey mb-2 xl:mb-0'>Profil</p>
                 <p className='font-medium text-sm sm:text-base'>REHAU Thermo 60, 4 kamerali</p>
               </li>
               <li className='py-2 border-b-2 flex flex-col lg:flex-row lg:items-center lg:justify-between lg:space-x-1'>
-                <p className='font-medium opacity-70 mb-2 lg:mb-0'>Ikki oynali oyna</p>
+                <p className='font-medium text-textGrey mb-2 lg:mb-0'>Ikki oynali oyna</p>
                 <p className='font-medium text-sm sm:text-base'>2 kamerali, 32 mm</p>
               </li>
               <li className='py-2 border-b-2 flex flex-col'>
-                <p className='font-medium opacity-70 mb-2 xl:mb-0'>Ixchamlovchi</p>
+                <p className='font-medium text-textGrey mb-2 xl:mb-0'>Ixchamlovchi</p>
                 <p className='font-medium text-sm sm:text-base'>Rehau Raucell: qora, kulrang, oq</p>
               </li>
               <li className='py-2 border-b-2 flex flex-col xl:flex-row xl:items-center xl:justify-between xl:space-x-1'>
-                <p className='font-medium opacity-70 mb-2 xl:mb-0'>Aksessuarlar</p>
+                <p className='font-medium text-textGrey mb-2 xl:mb-0'>Aksessuarlar</p>
                 <p className='font-medium text-sm sm:text-base'>Roto NT klassi - Premium</p>
               </li>
               <li className='pt-[30px]'>
                 <p className='text-lg font-normal space-x-2'><span className='font-semibold text-[25px] sm:text-[26px]'>6 450</span> dan so'm/m<sup>2</sup></p>
-                <Link to='/rehau-thermo' className='inline-block pt-6 font-semibold text-base underline underline-offset-8 opacity-70 transition-all duration-300 hover:no-underline hover:opacity-100'>profil haqida batafsil</Link>
+                <Link to='/Profillar/Rehau Thermo' className='inline-block pt-6 font-semibold text-base underline underline-offset-8 text-textGrey transition-all duration-300 hover:no-underline hover:text-mainBlack'>profil haqida batafsil</Link>
               </li>
             </ul>
           </div>
@@ -52,30 +52,30 @@ const Profiles = () => {
           {/* 2 */}
           <div className='p-[30px] my-3 border border-opacity-70 rounded-xl'>
             <img className='overflow-hidden w-full h-full max-w-36 max-h-44 mb-5' src={profile2} alt="Rehau profili" />
-            <Link to='/rehau-grazio' className='inline-block mb-4'>
+            <Link to='/profillar/Rehau Grazio' className='inline-block mb-4'>
               <span className='inline-block mb-2 font-bold text-[22px] sm:text-[22px] md:text-2xl lg:text-[28px]'>Rehau Grazio</span>
               <span className='inline-block font-medium'>Hali ham arzon variant, lekin yuqori issiqlik va ovoz o'tkazmaydigan.</span>
             </Link>
             <ul className='font-montserrat pt-5'>
               <li className='py-2 border-b-2 flex flex-col xl:flex-row xl:items-center xl:justify-between xl:space-x-1'>
-                <p className='font-medium opacity-70 mb-2 xl:mb-0'>Profil</p>
+                <p className='font-medium text-textGrey mb-2 xl:mb-0'>Profil</p>
                 <p className='font-medium text-sm sm:text-base'>REHAU Grazio 70, 5 kamerali</p>
               </li>
               <li className='py-2 border-b-2 flex flex-col lg:flex-row lg:items-center lg:justify-between lg:space-x-1'>
-                <p className='font-medium opacity-70 mb-2 lg:mb-0'>Ikki oynali oyna</p>
+                <p className='font-medium text-textGrey mb-2 lg:mb-0'>Ikki oynali oyna</p>
                 <p className='font-medium text-sm sm:text-base'>2 kamerali, 32 mm</p>
               </li>
               <li className='py-2 border-b-2 flex flex-col'>
-                <p className='font-medium opacity-70 mb-2 xl:mb-0'>Ixchamlovchi</p>
+                <p className='font-medium text-textGrey mb-2 xl:mb-0'>Ixchamlovchi</p>
                 <p className='font-medium text-sm sm:text-base'>Rehau Raucell: qora, kulrang, oq</p>
               </li>
               <li className='py-2 border-b-2 flex flex-col xl:flex-row xl:items-center xl:justify-between xl:space-x-1'>
-                <p className='font-medium opacity-70 mb-2 xl:mb-0'>Aksessuarlar</p>
+                <p className='font-medium text-textGrey mb-2 xl:mb-0'>Aksessuarlar</p>
                 <p className='font-medium text-sm sm:text-base'>Roto NT klassi - Premium</p>
               </li>
               <li className='pt-[30px]'>
                 <p className='text-lg font-normal space-x-2'><span className='font-semibold text-[25px] sm:text-[26px]'>7 300</span> dan so'm/m<sup>2</sup></p>
-                <Link to='/rehau-grazio' className='inline-block pt-6 font-semibold text-base underline underline-offset-8 opacity-70 hover:no-underline transition-all duration-300 hover:opacity-100'>profil haqida batafsil</Link>
+                <Link to='/Profillar/Rehau Grazio' className='inline-block pt-6 font-semibold text-base underline underline-offset-8 text-textGrey hover:no-underline transition-all duration-300 hover:text-mainBlack'>profil haqida batafsil</Link>
               </li>
             </ul>
           </div>
@@ -83,30 +83,30 @@ const Profiles = () => {
           {/* 3 */}
           <div className='p-[30px] my-3 border border-opacity-70 rounded-xl'>
             <img className='overflow-hidden w-full h-full max-w-36 max-h-44 mb-5' src={profile3} alt="Rehau profili" />
-            <Link to='/rehau-delight' className='inline-block mb-4'>
+            <Link to='/profillar/Rehau Delight' className='inline-block mb-4'>
               <span className='inline-block mb-2 font-bold text-[22px] sm:text-[22px] md:text-2xl lg:text-[28px]'>Rehau Delight</span>
               <span className='inline-block font-medium'>Rehau Delight oynalari bilan xonaga 10% ko'proq yorug'lik kiradi - bu profil balandligining pasayishi tufayli.</span>
             </Link>
             <ul className='font-montserrat'>
               <li className='py-2 border-b-2 flex flex-col xl:flex-row xl:items-center xl:justify-between xl:space-x-1'>
-                <p className='font-medium opacity-70 mb-2 xl:mb-0'>Profil</p>
+                <p className='font-medium text-textGrey mb-2 xl:mb-0'>Profil</p>
                 <p className='font-medium text-sm sm:text-base'>REHAU Delight 60, 5 kamerali</p>
               </li>
               <li className='py-2 border-b-2 flex flex-col lg:flex-row lg:items-center lg:justify-between lg:space-x-1'>
-                <p className='font-medium opacity-70 mb-2 lg:mb-0'>Ikki oynali oyna</p>
+                <p className='font-medium text-textGrey mb-2 lg:mb-0'>Ikki oynali oyna</p>
                 <p className='font-medium text-sm sm:text-base'>2 kamerali, 32 mm</p>
               </li>
               <li className='py-2 border-b-2 flex flex-col'>
-                <p className='font-medium opacity-70 mb-2 xl:mb-0'>Ixchamlovchi</p>
+                <p className='font-medium text-textGrey mb-2 xl:mb-0'>Ixchamlovchi</p>
                 <p className='font-medium text-sm sm:text-base'>Rehau Raucell: qora, kulrang, oq</p>
               </li>
               <li className='py-2 border-b-2 flex flex-col xl:flex-row xl:items-center xl:justify-between xl:space-x-1'>
-                <p className='font-medium opacity-70 mb-2 xl:mb-0'>Aksessuarlar</p>
+                <p className='font-medium text-textGrey mb-2 xl:mb-0'>Aksessuarlar</p>
                 <p className='font-medium text-sm sm:text-base'>Roto NT klassi - Premium</p>
               </li>
               <li className='pt-[30px]'>
                 <p className='text-lg font-normal space-x-2'><span className='font-semibold text-[25px] sm:text-[26px]'>8 250</span> dan so'm/m<sup>2</sup></p>
-                <Link to='/rehau-delight' className='inline-block pt-6 font-semibold text-base underline underline-offset-8 opacity-70 hover:no-underline transition-all duration-300 hover:opacity-100'>profil haqida batafsil</Link>
+                <Link to='/Profillar/Rehau Delight' className='inline-block pt-6 font-semibold text-base underline underline-offset-8 text-textGrey hover:no-underline transition-all duration-300 hover:text-mainBlack'>profil haqida batafsil</Link>
               </li>
             </ul>
           </div>

@@ -9,7 +9,7 @@ const CTA = () => {
         <form onSubmit={() => { checked && alert('Xat ketti'), !checked && alert('Iltimos bizning siyosatimiz qabul qiling!') }} className='px-8 py-10 w-full bg-lightGreen rounded-xl text-white xl:flex items-center justify-between xl:p-10'>
           <div className='xl:mr-12'>
             <h2 className='mb-2 text-2xl font-extrabold text-center md:text-3xl lg:text-32 lg:text-left xl:text-4xl'>Aniq hisob-kitob qilishni xohlaysizmi?</h2>
-            <p className='text-sm text-center font-medium opacity-70 lg:text-left'>So'rov qoldiring va biz 10 daqiqa ichida qayta qo'ng'iroq qilamiz va buyurtmangizni hisoblaymiz</p>
+            <p className='text-sm text-center font-medium text-white lg:text-left'>So'rov qoldiring va biz 10 daqiqa ichida qayta qo'ng'iroq qilamiz va buyurtmangizni hisoblaymiz</p>
           </div>
           <div className='xl:w-[525px]'>
             <div className='flex flex-col my-3'>

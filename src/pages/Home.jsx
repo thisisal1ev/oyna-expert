@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 //components
 import Complement from '../components/Complement'
 import Profiles from '../components/Profiles'
@@ -10,6 +8,7 @@ import CTA from '../components/CTA'
 import WorkStages from '../components/WorkStages'
 import About from '../components/About'
 import PostComponent from '../components/PostComponent'
+import Stocks from '../components/Stocks'
 
 const Home = () => {
 
@@ -21,6 +20,8 @@ const Home = () => {
       <Profiles />
 
       <Tab />
+
+      <Stocks/>
 
       <Service />
 

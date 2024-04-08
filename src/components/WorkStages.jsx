@@ -7,7 +7,7 @@ const WorkStages = () => {
       <div className="w-full max-w-base mx-auto px-5">
         <div className='mb-5 md:mb-8' data-aos="fade-up" data-aos-anchor-placement="center" data-aos-easing="ease-in" data-aos-duration="1000">
           <h2 className='mb-3 font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-44'>Ish bosqichlari</h2>
-          <p className='font-medium text-base opacity-70'>Muvaffaqiyatli hamkorlik qilish uchun atigi 6 qadam!</p>
+          <p className='font-medium text-base text-textGrey'>Muvaffaqiyatli hamkorlik qilish uchun atigi 6 qadam!</p>
         </div>
         <ul className='grid gap-3 grid-cols-1 lg:grid-cols-3'>
           {
@@ -16,9 +16,9 @@ const WorkStages = () => {
                 <li className='stageList px-5 py-8 border-2 rounded-xl relative overflow-hidden last:border-orange' key={stage.id}>
                   <img className='mb-5 md:mb-6 w-14 h-14' width={60} height={60} src={stage.img} alt={stage.title} />
                   <h3 className='mb-2 font-bold text-xl sm:text-22 md:text-2xl lg:text-28'>{stage.title}</h3>
-                  <p className='font-montserrat font-medium text-sm lg:text-base opacity-70 relative z-1'>{stage.context}</p>
+                  <p className='font-montserrat font-medium text-sm lg:text-base text-textGrey relative z-1'>{stage.context}</p>
                   <div className='absolute -bottom-5 right-5' data-aos="fade-left" data-aos-duration="1000">
-                    <span className='font-bold text-7xl lg:text-8xl opacity-10'>{stage.id}</span>
+                    <span className='font-bold text-7xl lg:text-8xl opacity-10 select-none'>{stage.id}</span>
                   </div>
                 </li>
               )
@@ -26,7 +26,8 @@ const WorkStages = () => {
           }
         </ul>
       </div>
-    </div>)
+    </div>
+  )
 }
 
 export default WorkStages

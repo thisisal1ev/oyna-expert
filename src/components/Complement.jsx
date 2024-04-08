@@ -19,7 +19,7 @@ const Complement = () => {
                     <img className="rounded-xl mb-6 lg:mb-8" src={komplekt.img} alt={komplekt.title} />
                     <div>
                       <h3 className="font-bold mb-3 text-22 md:text-2xl lg:text-28">{komplekt.title}</h3>
-                      <p className="font-montserrat opacity-70">{komplekt.text}</p>
+                      <p className="font-montserrat text-textGrey">{komplekt.text}</p>
                     </div>
                   </Link>
                 </li>

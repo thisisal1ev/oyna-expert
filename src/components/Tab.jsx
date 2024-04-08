@@ -21,7 +21,7 @@ const Home = () => {
       <div className="w-full max-w-base mx-auto px-5">
         <div className="mb-6" data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-easing="ease-in" data-aos-duration="1000">
           <h2 className="mb-2 text-22 sm:text-2xl md:text-30 font-extrabold">Standart o'lchamdagi derazalar uchun narxlar</h2>
-          <h3 className="text-sm font-medium font-montserrat opacity-70 sm:text-base">Сроки изготовления всего 5 дней</h3>
+          <h3 className="text-sm font-medium font-montserrat text-textGrey sm:text-base">Сроки изготовления всего 5 дней</h3>
         </div>
         <ul className="flex items-center space-x-2 mb-5">
           {data.map((tab) => {
@@ -52,7 +52,7 @@ const Home = () => {
                     <h4 className="mb-2 text-22 font-bold md:text-2xl lg:text-28">{tab.tabContentTitle}</h4>
                     <p className="font-medium text-base">{tab.tabContent}</p>
                   </Link>
-                  <p className="mb-6 font-semibold text-28 font-montserrat">{tab.tabPrice} <span className="inline-block opacity-70 text-lg font-medium">so'mdan</span></p>
+                  <p className="mb-6 font-semibold text-28 font-montserrat">{tab.tabPrice} <span className="inline-block text-textGrey text-lg font-medium">so'mdan</span></p>
                   <div>
                     <button className="inline-block px-10 py-5 bg-lightGreen border-2 border-lightGreen rounded-md text-base text-white font-bold transition-all duration-300 hover:bg-white hover:text-mainBlack">So'rov qoldish</button>
                   </div>
@@ -64,7 +64,7 @@ const Home = () => {
                     <h4 className="mb-2 text-22 font-bold md:text-2xl lg:text-28">{tab.tabContentTitle2}</h4>
                     <p className="font-medium text-base">{tab.tabContent2}</p>
                   </Link>
-                  <p className="mb-6 font-semibold text-28 font-montserrat">{tab.tabPrice2} <span className="inline-block opacity-70 text-lg font-medium">so'mdan</span></p>
+                  <p className="mb-6 font-semibold text-28 font-montserrat">{tab.tabPrice2} <span className="inline-block text-textGrey text-lg font-medium">so'mdan</span></p>
                   <div>
                     <button className="inline-block px-10 py-5 bg-lightGreen border-2 border-lightGreen rounded-md text-base text-white font-bold transition-all duration-300 hover:bg-white hover:text-mainBlack">So'rov qoldish</button>
                   </div>
@@ -76,7 +76,7 @@ const Home = () => {
                     <h4 className="mb-2 text-22 font-bold md:text-2xl lg:text-28">{tab.tabContentTitle3}</h4>
                     <p className="font-medium text-base">{tab.tabContent3}</p>
                   </Link>
-                  <p className="mb-6 font-semibold text-28 font-montserrat">{tab.tabPrice3} <span className="inline-block opacity-70 text-lg font-medium">so'mdan</span></p>
+                  <p className="mb-6 font-semibold text-28 font-montserrat">{tab.tabPrice3} <span className="inline-block text-textGrey text-lg font-medium">so'mdan</span></p>
                   <div>
                     <button className="inline-block px-10 py-5 bg-lightGreen border-2 border-lightGreen rounded-md text-base text-white font-bold transition-all duration-300 hover:bg-white hover:text-mainBlack">So'rov qoldish</button>
                   </div>

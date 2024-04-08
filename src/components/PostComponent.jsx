@@ -15,10 +15,10 @@ const PostComponent = () => {
               <img src={sbor} alt="photo" />
             </div>
             <div>
-              <span className="mb-2 font-montserrat font-medium text-sm opacity-70">8 Iyul 2022</span>
+              <span className="mb-2 font-montserrat font-medium text-sm text-textGrey">8 Iyul 2022</span>
               <h3 className="mb-2 font-bold text-xl sm:text-22 md:text-2xl lg:text-28">Ma'lumot to'plash</h3>
-              <p className="mb-5 font-medium font-montserrat text-sm opacity-70">Qanday bo'lmasin, ushbu mavzu bo'yicha qaysi mutaxassis bo'lishingizdan qat'i nazar, boshqa mualliflarning materiallari bilan tanishish tavsiya etiladi.</p>
-              <Link to='/' className='inline-block font-montserrat font-semibold text-base underline underline-offset-8 opacity-70 transition-all duration-300 hover:no-underline hover:opacity-100'>Batafsil</Link>
+              <p className="mb-5 font-medium font-montserrat text-sm text-textGrey">Qanday bo'lmasin, ushbu mavzu bo'yicha qaysi mutaxassis bo'lishingizdan qat'i nazar, boshqa mualliflarning materiallari bilan tanishish tavsiya etiladi.</p>
+              <Link to='/' className='inline-block font-montserrat font-semibold text-base underline underline-offset-8 text-textGrey transition-all duration-300 hover:no-underline hover:text-mainBlack'>Batafsil</Link>
             </div>
           </div>
           <div className="lg:flex lg:items-center">
@@ -26,10 +26,10 @@ const PostComponent = () => {
               <img src={optimizasiya} alt="photo" />
             </div>
             <div>
-              <span className="mb-2 font-montserrat font-medium text-sm opacity-70">8 Iyul 2022</span>
-              <h3 className="mb-2 font-bold text-xl sm:text-22 md:text-2xl lg:text-28">Ma'lumot to'plash</h3>
-              <p className="mb-5 font-medium font-montserrat text-sm opacity-70">Qanday bo'lmasin, ushbu mavzu bo'yicha qaysi mutaxassis bo'lishingizdan qat'i nazar, boshqa mualliflarning materiallari bilan tanishish tavsiya etiladi.</p>
-              <Link to='/' className='inline-block font-montserrat font-semibold text-base underline underline-offset-8 opacity-70 transition-all duration-300 hover:no-underline hover:opacity-100'>Batafsil</Link>
+              <span className="mb-2 font-montserrat font-medium text-sm text-textGrey">1 Mart 2022</span>
+              <h3 className="mb-2 font-bold text-xl sm:text-22 md:text-2xl lg:text-28">Blog uchun maqolani optimallashtirish</h3>
+              <p className="mb-5 font-medium font-montserrat text-sm text-textGrey">Nima uchun bu qator ikkinchi o'rinda turadi? Chunki ma'lumot to'plangandan so'ng, siz maqolani optimallashtirishga tayyorgarlikni boshlashingiz kerak.</p>
+              <Link to='/' className='inline-block font-montserrat font-semibold text-base underline underline-offset-8 text-textGrey transition-all duration-300 hover:no-underline hover:text-mainBlack'>Batafsil</Link>
             </div>
           </div>
         </div>

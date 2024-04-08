@@ -16,15 +16,26 @@ export default {
         'orange': '#FFB500',
         'mainGrey': '#B3B3B3',
         'grey': '#f7f7f7',
+        'textGrey': '#7f7f7f',
+        'primaryBlue': '#4285F4',
+        'skyblue': '#a2c3fa',
+        'royaleBlue': '#15c',
+        'btnBlue': '#3b7cef;'
       },
       maxWidth: {
         'base': '1440px',
       },
       fontSize: {
         '22': '22px',
+        '26': '26px',
         '28': '28px',
         '32': '32px',
+        '38': '38px',
         '44': '44px',
+      },
+      backgroundImage: {
+        'sobaka': "url('/src/assets/img/sobaka.jpg')",
+        'koshka': "url('/src/assets/img/koshka.jpg')",
       },
       zIndex: {
         1: '1'

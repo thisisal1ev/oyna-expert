@@ -1,3 +1,4 @@
+import React from "react"
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom"
 
 // pages
@@ -11,6 +12,9 @@ import StocksPage from "./pages/StocksPage"
 import Contacts from "./pages/Contacts"
 import Prices from "./pages/Prices"
 import Registration from "./pages/Registration"
+import WindowsLayout from "./layouts/WindowsLayout"
+import PlasticWindows from './pages/PlasticWindows'
+import WindowsDetail from "./pages/WindowsDetail"
 
 const App = () => {
   const router = createBrowserRouter(
@@ -21,9 +25,13 @@ const App = () => {
         <Route path="/kontaktlar" element={<Contacts />} />
         <Route path="/narxlar" element={<Prices />} />
         <Route path="/registratsiya" element={<Registration />} />
-        <Route path="/Profillar" element={<ProfilesLayout />}>
+        <Route path="/profillar" element={<ProfilesLayout />}>
           <Route index element={<Profiles />} />
-          <Route path="/Profillar/:title" element={<ProfilesDetail />} />
+          <Route path="/profillar/:title" element={<ProfilesDetail />} />
+        </Route>
+        <Route path="/oynalar" element={<WindowsLayout />}>
+          <Route index element={<PlasticWindows />} />
+          <Route path="/oynalar/:title" element={<WindowsDetail />} />
         </Route>
         <Route path='*' element={<PageNotFound />} />
       </Route>

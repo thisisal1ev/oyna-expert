@@ -5,7 +5,7 @@ const CTA = () => {
 
   return (
     <div className="py-9">
-      <div className="w-full max-w-base mx-auto px-5" data-aos="fade-up" data-aos-anchor-placement="center" data-aos-easing="ease-in" data-aos-duration="1000">
+      <div className="w-full max-w-base mx-auto px-5" data-aos="fade-up" data-aos-anchor-placement="center" data-aos-easing="ease-in" data-aos-duration="800">
         <form onSubmit={() => { checked && alert('Xat ketti'), !checked && alert('Iltimos bizning siyosatimiz qabul qiling!') }} className='px-8 py-10 w-full bg-lightGreen rounded-xl text-white xl:flex items-center justify-between xl:p-10'>
           <div className='xl:mr-12'>
             <h2 className='mb-2 text-2xl font-extrabold text-center md:text-3xl lg:text-32 lg:text-left xl:text-4xl'>Aniq hisob-kitob qilishni xohlaysizmi?</h2>

@@ -1,3 +1,4 @@
+import React from 'react'
 //components
 import Complement from '../components/Complement'
 import Profiles from '../components/Profiles'
@@ -11,7 +12,6 @@ import PostComponent from '../components/PostComponent'
 import Stocks from '../components/Stocks'
 
 const Home = () => {
-
   return (
     <>
 
@@ -21,7 +21,7 @@ const Home = () => {
 
       <Tab />
 
-      <Stocks/>
+      <Stocks />
 
       <Service />
 
@@ -31,7 +31,7 @@ const Home = () => {
 
       <Complement />
 
-      <PostComponent/>
+      <PostComponent />
 
       <About />
 

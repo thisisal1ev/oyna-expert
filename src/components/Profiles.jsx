@@ -11,7 +11,7 @@ const Profiles = () => {
     <div className='py-9'>
       <div className="w-full max-w-base mx-auto px-5">
 
-        <div className='mb-6' data-aos="fade-up" data-aos-anchor-placement="center" data-aos-easing="ease-in" data-aos-duration="1000">
+        <div className='mb-6' data-aos="fade-up" data-aos-anchor-placement="center" data-aos-easing="ease-in" data-aos-duration="800">
           <h2 className='text-[22px] font-bold sm:text-[25px] md:text-[30px] mb-2 lg:text-4xl'>Rehau profillaridan birini tanlang</h2>
           <p className='text-sm font-medium text-textGrey sm:text-base'>Dizayn va issiqlik izolyatsiyasi, tejamkor narxda yuqori sifatli derazalar</p>
         </div>

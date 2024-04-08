@@ -19,7 +19,7 @@ const Home = () => {
     <div className="py-9">
 
       <div className="w-full max-w-base mx-auto px-5">
-        <div className="mb-6" data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-easing="ease-in" data-aos-duration="1000">
+        <div className="mb-6" data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-easing="ease-in" data-aos-duration="800">
           <h2 className="mb-2 text-22 sm:text-2xl md:text-30 font-extrabold">Standart o'lchamdagi derazalar uchun narxlar</h2>
           <h3 className="text-sm font-medium font-montserrat text-textGrey sm:text-base">Сроки изготовления всего 5 дней</h3>
         </div>

@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 800,
       delay: 0,
       once: true,
     })
@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <footer className='bg-grey pt-10'>
 
-      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in" data-aos-duration="1000">
+      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in" data-aos-duration="800">
 
         <div className='w-full mx-auto max-w-base px-5 flex flex-col items-center sm:block'>
           <h2 className='mb-3 font-bold text-[22px] sm:text-4xl'>Bog'lanish uchun ma'lumot</h2>

@@ -16,6 +16,7 @@ const Header = () => {
   const [showContactModal, setShowContactModal] = useState(false);
   const [checked, setChecked] = useState(false);
   const [showButton, setShowButton] = useState(false);
+  const [navAccardion, setNavAccardion] = useState(false);
 
   const closeModal = (e) => {
     if (e.target.classList.contains('overlay')) setShowModal(false), setShowContactModal(false);
@@ -68,10 +69,25 @@ const Header = () => {
                 <button className='absolute top-4 right-3 text-textGrey transition-all duration-500 sm:right-4 md:top-2 md:right-10' onClick={() => setOpenMenu(true)}>
                   <img src={xmark} alt="Exit icon" width={50} height={50} className='w-[30px] h-[35px]' />
                 </button>
-                <NavLink to='/plastic-windows' className='font-bold flex items-center justify-between py-1 hover:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>
-                  <span className='mr-5'>Plastik oynalar</span>
-                  <img src={dropdown2} alt="drop icon" />
-                </NavLink>
+                <div className='flex items-center justify-between'>
+                  <NavLink to='/oynalar' className='font-bold py-1 hover:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>
+                    <span className='mr-5'>Plastik oynalar</span>
+                  </NavLink>
+                  <button onClick={() => setNavAccardion(prev => !prev)}>
+                    <img src={dropdown2} alt="dropdown" className={`${navAccardion ? '-rotate-180' : ''} transition-all duration-500`} />
+                  </button>
+                </div>
+                <div onClick={() => setNavAccardion(true)} className={navAccardion ? 'flex flex-col transition-all duration-500 px-2 py-3 text-sm text-gray-500 space-y-3 rounded-lg' : 'hidden'}>
+                  <Link className='hover:text-lightGreen transition-colors ease-in-out duration-500'>
+                    Sertifikatlar
+                  </Link>
+                  <Link className='hover:text-lightGreen transition-colors ease-in-out duration-500'>
+                    Foydali maqolalar
+                  </Link>
+                  <Link className='hover:text-lightGreen transition-colors ease-in-out duration-500'>
+                    Savol-javob
+                  </Link>
+                </div>
                 <NavLink to='/Profillar' className='font-bold flex items-center justify-between py-1 hover:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>
                   <span className='mr-5'>Profillar</span>
                   <img src={dropdown2} alt="drop icon" />
@@ -144,8 +160,7 @@ const Header = () => {
       <div className={`hidden lg:block bg-grey`}>
         <div className="w-full max-w-base mx-auto px-5 flex items-center justify-between">
           <div className='flex items-center justify-between lg:space-x-12 xl:space-x-2 xl:w-full'>
-
-            <Link to='/plastic-windows' className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
+            <Link to='/oynalar' className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
               <span>Plastik oynalar</span>
               <img src={dropdown2} alt="dropdown" />
             </Link>
@@ -184,34 +199,36 @@ const Header = () => {
       {
         showModal && <div className='relative max-w-base mx-auto px-5 w-full'>
           <div className="overlay"></div>
-          <div className="fixed translate-x-full top-10 w-full max-w-[500px] p-10 rounded-xl h-auto bg-white z-50">
-            <div className="py-2 text-mainBlack mb-5 flex items-center justify-between">
-              <h3 className='font-semibold text-2xl font-montserrat'>Bog'lanish uchun ma'lumot</h3>
-              <button onClick={() => setShowModal(false)} className="absolute top-5 right-4 opacity-30 transition-all duration-500 hover:opacity-100">
-                <img src={xmark} alt="Exit icon" width={40} className='w-10' />
-              </button>
-            </div>
-            <div className="py-5 text-mainBlack">
-              <div className='space-y-1 mb-5'>
-                <h4 className='font-medium font-montserrat text-textGrey'>Ish tartibi:</h4>
-                <p>Dushanba-Yakshanba: <strong>Kechayu-kunduz</strong></p>
+          <div className='flex flex-col items-center justify-center'>
+            <div className="fixed top-20 w-full max-w-[500px] p-10 rounded-xl h-auto bg-white z-50 xl:top-10">
+              <div className="py-2 text-mainBlack mb-5 flex items-center justify-between">
+                <h3 className='font-semibold text-2xl font-montserrat'>Bog'lanish uchun ma'lumot</h3>
+                <button onClick={() => setShowModal(false)} className="absolute top-5 right-4 opacity-30 transition-all duration-500 hover:opacity-100">
+                  <img src={xmark} alt="Exit icon" width={40} className='w-10' />
+                </button>
               </div>
-              <div className='space-y-1 mb-5'>
-                <h4 className='font-medium font-montserrat text-textGrey'>Raqamga qo'ng'iroq qiling:</h4>
-                <a className='font-semibold text-xl font-montserrat' href="tel:+998999999999">+998 (99) 999 99 99</a>
-                <div className='flex items-center space-x-2'>
-                  <Link to='/' className='font-semibold underline text-mainGrey hover:text-mainBlack transition-all duration-500'>WhatsApp</Link>
-                  <Link to='https://t.me/thisisal1ev' className='font-semibold underline text-mainGrey hover:text-mainBlack transition-all duration-500'>Telegram</Link>
+              <div className="py-5 text-mainBlack">
+                <div className='space-y-1 mb-5'>
+                  <h4 className='font-medium font-montserrat text-textGrey'>Ish tartibi:</h4>
+                  <p>Dushanba-Yakshanba: <strong>Kechayu-kunduz</strong></p>
                 </div>
-              </div>
-              <div className="space-y-1 mb-5">
-                <h4 className='font-medium font-montserrat text-textGrey'>Xatlar va takliflar uchun:</h4>
-                <Link to='https://aaalievvv1@gmail.com' className='font-semibold text-lg text-lightGreen underline underline-offset-1 hover:no-underline'>aaalievvv1@gmail.com
-                </Link>
-              </div>
-              <div className="space-y-1">
-                <h4 className='font-medium font-montserrat text-mainGrey'>Biz quyidagi manzilda joylashganmiz:</h4>
-                <address className='font-medium font-montserrat not-italic'>Andijon viloyati, Baliqchi tumani, Chinobod shaharchasi </address>
+                <div className='space-y-1 mb-5'>
+                  <h4 className='font-medium font-montserrat text-textGrey'>Raqamga qo'ng'iroq qiling:</h4>
+                  <a className='font-semibold text-xl font-montserrat' href="tel:+998999999999">+998 (99) 999 99 99</a>
+                  <div className='flex items-center space-x-2'>
+                    <Link to='/' className='font-semibold underline text-mainGrey hover:text-mainBlack transition-all duration-500'>WhatsApp</Link>
+                    <Link to='https://t.me/thisisal1ev' className='font-semibold underline text-mainGrey hover:text-mainBlack transition-all duration-500'>Telegram</Link>
+                  </div>
+                </div>
+                <div className="space-y-1 mb-5">
+                  <h4 className='font-medium font-montserrat text-textGrey'>Xatlar va takliflar uchun:</h4>
+                  <Link to='https://aaalievvv1@gmail.com' className='font-semibold text-lg text-lightGreen underline underline-offset-1 hover:no-underline'>aaalievvv1@gmail.com
+                  </Link>
+                </div>
+                <div className="space-y-1">
+                  <h4 className='font-medium font-montserrat text-mainGrey'>Biz quyidagi manzilda joylashganmiz:</h4>
+                  <address className='font-medium font-montserrat not-italic'>Andijon viloyati, Baliqchi tumani, Chinobod shaharchasi </address>
+                </div>
               </div>
             </div>
           </div>
@@ -221,25 +238,27 @@ const Header = () => {
       {
         showContactModal && <>
           <div className="overlay"></div>
-          <div className="fixed translate-x-full top-10 w-full max-w-[500px] p-10 rounded-xl h-auto bg-white z-50">
-            <div className="py-2 text-mainBlack mb-5 mt-10 flex flex-col">
-              <h3 className='font-extrabold text-2xl font-raleway text-center'>Savollaringiz qoldimi?</h3>
-              <h4 className='font-extrabold text-2xl font-raleway text-center'>So'rov qoldiring</h4>
-              <p className='text-sm text-textGrey mt-2 font-medium text-center'>va bizning mutaxassislarimiz imkon qadar tezroq siz bilan bog'lanadi</p>
-              <button onClick={() => setShowContactModal(false)} className="absolute top-5 right-4 opacity-30 transition-all duration-500 hover:opacity-100">
-                <img src={xmark} alt="Exit icon" width={40} className='w-10' />
-              </button>
-            </div>
-            <div className="py-5 text-mainBlack">
-              <form onSubmit={(e) => { e.preventDefault(), setChecked(false), checked && alert('Xat ketti'), checked && setShowContactModal(false), !checked && alert('Iltimos bizning siyosatimiz qabul qiling!') }} className='w-full flex flex-col'>
-                <input className='bg-transparent py-4 font-montserrat outline-none border-b-2 my-2 hover:placeholder:text-lightGreen placeholder:text-mainBlack focus:border-mainBlack' placeholder='Ismingiz' type="text" required />
-                <input id='changeContent' className='bg-transparent py-4 font-montserrat outline-none border-b-2 my-2 placeholder:text-mainBlack focus:border-mainBlack' placeholder='Telefon raqamingiz' pattern="(\+998|8)[\- ]?\d{2}[\- ]?\d{3}[\- ]?\d{2}[\- ]?\d{2}" type="tel" required />
-                <div className='my-2 flex items-center justify-between pb-4'>
-                  <input onChange={() => setChecked(true)} width={20} height={20} className='w-10 h-5 mr-4 cursor-pointer outline-none focus:outline-none checked:bg-lightGreen ' id='check' type="checkbox" />
-                  <label className='font-medium text-textGrey' htmlFor='check'>Men shaxsiy ma'lumotlarni qayta ishlash va <a className='underline' target='_blank' href="#">maxfiylik siyosatiga roziman.</a></label>
-                </div>
-                <button type='submit' onSubmit={() => alert('Xat ketti')} className='py-7 px-9 bg-lightGreen border-2 border-lightGreen w-full font-bold font-raleway overflow-hidden rounded-md text-white hover:bg-white hover:text-mainBlack transition-all duration-500'>So'rov qoldirish</button>
-              </form>
+          <div className='flex flex-col items-center justify-center'>
+            <div className="fixed top-20 w-full max-w-[500px] p-10 rounded-xl h-auto bg-white z-50 xl:top-10">
+              <div className="py-2 text-mainBlack mb-5 mt-10 flex flex-col">
+                <h3 className='font-extrabold text-2xl font-raleway text-center'>Savollaringiz qoldimi?</h3>
+                <h4 className='font-extrabold text-2xl font-raleway text-center'>So'rov qoldiring</h4>
+                <p className='text-sm text-textGrey mt-2 font-medium text-center'>va bizning mutaxassislarimiz imkon qadar tezroq siz bilan bog'lanadi</p>
+                <button onClick={() => setShowContactModal(false)} className="absolute top-5 right-4 opacity-30 transition-all duration-500 hover:opacity-100">
+                  <img src={xmark} alt="Exit icon" width={40} className='w-10' />
+                </button>
+              </div>
+              <div className="py-5 text-mainBlack">
+                <form onSubmit={(e) => { e.preventDefault(), setChecked(false), checked && alert('Xat ketti'), checked && setShowContactModal(false), !checked && alert('Iltimos bizning siyosatimiz qabul qiling!') }} className='w-full flex flex-col'>
+                  <input className='bg-transparent py-4 font-montserrat outline-none border-b-2 my-2 hover:placeholder:text-lightGreen placeholder:text-mainBlack focus:border-mainBlack' placeholder='Ismingiz' type="text" required />
+                  <input id='changeContent' className='bg-transparent py-4 font-montserrat outline-none border-b-2 my-2 placeholder:text-mainBlack focus:border-mainBlack' placeholder='Telefon raqamingiz' pattern="(\+998|8)[\- ]?\d{2}[\- ]?\d{3}[\- ]?\d{2}[\- ]?\d{2}" type="tel" required />
+                  <div className='my-2 flex items-center justify-between pb-4'>
+                    <input onChange={() => setChecked(true)} width={20} height={20} className='w-10 h-5 mr-4 cursor-pointer outline-none focus:outline-none checked:bg-lightGreen ' id='check' type="checkbox" />
+                    <label className='font-medium text-textGrey' htmlFor='check'>Men shaxsiy ma'lumotlarni qayta ishlash va <a className='underline' target='_blank' href="#">maxfiylik siyosatiga roziman.</a></label>
+                  </div>
+                  <button type='submit' onSubmit={() => alert('Xat ketti')} className='py-7 px-9 bg-lightGreen border-2 border-lightGreen w-full font-bold font-raleway overflow-hidden rounded-md text-white hover:bg-white hover:text-mainBlack transition-all duration-500'>So'rov qoldirish</button>
+                </form>
+              </div>
             </div>
           </div>
         </>

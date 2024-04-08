@@ -11,8 +11,8 @@ const PostComponent = () => {
         <h2 className="mb-4 font-extrabold text-xl sm:text-22 md:text-2xl lg:text-44 xl:mb-11">Bilish foydali</h2>
         <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
           <div className="lg:flex lg:items-center">
-            <div className="mb-6 h-60 rounded-xl overflow-hidden lg:mr-5 xl:mr-8">
-              <img src={sbor} alt="photo" />
+            <div className="mb-6 h-44 sm:h-72 md:h-auto rounded-xl overflow-hidden lg:mr-5 xl:mr-8">
+              <img className="w-full h-full" src={sbor} alt="photo" />
             </div>
             <div>
               <span className="mb-2 font-montserrat font-medium text-sm text-textGrey">8 Iyul 2022</span>
@@ -22,8 +22,8 @@ const PostComponent = () => {
             </div>
           </div>
           <div className="lg:flex lg:items-center">
-            <div className="mb-6 h-60 rounded-xl overflow-hidden lg:mr-5 xl:mr-8">
-              <img src={optimizasiya} alt="photo" />
+            <div className="mb-6 h-44 sm:h-72 md:h-auto rounded-xl overflow-hidden lg:mr-5 xl:mr-8">
+              <img className="w-full h-full" src={optimizasiya} alt="photo" />
             </div>
             <div>
               <span className="mb-2 font-montserrat font-medium text-sm text-textGrey">1 Mart 2022</span>

@@ -22,14 +22,15 @@ const Footer = () => {
   return (
     <footer className='bg-grey pt-10'>
 
-      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in" data-aos-duration="800">
+      <div data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-easing="ease-in" data-aos-duration="800">
 
         <div className='w-full mx-auto max-w-base px-5 flex flex-col items-center sm:block'>
-          <h2 className='mb-3 font-bold text-[22px] sm:text-4xl'>Bog'lanish uchun ma'lumot</h2>
+          <h2 className='mb-3 font-bold text-22 sm:text-4xl'>Bog'lanish uchun ma'lumot</h2>
           <p className='font-montserrat font-medium text-textGrey mb-5 text-sm sm:text-base'>Siz uchun qulay usulda biz bilan bog'laning</p>
         </div>
 
-        <div className='flex-col items-center text-center w-full mx-auto max-w-base px-5 flex sm:items-start sm:text-left lg:flex-row lg:items-center justify-between mb-5'>
+        <div className='flex flex-col items-center text-center w-full mx-auto max-w-base px-5 lg:space-x-2 sm:items-start sm:text-left lg:flex-row lg:items-center justify-between mb-5'>
+
           <div className='space-y-5 mb-5 lg:mb-0'>
             <div className='space-y-2'>
               <h4 className='font-medium font-montserrat text-mainGrey'>Ish kunlari:</h4>
@@ -43,10 +44,11 @@ const Footer = () => {
               </div>
             </div>
           </div>
+
           <div className='space-y-5 mb-5 lg:mb-0'>
             <div className='space-y-2'>
               <h4 className='font-medium font-montserrat text-mainGrey'>Qong'roq qilish:</h4>
-              <a href="tel:+998900000000" className='font-semibold text-2xl font-montserrat'>{'+998 (90) 000 00 00'}</a>
+              <a href="tel:+998900000000" className='font-semibold whitespace-nowrap text-2xl font-montserrat'>{'+998 (90) 000 00 00'}</a>
               <div className='flex items-center justify-center sm:justify-normal space-x-2'>
                 <Link to='/' className='font-semibold text-mainGrey hover:text-mainBlack transition-all duration-500'>WhatsApp</Link>
                 <Link to='https://t.me/thisisal1ev' target='_blank' className='font-semibold text-mainGrey hover:text-mainBlack transition-all duration-500'>Telegram</Link>
@@ -58,6 +60,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
+
           <div className='space-y-5'>
             <div className='space-y-2'>
               <h4 className='font-medium font-montserrat text-mainGrey'>Ijtimoiy tarmoqlarga obuna bo'ling:</h4>
@@ -82,9 +85,10 @@ const Footer = () => {
                   </svg>
                 </Link>
               </div>
-              <p className='font-medium font-montserrat text-mainGrey leading-6 w-full lg:w-[420px]'>Saytdagi barcha materiallar, jumladan, mualliflik huquqi va turdosh huquqlar qonun hujjatlariga muvofiq himoyalangan</p>
+              <p className='font-medium font-montserrat text-mainGrey leading-6 w-full lg:max-w-[420px]'>Saytdagi barcha materiallar, jumladan, mualliflik huquqi va turdosh huquqlar qonun hujjatlariga muvofiq himoyalangan</p>
             </div>
           </div>
+
         </div>
 
       </div>

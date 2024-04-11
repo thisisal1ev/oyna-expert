@@ -16,11 +16,11 @@ const WindowsDetail = () => {
             <p className="text-base leading-normal mb-4 lg:mb-6 md:text-lg">{detailWindows.mainText}</p>
             <p className="text-base leading-normal mb-4 lg:mb-6 md:text-lg">{detailWindows.context}</p>
             <h3 className="text-base pt-4 mb-4 lg:mb-6 md:text-lg">{detailWindows.sectionTitle}</h3>
-            <ul className="list-disc pb-4">
+            <ul className="list-disc ml-4 pb-4">
               {
-                detailWindows.charakteristic.map((text) => {
+                detailWindows.charakteristic.map((text,index) => {
                   return (
-                    <li className="ml-4 md:text-lg" key={detailWindows.id}>{text}</li>
+                    <li className="md:text-lg" key={index}>{text}</li>
                   )
                 })
               }

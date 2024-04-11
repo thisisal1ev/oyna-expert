@@ -15,11 +15,11 @@ const ProfilesDetail = () => {
           <div className="text-textGrey font-montserrat">
             <p className="text-base leading-normal mb-4 lg:mb-6 md:text-lg">{detailProfiles.mainText}</p>
             <h3 className="text-base pt-4 mb-4 lg:mb-6 md:text-lg">{detailProfiles.sectionTitle}</h3>
-            <ul className="list-disc pb-4">
+            <ul className="list-disc pb-4 ml-4">
               {
-                detailProfiles.context.map((text) => {
+                detailProfiles.context.map((text,index) => {
                   return (
-                    <li className="ml-4 md:text-lg" key={detailProfiles.id}>{text}</li>
+                    <li className="md:text-lg" key={index}>{text}</li>
                   )
                 })
               }

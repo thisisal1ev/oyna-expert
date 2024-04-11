@@ -6,7 +6,7 @@ const Prices = () => {
     <div className='py-9'>
       <div className="w-full max-w-base mx-auto px-5">
         <h1 className='mb-6 font-extrabold text-22 sm:text-2xl md:3xl lg:text-4xl xl:text-38 sm:mb-8 lg:mb-9 xl:mb-11'>Narxlar</h1>
-        <ul className="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <ul className="grid gap-y-5 gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {
             priceList.map((priceListItem) => {
               return (
@@ -15,11 +15,11 @@ const Prices = () => {
                   <div className="text-textGrey font-montserrat mb-3 space-y-3 lg:space-y-4 xl:space-y-5">
                     <h3 className="font-bold text-xl sm:text-22 xl:text-26">{priceListItem.title}</h3>
                     <p>{priceListItem.context}</p>
-                    <ul className="list-disc">
+                    <ul className="list-disc ml-4">
                       {
-                        priceListItem.charakteristic.map((charakteristic) => {
+                        priceListItem.charakteristic.map((charakteristic,index) => {
                           return (
-                            <li className="ml-4" key={priceListItem.id}>{charakteristic}</li>
+                            <li key={index}>{charakteristic}</li>
                           )
                         })
                       }

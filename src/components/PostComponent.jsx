@@ -8,7 +8,7 @@ const PostComponent = () => {
   return (
     <div className="py-9">
       <div className="w-full max-w-base mx-auto px-5">
-        <h2 className="mb-4 font-extrabold text-xl sm:text-22 md:text-2xl lg:text-44 xl:mb-11">Bilish foydali</h2>
+        <h2 className="mb-4 font-extrabold text-xl sm:text-22 md:text-2xl lg:text-4xl xl:text-44 xl:mb-11">Bilish foydali</h2>
         <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
           <div className="lg:flex lg:items-center">
             <div className="mb-6 h-44 sm:h-72 md:h-auto rounded-xl overflow-hidden lg:mr-5 xl:mr-8">

@@ -12,7 +12,7 @@ const Profiles = () => {
       <div className="w-full max-w-base mx-auto px-5">
 
         <div className='mb-6' data-aos="fade-up" data-aos-anchor-placement="center" data-aos-easing="ease-in" data-aos-duration="800">
-          <h2 className='text-[22px] font-bold sm:text-[25px] md:text-[30px] mb-2 lg:text-4xl'>Rehau profillaridan birini tanlang</h2>
+          <h2 className='text-22 font-bold sm:text-26 md:text-3xl mb-2 lg:text-4xl xl:text-44'>Rehau profillaridan birini tanlang</h2>
           <p className='text-sm font-medium text-textGrey sm:text-base'>Dizayn va issiqlik izolyatsiyasi, tejamkor narxda yuqori sifatli derazalar</p>
         </div>
 
@@ -21,7 +21,7 @@ const Profiles = () => {
           {/* 1 */}
           <div className='p-[30px] my-3 border border-opacity-70 rounded-xl'>
             <img className='overflow-hidden w-full h-full max-w-36 max-h-44 mb-5' src={profile1} alt="Rehau profili" />
-            <Link to='/profillar/Rehau Thermo' className='inline-block mb-4'>
+            <Link to='/profillar/Rehau Thermo' className='inline-flex flex-col mb-4'>
               <span className='inline-block mb-2 font-bold text-[22px] sm:text-[22px] md:text-2xl lg:text-[28px]'>Rehau Thermo</span>
               <span className='inline-block font-medium'>An'anaviy chuqurligi 60 mm bo'lgan derazalar 4 kamerali profil tufayli energiya samaradorligini oshadi.</span>
             </Link>
@@ -52,7 +52,7 @@ const Profiles = () => {
           {/* 2 */}
           <div className='p-[30px] my-3 border border-opacity-70 rounded-xl'>
             <img className='overflow-hidden w-full h-full max-w-36 max-h-44 mb-5' src={profile2} alt="Rehau profili" />
-            <Link to='/profillar/Rehau Grazio' className='inline-block mb-4'>
+            <Link to='/profillar/Rehau Grazio' className='inline-flex flex-col mb-4'>
               <span className='inline-block mb-2 font-bold text-[22px] sm:text-[22px] md:text-2xl lg:text-[28px]'>Rehau Grazio</span>
               <span className='inline-block font-medium'>Hali ham arzon variant, lekin yuqori issiqlik va ovoz o'tkazmaydigan.</span>
             </Link>
@@ -83,7 +83,7 @@ const Profiles = () => {
           {/* 3 */}
           <div className='p-[30px] my-3 border border-opacity-70 rounded-xl'>
             <img className='overflow-hidden w-full h-full max-w-36 max-h-44 mb-5' src={profile3} alt="Rehau profili" />
-            <Link to='/profillar/Rehau Delight' className='inline-block mb-4'>
+            <Link to='/profillar/Rehau Delight' className='inline-flex flex-col mb-4'>
               <span className='inline-block mb-2 font-bold text-[22px] sm:text-[22px] md:text-2xl lg:text-[28px]'>Rehau Delight</span>
               <span className='inline-block font-medium'>Rehau Delight oynalari bilan xonaga 10% ko'proq yorug'lik kiradi - bu profil balandligining pasayishi tufayli.</span>
             </Link>

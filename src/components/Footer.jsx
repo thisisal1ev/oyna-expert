@@ -25,8 +25,8 @@ const Footer = () => {
       <div data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-easing="ease-in" data-aos-duration="800">
 
         <div className='w-full mx-auto max-w-base px-5 flex flex-col items-center sm:block'>
-          <h2 className='mb-3 font-bold text-22 sm:text-4xl'>Bog'lanish uchun ma'lumot</h2>
-          <p className='font-montserrat font-medium text-textGrey mb-5 text-sm sm:text-base'>Siz uchun qulay usulda biz bilan bog'laning</p>
+          <h2 className='mb-3 font-bold text-center sm:text-left text-22 sm:text-4xl'>Bog'lanish uchun ma'lumot</h2>
+          <p className='font-montserrat text-center sm:text-left font-medium text-textGrey mb-5 text-sm sm:text-base'>Siz uchun qulay usulda biz bilan bog'laning</p>
         </div>
 
         <div className='flex flex-col items-center text-center w-full mx-auto max-w-base px-5 lg:space-x-2 sm:items-start sm:text-left lg:flex-row lg:items-center justify-between mb-5'>

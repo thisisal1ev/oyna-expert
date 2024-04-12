@@ -18,7 +18,7 @@ const Service = () => {
               services.map((service) => {
                 return (
                   <li key={service.id}>
-                    <img className='mb-3' src={service.img} alt={service.title} />
+                    <img className='mb-3' width={90} height={90} src={service.img} alt={service.title} />
                     <h4 className='mb-1 font-bold text-22 md:text-2xl'>{service.title}</h4>
                     <p className='font-medium text-textGrey text-base'>{service.context}</p>
                   </li>
@@ -27,7 +27,7 @@ const Service = () => {
             }
           </ul>
           <div className='hidden lg:w-full lg:block'>
-            <img className='absolute -right-20 top-0 w-[45%] h-full object-cover -z-10' src={serviceIMG} alt="service" />
+            <img className='absolute -right-20 top-0 w-[45%] h-full object-cover bg-cover -z-10' src={serviceIMG} alt="service" />
           </div>
         </div>
       </div>

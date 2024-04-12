@@ -10,9 +10,9 @@ const StocksPage = () => {
           {
             stocks.map((stock) => {
               return (
-                <li key={stock.id} className="text-textGrey">
+                <li key={stock.id} className="text-textGrey flex flex-col">
                   <img className="mb-2" src={stock.img} alt={stock.title} />
-                  <div className="mt-1 mb-4 font-montserrat space-y-2 lg:space-y-3">
+                  <div className="mt-1 mb-6 flex-auto font-montserrat space-y-3">
                     <span className="inline-block">{stock.date}</span>
                     <h3 className="font-bold text-xl sm:text-22 lg:text-26">{stock.title}</h3>
                     <p className="">{stock.context}</p>

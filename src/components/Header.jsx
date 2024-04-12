@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link, NavLink } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
@@ -9,6 +10,7 @@ import dropdown2 from '../assets/img/dropdown2.svg'
 import logo from '../assets/img/logo.svg'
 import phone from '../assets/img/phone.svg'
 import xmark from '../assets/img/xmark.svg'
+import HamburgerMenu from './HamburgerMenu';
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(true)
@@ -16,7 +18,6 @@ const Header = () => {
   const [showContactModal, setShowContactModal] = useState(false);
   const [checked, setChecked] = useState(false);
   const [showButton, setShowButton] = useState(false);
-  const [navAccardion, setNavAccardion] = useState(false);
 
   const closeModal = (e) => {
     if (e.target.classList.contains('overlay')) setShowModal(false), setShowContactModal(false);
@@ -53,10 +54,11 @@ const Header = () => {
       <div className='py-4 border-b-2'>
         <div className="w-full max-w-base mx-auto px-2 flex items-center justify-between">
           <div className='font-medium flex items-center'>
-            <img className='hidden lg:block mr-2' src={location} alt="location" />
+            <img className='hidden lg:block mr-2' src={location} width={24} height={24} alt="location" />
             <p className='font-medium font-montserrat'>Shahar: Andijon</p>
 
           </div>
+
           {
             <button onClick={() => setOpenMenu(false)} className={`inline-flex items-center space-x-2 text-white px-5 rounded-es-md h-[56px] bg-lightGreen top-0 right-0 fixed lg:hidden ${showModal || showContactModal ? '-z-0' : 'z-10'}`}>
               <p className='uppercase font-medium'>Menyu</p>
@@ -67,53 +69,16 @@ const Header = () => {
           {!openMenu && <div onClick={() => setOpenMenu(true)} className='fixed top-0 left-0 z-10 w-full h-full opacity-70 bg-black lg:hidden'></div>}
           <div className="block fixed top-0 right-0 w-full h-full z-30 bg-white translate-x-full duration-300 max-w-none lg:hidden">
             <div className="flex flex-col h-full px-6 py-5 overflow-y-auto">
+
               <nav className={`absolute top-0 left-0 h-full w-[255px] flex flex-col space-y-3 px-7 pt-14 pb-8 grow bg-white transform ${openMenu ? '-translate-x-0' : `-translate-x-full `} duration-500 sm:w-[325px] sm:px-9 sm:pt-[60px] sm:pb-11 md:w-[360px] md:px-10 md:py-12 lg:hidden`}>
-                <button className='absolute top-4 right-3 text-textGrey transition-all duration-500 sm:right-4 md:top-2 md:right-10' onClick={() => setOpenMenu(true)}>
+                <button className='absolute top-4 right-2 text-textGrey transition-all duration-500 sm:right-4 md:top-2 md:right-2' onClick={() => setOpenMenu(true)}>
                   <img src={xmark} alt="Exit icon" width={50} height={50} className='w-[30px] h-[35px]' />
                 </button>
-                <div className='flex items-center justify-between'>
-                  <NavLink to='/plastik oynalar' className='font-bold py-1 hover:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>
-                    <span className='mr-5'>Plastik oynalar</span>
-                  </NavLink>
-                  <button onClick={() => setNavAccardion(prev => !prev)}>
-                    <img src={dropdown2} alt="dropdown" className={`${navAccardion ? '-rotate-180' : ''} transition-all duration-500`} />
-                  </button>
-                </div>
-                <div onClick={() => setNavAccardion(true)} className={navAccardion ? 'flex flex-col transition-all duration-500 px-2 py-3 text-sm text-gray-500 space-y-3 rounded-lg' : 'hidden'}>
-                  <Link to='/sertifikatlar' className='hover:text-lightGreen transition-colors ease-in-out duration-500'>
-                    Sertifikatlar
-                  </Link>
-                  <Link className='hover:text-lightGreen transition-colors ease-in-out duration-500'>
-                    Foydali maqolalar
-                  </Link>
-                  <Link className='hover:text-lightGreen transition-colors ease-in-out duration-500'>
-                    Savol-javob
-                  </Link>
-                </div>
-                <NavLink to='/Profillar' className='font-bold flex items-center justify-between py-1 hover:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>
-                  <span className='mr-5'>Profillar</span>
-                  <img src={dropdown2} alt="drop icon" />
-                </NavLink>
-                <NavLink to='/balkonlar' className='font-bold flex items-center justify-between py-1 hover:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>
-                  <span className='mr-5'>Balkonlar</span>
-                  <img src={dropdown2} alt="drop icon" />
-                </NavLink>
-                <NavLink to="/xizmat ko'rsatish" className='font-bold flex items-center justify-between py-1 hover:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>
-                  <span className='mr-5'>Xizmat ko'rsatish</span>
-                  <img src={dropdown2} alt="drop icon" />
-                </NavLink>
-                <NavLink to='/payment' className='font-bold flex items-center justify-between py-1 hover:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>
-                  <span className='mr-5'>To'lov</span>
-                  <img src={dropdown2} alt="drop icon" />
-                </NavLink>
-                <NavLink to='/narxlar' className='font-bold py-1 hover:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Narxlar</NavLink>
-                <NavLink to='/sertific' className='font-bold py-1 hover:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Sertifikatlar</NavLink>
-                <NavLink to='/registratsiya' className='font-bold py-1 hover:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Ro'yxatdan o'tish</NavLink>
-                <NavLink to='/aksiyalar' className='font-bold py-1 hover:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Aksiya</NavLink>
-                <NavLink to='/about' className='font-bold py-1 hover:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Kompaniya haqida</NavLink>
-                <NavLink to='/news' className='font-bold py-1 hover:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Yangiliklar</NavLink>
-                <NavLink to='/kontaktlar' className='font-bold py-1 hover:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Kontaktlar</NavLink>
+
+                <HamburgerMenu />
+
               </nav>
+
             </div>
           </div>
 
@@ -132,7 +97,7 @@ const Header = () => {
         <div className='pt-5 pb-2 flex flex-col lg:flex-row lg:items-center lg:justify-between'>
           <div className='flex items-center flex-col mb-5 md:flex-row md:mb-0'>
             <Link to='/'>
-              <img className='mb-2 md:mr-5' src={logo} alt="logo" />
+              <img className='mb-2 md:mr-5' width={80} height={80} src={logo} alt="logo" />
             </Link>
             <div>
               <p className='font-bold text-2xl text-center md:text-left'>Kompaniya nomi</p>
@@ -142,13 +107,13 @@ const Header = () => {
           <div>
             <div className='flex items-center space-y-4 flex-col md:flex-row md:justify-between md:space-x-4'>
               <div className='flex items-center space-x-3 md:space-x-4'>
-                <img className='hidden md:block' src={phone} alt="phone" />
+                <img width={25} height={25} className='hidden md:block' src={phone} alt="phone" />
                 <div>
                   <p className='font-medium font-montserrat text-sm text-textGrey text-center md:text-left'>Qong'iroq bepul</p>
                   <a className='text-2xl font-semibold font-montserrat' href="tel:+99890000000">{'+998 (90) 000 00 00'}</a>
                 </div>
                 <button onClick={() => setShowModal(true)}>
-                  <img src={dropdown} alt="dropdown" />
+                  <img width={25} height={25} src={dropdown} alt="dropdown" />
                 </button>
               </div>
               <div className='mx-auto'>
@@ -164,23 +129,23 @@ const Header = () => {
           <div className='flex items-center justify-between lg:space-x-12 xl:space-x-2 xl:w-full'>
             <Link to='/plastik oynalar' className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
               <span>Plastik oynalar</span>
-              <img src={dropdown2} alt="dropdown" />
+              <img width={25} height={25} src={dropdown2} alt="dropdown" />
             </Link>
             <Link to='/profillar' className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
               <span>Profillar</span>
-              <img src={dropdown2} alt="dropdown" />
+              <img width={25} height={25} src={dropdown2} alt="dropdown" />
             </Link>
             <Link to='/balkonlar' className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
               <span>Balkonlar</span>
-              <img src={dropdown2} alt="dropdown" />
+              <img width={25} height={25} src={dropdown2} alt="dropdown" />
             </Link>
             <Link to="/xizmat ko'rsatish" className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
               <span>Xizmat ko'rsatish</span>
-              <img src={dropdown2} alt="dropdown" />
+              <img width={25} height={25} src={dropdown2} alt="dropdown" />
             </Link>
             <Link to='/payment' className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:flex'>
               <span>To'lov</span>
-              <img src={dropdown2} alt="dropdown" />
+              <img width={25} height={25} src={dropdown2} alt="dropdown" />
             </Link>
             <Link to='/narxlar' className='pt-5 pb-6 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:block'>Narxlar</Link>
             <Link to='/sertifikatlar' className='pt-5 pb-6 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:block'>Sertifikatlar</Link>

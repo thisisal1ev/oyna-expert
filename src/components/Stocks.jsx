@@ -12,7 +12,7 @@ const Stocks = () => {
             <Link to='/' className='inline-block relative z-1 overflow-hidden rounded-xl'>
               <div className='bg-sobaka bg-cover bg-no-repeat hover:scale-105 transition-all duration-700'>
                 <div className='text-white bg-img w-full'>
-                  <div className='flex flex-col space-y-4 pr-12 pl-12 py-10 sm:px-14 sm:py-12 md:py-20 lg:px-[33px] xl:pr-28 xl:pl-10 xl:pt-36 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-easing="ease-in" data-aos-duration="800">
+                  <div className='flex flex-col space-y-4 pr-12 pl-12 py-10 sm:px-14 sm:py-12 md:py-20 lg:px-[33px] xl:pr-32 xl:pl-12 xl:pt-36 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-easing="ease-in" data-aos-duration="800">
                     <span className='inline-block font-montserrat text-sm font-medium w-48 bg-orange py-1 px-3 rounded-md'>9 aprelgacha chegirma</span>
                     <span className='inline-block text-22 font-bold sm:text-28 md:text-3xl lg:text-4xl'>Tugatish uchun 15% gacha</span>
                     <span className='inline-block font-montserrat text-sm font-medium md:text-lg'>Va shisha uchun 30% gacha</span>

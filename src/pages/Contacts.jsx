@@ -8,9 +8,9 @@ import rutube from '../assets/img/rutube.svg'
 const Contacts = () => {
   return (
     <div className='py-9'>
-      <div className="w-full max-w-base mx-auto px-5">
-        <div>
-          <h1 className='mb-6 font-extrabold text-22 sm:text-2xl md:3xl lg:text-4xl xl:text-38 sm:mb-8 lg:mb-9 xl:mb-11'>Kontaktlar</h1>
+      <div className="w-full max-w-base mx-auto px-5 flex flex-col lg:items-center lg:justify-between lg:flex-row">
+        <div className='mb-10 mr-0 lg:mb-0 lg:mr-10'>
+          <h1 className='mb-6 font-extrabold text-22 sm:text-2xl md:3xl lg:text-4xl xl:text-5xl sm:mb-8 lg:mb-9 xl:mb-11'>Kontaktlar</h1>
           <ul className='space-y-3 font-montserrat xl:space-y-5'>
             <li className='flex flex-col mb-2 md:flex-row md:items-center'>
               <a href="tel:+998900000000" className='font-bold text-xl mr-4 text-textGrey mb-2'>+998 (90) 000 00 00</a>
@@ -44,7 +44,7 @@ const Contacts = () => {
           </ul>
         </div>
 
-
+        <iframe className='w-full h-96 lg:h-[600px]' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12067.141075987674!2d71.96337355597498!3d40.87658636659705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bca0b64ef43357%3A0x8d7798d2806477f0!2zQ2hpbm9ib2QsINCQ0L3QtNC40LbQsNC90YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1712827247738!5m2!1sru!2s" width="800" height="600" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   )

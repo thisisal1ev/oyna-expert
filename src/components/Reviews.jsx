@@ -158,7 +158,7 @@ const Reviews = () => {
 
         </ul>
 
-        <Link to='/' className='inline-block font-semibold text-base underline underline-offset-8 text-textGrey transition-all duration-300 hover:no-underline hover:text-mainBlack'>barcha sharhlarni o'qing</Link>
+        <Link to='/kompaniya haqida/Biz haqimizda sharhlar' className='inline-block font-semibold text-base underline underline-offset-8 text-textGrey transition-all duration-300 hover:no-underline hover:text-mainBlack'>barcha sharhlarni o'qing</Link>
 
       </div>
 

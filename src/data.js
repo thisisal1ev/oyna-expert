@@ -20,6 +20,9 @@ import standart from './assets/img/standart.webp'
 import komfort from './assets/img/komfort.webp'
 import biznes from './assets/img/biznes.webp'
 import delyuks from './assets/img/delyuks.webp'
+import review1 from './assets/img/yakovlev.webp'
+import review2 from './assets/img/somonova.webp'
+import review3 from './assets/img/yagudin.webp'
 
 export const services = [
   {
@@ -437,5 +440,26 @@ export const servicesPage = [
       `germetik, issiqlik izolatsiyasi;`,
       `har qanday plastik derazalar uchun javob beradi.`,
     ],
+  },
+];
+
+export const reviews = [
+  {
+    id: 1,
+    reviewerImg: review1,
+    reviewer: `Kirill Yakovlev`,
+    reviewContext: `Mijozlarga do'stona munosabat va sodiqlikni ta'kidlamoqchiman va bu har doim o'zaro aloqa jarayonini yoqimli va samarali qilishga yordam beradi. Bizning ehtiyojlarimiz va umidlarimiz bilan chin dildan qiziqayotganingiz juda yaxshi. Hamkorlik men uchun yoqimli tajriba bo'ldi.`,
+  },
+  {
+    id: 2,
+    reviewerImg: review2,
+    reviewer: `Aleksandra Somova`,
+    reviewContext: `Men bu erga birinchi marta kelishim emas va ishonch bilan ayta olamanki, siz juda yaxshi ish qilasiz! Men yuqori professionallik, mas'uliyat va mijozga nisbatan sezgir munosabatni qadrlayman. Ajoyib ish uchun rahmat!`,
+  },
+  {
+    id: 3,
+    reviewerImg: review3,
+    reviewer: `Aleksandr Yagudin`,
+    reviewContext: `Menga iliq va professional yondashuv uchun juda minnatdorman. Mas'uliyatingiz, ochiqligingiz va yordam berishga tayyorligingiz uchun tashakkur. Men sizni har doim do'stlarim va tanishlarimga tavsiya qilaman`,
   },
 ];

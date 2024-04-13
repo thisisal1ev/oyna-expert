@@ -29,13 +29,14 @@ const PaymentMethods = () => {
         <div className='font-montserrat text-textGrey py-6 lg:py-8'>
 
           <Accordion className="border-y-2 border-textGrey" open={open === 1} icon={<Icon id={1} open={open} />}>
-            <AccordionHeader className="border-none font-bold text-xl py-4 text-left sm:text-22 lg:text-26 sm:py-5 md:py-6" onClick={() => handleOpen(1)}>Tog&apos;lar so&apos;zidan uzoqroqda</AccordionHeader>
+            <AccordionHeader className="border-none outline-none font-bold text-xl py-4 text-left sm:text-22 lg:text-26 sm:py-5 md:py-6" onClick={() => handleOpen(1)}>Tog&apos;lar so&apos;zidan uzoqroqda</AccordionHeader>
             <AccordionBody className='md:text-lg xl:text-xl mb-5 lg:mb-6'>
               Hammadan ajralib, ular katta til okeani bo&apos;lgan Semantika qirg&apos;og&apos;idagi tom ma&apos;nodagi uylarda yashaydilar. Kichik Dal daryosi butun mamlakat bo&apos;ylab oqadi va uni barcha kerakli qoidalar bilan ta&apos;minlaydi.
             </AccordionBody>
           </Accordion>
+          
           <Accordion className="border-b-2 border-textGrey" open={open === 2} icon={<Icon id={2} open={open} />}>
-            <AccordionHeader className="border-none font-bold text-xl py-4 text-left sm:text-22 lg:text-26 sm:py-5 md:py-6" onClick={() => handleOpen(2)}>
+            <AccordionHeader className="border-none outline-none font-bold text-xl py-4 text-left sm:text-22 lg:text-26 sm:py-5 md:py-6" onClick={() => handleOpen(2)}>
               Ajoyib Oksmoks
             </AccordionHeader>
             <AccordionBody className='md:text-lg xl:text-xl mb-5 lg:mb-6'>

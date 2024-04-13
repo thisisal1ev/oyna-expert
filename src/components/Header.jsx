@@ -17,7 +17,7 @@ import phone from '../assets/img/phone.svg'
 import xmark from '../assets/img/xmark.svg'
 
 //data
-import { windows, balconies, servicesPage } from '../data'
+import { windows, balconies, servicesPage, profiles } from '../data'
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(true)
@@ -26,6 +26,8 @@ const Header = () => {
   const [checked, setChecked] = useState(false);
   const [showButton, setShowButton] = useState(false);
   const [open, setOpen] = React.useState(0);
+  const [openDropMenu, setOpenDropMenu] = React.useState(0);
+  const [openDropMenu2, setOpenDropMenu2] = React.useState(0);
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
@@ -55,12 +57,12 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    if (!openMenu) {
+    if (!openMenu || showModal || showContactModal) {
       document.body.classList.add("overflow-hidden");
     } else {
       document.body.classList.remove("overflow-hidden");
     }
-  }, [openMenu])
+  }, [openMenu, showModal, showContactModal])
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -73,10 +75,10 @@ const Header = () => {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        fill="none"
+        fill="white"
         viewBox="0 0 24 24"
         strokeWidth={2}
-        stroke="currentColor"
+        stroke="#323232"
         className={`${id === open ? "rotate-180" : ""} h-5 w-5 transition-transform`}
       >
         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -89,8 +91,11 @@ const Header = () => {
     <header onClick={closeModal} onKeyDown={closeModal}>
 
       <div className='py-4 border-b-2'>
+
         <div className="w-full max-w-base mx-auto px-2 flex items-center justify-between">
+
           <div className='font-medium flex items-center'>
+
             <img className='hidden lg:block mr-2' src={location} width={24} height={24} alt="location" />
             <p className='font-medium font-montserrat'>Shahar: Andijon</p>
 
@@ -107,7 +112,7 @@ const Header = () => {
             !openMenu && <div onClick={() => setOpenMenu(true)} className='fixed top-0 left-0 z-10 w-full h-full opacity-70 bg-black lg:hidden'></div>
           }
 
-          <div className="block fixed top-0 right-0 w-full h-full z-30 bg-white translate-x-full duration-300 max-w-none lg:hidden">
+          <div className="block fixed top-0 right-0 outline-none w-full h-full z-30 bg-white translate-x-full duration-1000 max-w-none lg:hidden">
             <div className="flex flex-col h-full px-6 py-5 overflow-y-auto">
 
               <nav className={`absolute top-0 left-0 h-full w-[255px] flex flex-col space-y-3 px-7 pt-14 pb-8 grow bg-white transform ${openMenu ? '-translate-x-0' : `-translate-x-full `} duration-500 sm:w-[325px] sm:px-9 sm:pt-[60px] sm:pb-11 md:w-[360px] md:px-10 md:py-12 lg:hidden`}>
@@ -216,7 +221,7 @@ const Header = () => {
 
                 <NavLink onClick={handleLinkClick} to='/aksiyalar' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Aksiya</NavLink>
 
-                <NavLink onClick={handleLinkClick} to='/about' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Kompaniya haqida</NavLink>
+                <NavLink onClick={handleLinkClick} to='/kompaniya haqida' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Kompaniya haqida</NavLink>
 
                 <NavLink onClick={handleLinkClick} to='/news' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Yangiliklar</NavLink>
 
@@ -227,10 +232,12 @@ const Header = () => {
           </div>
 
           <nav className='hidden lg:block space-x-4'>
+
             <NavLink to='/aksiyalar' className='font-semibold text-sm text-mainBlack hover:text-lightGreen transition-all duration-500'>Aksiyalar</NavLink>
-            <NavLink to='/about' className='font-semibold text-sm text-mainBlack hover:text-lightGreen transition-all duration-500'>Kompaniya haqida</NavLink>
+            <NavLink to='/kompaniya haqida' className='font-semibold text-sm text-mainBlack hover:text-lightGreen transition-all duration-500'>Kompaniya haqida</NavLink>
             <NavLink to='/news' className='font-semibold text-sm text-mainBlack hover:text-lightGreen transition-all duration-500'>Yangiliklar</NavLink>
             <NavLink to='/kontaktlar' className='font-semibold text-sm text-mainBlack hover:text-lightGreen transition-all duration-500'>Kontaktlar</NavLink>
+
           </nav>
 
         </div>
@@ -269,42 +276,159 @@ const Header = () => {
       </div>
 
       <div className={`hidden lg:block bg-grey`}>
+
         <div className="w-full max-w-base mx-auto px-5 flex items-center justify-between">
-          <div className='flex items-center justify-between lg:space-x-12 xl:space-x-2 xl:w-full'>
-            <Link to='/plastik oynalar' className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
+
+
+          <div className='dropdown'>
+
+            <Link to='/plastik oynalar' className='dropdown flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
               <span>Plastik oynalar</span>
-              <img width={25} height={25} src={dropdown2} alt="dropdown" />
+              <img className='dropdown-icon transition-all duration-300' width={25} height={25} src={dropdown2} alt="dropdown" />
             </Link>
-            <Link to='/profillar' className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
-              <span>Profillar</span>
-              <img width={25} height={25} src={dropdown2} alt="dropdown" />
-            </Link>
-            <Link to='/balkonlar' className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
-              <span>Balkonlar</span>
-              <img width={25} height={25} src={dropdown2} alt="dropdown" />
-            </Link>
-            <Link to="/xizmat ko'rsatish" className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
-              <span>Xizmat ko&apos;rsatish</span>
-              <img width={25} height={25} src={dropdown2} alt="dropdown" />
-            </Link>
-            <Link to='/to&apos;lov' className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:flex'>
-              <span>To&apos;lov</span>
-              <img width={25} height={25} src={dropdown2} alt="dropdown" />
-            </Link>
-            <Link to='/narxlar' className='pt-5 pb-6 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:block'>Narxlar</Link>
-            <Link to='/sertifikatlar' className='pt-5 pb-6 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:block'>Sertifikatlar</Link>
-            <Link to='/registratsiya' className='pt-5 pb-6 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:block'>Ro&apos;yxatdan o&apos;tish</Link>
+
+            <div className={`dropdown_menu absolute max-w-72 z-10 border bg-white font-medium focus:outline-none ${openDropMenu ? 'block' : 'hidden'}`}>
+              {
+                windows.map((window, index) => {
+                  return (
+                    <Link to={`/plastik oynalar/${window.title}`} className='inline-flex px-7 py-4 ease-in border-b w-full transition-all duration-300 hover:text-lightGreen last:border-none' key={index}>
+                      {window.title}
+                    </Link>
+                  )
+                })
+              }
+            </div>
 
           </div>
 
-          <div className='p-1 lg:block xl:hidden'>
-            <button>
+          <div className="dropdown">
+
+            <Link to='/profillar' className='dropdown flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
+              <span>Profillar</span>
+              <img className='dropdown-icon transition-all duration-300' width={25} height={25} src={dropdown2} alt="dropdown" />
+            </Link>
+
+            <div className={`dropdown_menu absolute max-w-72 z-10 border bg-white font-medium focus:outline-none ${openDropMenu ? 'block' : 'hidden'}`}>
+              {
+                profiles.map((profile, index) => {
+                  return (
+                    <Link to={`/profillar/${profile.title}`} className='inline-flex px-7 py-4 ease-in border-b w-full transition-all duration-300 hover:text-lightGreen last:border-none' key={index}>
+                      {profile.title}
+                    </Link>
+                  )
+                })
+              }
+            </div>
+
+          </div>
+
+
+          <div className="dropdown">
+
+            <Link to='/balkonlar' className='dropdown flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
+              <span>Balkonlar</span>
+              <img className='dropdown-icon transition-all duration-300' width={25} height={25} src={dropdown2} alt="dropdown" />
+            </Link>
+
+            <div className={`dropdown_menu absolute max-w-72 z-10 border bg-white font-medium focus:outline-none ${openDropMenu ? 'block' : 'hidden'}`}>
+              {
+                balconies.map((balcony, index) => {
+                  return (
+                    <Link to={`/balkonlar/${balcony.title}`} className='inline-flex px-7 py-4 ease-in border-b w-full transition-all duration-300 hover:text-lightGreen last:border-none' key={index}>
+                      {balcony.title}
+                    </Link>
+                  )
+                })
+              }
+            </div>
+
+          </div>
+
+
+          <div className="dropdown">
+
+            <Link to="/xizmat ko'rsatish" className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
+              <span>Xizmat ko&apos;rsatish</span>
+              <img className='dropdown-icon transition-all duration-300' width={25} height={25} src={dropdown2} alt="dropdown" />
+            </Link>
+
+            <div className={`dropdown_menu absolute max-w-72 z-10 border bg-white font-medium focus:outline-none ${openDropMenu ? 'block' : 'hidden'}`}>
+              {
+                servicesPage.map((service, index) => {
+                  return (
+                    <Link to={`/xizmat ko'rsatish/${service.title}`} className='inline-flex px-7 py-4 ease-in border-b w-full transition-all duration-300 hover:text-lightGreen last:border-none' key={index}>
+                      {service.title}
+                    </Link>
+                  )
+                })
+              }
+            </div>
+
+          </div>
+
+
+          <div className="dropdown">
+
+            <Link to='/to&apos;lov' className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:flex'>
+              <span>To&apos;lov</span>
+              <img className='dropdown-icon transition-all duration-300' width={25} height={25} src={dropdown2} alt="dropdown" />
+            </Link>
+
+            <div className={`dropdown_menu absolute max-w-72 z-10 border bg-white font-medium focus:outline-none ${openDropMenu ? 'block' : 'hidden'}`}>
+
+              <Link to='/to&apos;lov/yetkazib berish' className='inline-flex px-7 py-4 ease-in border-b w-full transition-all duration-300 hover:text-lightGreen'>Yetkazib berish</Link>
+
+              <Link to='/to&apos;lov/to&apos;lov usullari' className='inline-flex px-7 py-4 ease-in border-b w-full transition-all duration-300 hover:text-lightGreen'>To&apos;lov usullari</Link>
+
+            </div>
+
+          </div>
+
+          <Link to='/narxlar' className='pt-5 pb-6 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:block'>Narxlar</Link>
+
+          <Link to='/sertifikatlar' className='pt-5 pb-6 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:block'>Sertifikatlar</Link>
+
+          <Link to='/registratsiya' className='pt-5 pb-6 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:block'>Ro&apos;yxatdan o&apos;tish</Link>
+
+
+
+
+          <div className='dropdown pl-5 p-1 lg:block xl:hidden'>
+
+            <button className='hamburger-btn transition-all duration-300'>
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256">
                 <path fill="#7f7f7f" d="M224 128a8 8 0 0 1-8 8H40a8 8 0 0 1 0-16h176a8 8 0 0 1 8 8ZM40 72h176a8 8 0 0 0 0-16H40a8 8 0 0 0 0 16Zm176 112H40a8 8 0 0 0 0 16h176a8 8 0 0 0 0-16Z" />
               </svg>
             </button>
+
+            <div className={`dropdown_menu absolute right-5 max-w-60 z-10 border bg-white font-medium focus:outline-none ${openDropMenu ? 'block' : 'hidden'}`}>
+
+
+              <Link onMouseEnter={() => setOpenDropMenu2(1)} onMouseLeave={() => setOpenDropMenu2(0)} to='/to&apos;lov' className='nested inline-flex items-center justify-between px-7 py-4 ease-in border-b w-full transition-all duration-300 hover:text-lightGreen'>
+                <img className='rotate-90' src={dropdown2} alt="arrow-icon" />
+                <span className='inline-block'>To&apos;lov shartlari</span>
+              </Link>
+
+              <div onMouseEnter={() => setOpenDropMenu2(1)} onMouseLeave={() => setOpenDropMenu2(0)} className={`dropdown_menu_item absolute top-0 right-[239px] max-w- z-10 border bg-white font-medium focus:outline-none ${openDropMenu2 ? 'block' : 'hidden'}`}>
+
+                <Link to='/to&apos;lov/Yetkazib berish' className='inline-block text-end px-7 py-4 ease-in border-b w-full transition-all duration-300 hover:text-lightGreen whitespace-nowrap'>Yetkazib berish</Link>
+
+                <Link to='/to&apos;lov/to&apos;lov usullari' className='inline-block text-end px-7 py-4 ease-in border-b w-full transition-all duration-300 hover:text-lightGreen whitespace-nowrap'>To&apos;lov usullari</Link>
+
+              </div>
+
+              <Link to='/narxlar' className='inline-block text-end px-7 py-4 ease-in border-b w-full transition-all duration-300 hover:text-lightGreen'>Narxlar</Link>
+
+              <Link to='/sertifikatlar' className='inline-block text-end px-7 py-4 ease-in border-b w-full transition-all duration-300 hover:text-lightGreen'>Sertifikatlar</Link>
+
+              <Link to='/Registratsiya' className='inline-block text-end px-7 py-4 ease-in border-b w-full transition-all duration-300 hover:text-lightGreen'>Ro&apos;yxatdan o&apos;tish</Link>
+
+            </div>
+
           </div>
+
         </div>
+
       </div>
 
       {
@@ -364,8 +488,22 @@ const Header = () => {
                   <input className='bg-transparent py-2 md:py-4 text-sm md:text-base font-montserrat outline-none border-b-2 my-2 hover:placeholder:text-lightGreen placeholder:text-mainBlack focus:border-mainBlack' placeholder='Ismingiz' type="text" required />
                   <input id='changeContent' className='bg-transparent py-2 md:py-4 text-sm md:text-base font-montserrat outline-none border-b-2 my-2 placeholder:text-mainBlack focus:border-mainBlack' placeholder='Telefon raqamingiz' pattern="(\+998|8)[\- ]?\d{2}[\- ]?\d{3}[\- ]?\d{2}[\- ]?\d{2}" type="tel" required />
                   <div className='my-1 sm:my-2 flex items-center justify-between pb-4'>
-                    <input onChange={() => setChecked(true)} width={20} height={20} className='w-6 md:w-10 h-5 mr-4 cursor-pointer outline-none focus:outline-none checked:bg-lightGreen ' id='check' type="checkbox" />
-                    <label className='font-medium text-textGrey text-sm md:text-base' htmlFor='check'>Men shaxsiy ma&apos;lumotlarni qayta ishlash va <a className='underline' target='_blank' href="#">maxfiylik siyosatiga roziman.</a></label>
+                    <div className="inline-flex items-center">
+                      <div className="relative flex items-center p-3 rounded-full cursor-pointer mr-2 lg:mr-5">
+                        <input onChange={() => setChecked(true)} id="ripple-on" type="checkbox"
+                          className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-textGrey before:opacity-0 before:transition-opacity checked:border-lightGreen checked:bg-lightGreen checked:before:bg-lightGreen hover:before:opacity-10" />
+                        <span
+                          className="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
+                            stroke="currentColor" strokeWidth="1">
+                            <path fillRule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clipRule="evenodd"></path>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <label className='font-medium text-textGrey text-sm md:text-base' htmlFor='ripple-on'>Men shaxsiy ma&apos;lumotlarni qayta ishlash va <a className='underline' target='_blank' href="#">maxfiylik siyosatiga roziman.</a></label>
                   </div>
                   <button type='submit' onSubmit={() => alert('Xat ketti')} className='py-2 px-5 md:py-4 md:px-7 lg:py-7 lg:px-9 text-sm md:text-base bg-lightGreen border-2 border-lightGreen w-full font-bold font-raleway overflow-hidden rounded-md text-white active:hover:bg-white active:text-mainBlack lg:hover:bg-white lg:hover:text-mainBlack transition-all duration-500'>So&apos;rov qoldirish</button>
                 </form>
@@ -377,7 +515,7 @@ const Header = () => {
 
       {
         !showModal && !showContactModal && openMenu && showButton && <>
-          <button onClick={scrollToTop} className={`fixed bottom-10 right-10 z-10 px-5 py-5 outline-none border-2 rounded-full bg-white  transition-all duration-500 hover:bg-lightGreen hover:border-lightGreen`}>
+          <button onClick={scrollToTop} className={`top fixed bottom-10 right-10 z-10 px-5 py-5 outline-none border-2 rounded-full bg-white  transition-all duration-500 hover:bg-lightGreen hover:border-lightGreen`}>
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 26 32.969" data-prefix="i9ikc8dfi">
               <path d="M12.565.069a1.2 1.2 0 0 1 .865 0 213.326 213.326 0 0 0 .291.151l11.775 9.7a1.264 1.264 0 0 1 .272 1.746 1.216 1.216 0 0 1-1.719.276l-9.821-8.254v28.028a1.231 1.231 0 1 1-2.462 0V3.688l-9.821 8.254a1.216 1.216 0 0 1-1.719-.276A1.264 1.264 0 0 1 .498 9.92L12.273.22a1.194 1.194 0 0 1 .156-.081 1.16 1.16 0 0 1 .136-.07z" fill='currentColor' fillRule="evenodd" className="path-i3cr1n271">
               </path>

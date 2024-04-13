@@ -3,16 +3,32 @@
 @tailwind utilities;
 
 @layer components {
-  header button:hover svg path {
+  header .top:hover svg path {
     fill: #fff;
   }
 
-  header div button:hover svg path {
+  header div .top:hover svg path {
     fill: #323232;
     transition: all 0.5s ease;
   }
 
-  .content-container{
+  .dropdown:hover .dropdown_menu {
+    @apply block;
+  }
+
+  .dropdown:hover .dropdown-icon {
+    @apply rotate-180
+  }
+
+  .dropdown>.nested:hover>.dropdown_menu_item {
+    @apply block
+  }
+
+  .hamburger-btn:hover svg path {
+    @apply fill-mainBlack
+  }
+
+  .content-container {
     @apply w-full max-w-base mx-auto px-5
   }
 

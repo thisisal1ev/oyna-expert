@@ -26,6 +26,10 @@ import Payment from "./pages/Payment"
 import PaymentLayout from "./layouts/PaymentLayout"
 import Delevery from "./pages/Delevery"
 import PaymentMethods from "./pages/PaymentMethods"
+import AboutCompanyLayout from "./layouts/AboutCompanyLayout"
+import AboutCompany from "./pages/AboutCompany"
+import OurTeam from "./pages/OurTeam"
+import ReviewsAboutTheCompany from "./pages/ReviewsAboutTheCompany"
 
 const App = () => {
   const router = createBrowserRouter(
@@ -41,6 +45,11 @@ const App = () => {
           <Route index element={<Payment />} />
           <Route path="/to&apos;lov/to&apos;lov usullari" element={<PaymentMethods />} />
           <Route path="/to&apos;lov/yetkazib berish" element={<Delevery />} />
+        </Route>
+        <Route path="/kompaniya haqida" element={<AboutCompanyLayout />}>
+          <Route index element={<AboutCompany />} />
+          <Route path="/kompaniya haqida/bizning jamoamiz" element={<OurTeam />} />
+          <Route path="/kompaniya haqida/biz haqimizda sharhlar" element={<ReviewsAboutTheCompany />} />
         </Route>
         <Route path="/profillar" element={<ProfilesLayout />}>
           <Route index element={<Profiles />} />

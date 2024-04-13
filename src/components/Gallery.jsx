@@ -12,7 +12,7 @@ const Gallery = () => {
     <div className='py-9'>
       <div className="content-container">
         <div className='mb-6' data-aos="fade-up" data-aos-anchor-placement="center" data-aos-easing="ease-in" data-aos-duration="800">
-          <h2 className='text-22 font-bold sm:text-26 md:text-3xl mb-2 lg:text-4xl xl:text-44'>3000 dan ortiq derazalar o'rnatilgan</h2>
+          <h2 className='text-22 font-extrabold sm:text-26 md:text-3xl mb-3 lg:text-4xl xl:text-44'>3000 dan ortiq derazalar o'rnatilgan</h2>
           <p className='text-sm font-montserrat font-medium text-textGrey sm:text-base'>Mahsulotlarimizni ishlab chiqarish uchun biz faqat eng yuqori sifatli original Yevropa komponentlaridan foydalanamiz.</p>
         </div>
         <div className='mb-6 md:mb-8 xl:mb-10 grid gap-10 grid-cols-1 md:grid-cols-2'>

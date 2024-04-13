@@ -7,10 +7,14 @@ import optimizasiya from '../assets/img/optimizasiya.jpg'
 const PostComponent = () => {
   return (
     <div className="py-9">
+
       <div className="w-full max-w-base mx-auto px-5">
+
         <h2 className="mb-4 font-extrabold text-xl sm:text-22 md:text-2xl lg:text-4xl xl:text-44 xl:mb-11">Bilish foydali</h2>
+
         <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
-          <div className="lg:flex">
+
+          <div className="lg:flex lg:mr-[1.5%]">
             <div className="mb-6 h-44 sm:h-72 md:h-auto rounded-xl overflow-hidden lg:mr-5 xl:mr-8 lg:w-full lg:h-full">
               <img className="w-full h-full" src={sbor} alt="photo" />
             </div>
@@ -21,6 +25,7 @@ const PostComponent = () => {
               <Link to='/' className='inline-block font-montserrat font-semibold text-base underline underline-offset-8 text-textGrey transition-all duration-300 hover:no-underline hover:text-mainBlack'>Batafsil</Link>
             </div>
           </div>
+
           <div className="lg:flex">
             <div className="mb-6 h-44 sm:h-72 md:h-auto rounded-xl overflow-hidden lg:mr-5 xl:mr-8 lg:w-full lg:h-full">
               <img className="w-full h-full" src={optimizasiya} alt="photo" />
@@ -32,8 +37,11 @@ const PostComponent = () => {
               <Link to='/' className='inline-block font-montserrat font-semibold text-base underline underline-offset-8 text-textGrey transition-all duration-300 hover:no-underline hover:text-mainBlack'>Batafsil</Link>
             </div>
           </div>
+
         </div>
+
       </div>
+
     </div>
   )
 }

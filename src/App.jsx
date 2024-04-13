@@ -16,12 +16,16 @@ import WindowsLayout from "./layouts/WindowsLayout"
 import PlasticWindows from './pages/PlasticWindows'
 import WindowsDetail from "./pages/WindowsDetail"
 import Balconies from "./pages/Balconies"
-import BalconiesLayot from "./layouts/BalconiesLayot"
+import BalconiesLayot from "./layouts/BalconiesLayout"
 import BalconiesDetail from "./pages/BalconiesDetail"
-import ServicesLayot from './layouts/ServicesLayot'
+import ServicesLayot from './layouts/ServicesLayout'
 import Services from "./pages/Services"
 import ServicesDetail from "./pages/ServicesDetail"
 import Sertific from "./pages/Sertific"
+import Payment from "./pages/Payment"
+import PaymentLayout from "./layouts/PaymentLayout"
+import Delevery from "./pages/Delevery"
+import PaymentMethods from "./pages/PaymentMethods"
 
 const App = () => {
   const router = createBrowserRouter(
@@ -33,6 +37,11 @@ const App = () => {
         <Route path="/narxlar" element={<Prices />} />
         <Route path="/sertifikatlar" element={<Sertific />} />
         <Route path="/registratsiya" element={<Registration />} />
+        <Route path="/to&apos;lov" element={<PaymentLayout />}>
+          <Route index element={<Payment />} />
+          <Route path="/to&apos;lov/to&apos;lov usullari" element={<PaymentMethods />} />
+          <Route path="/to&apos;lov/yetkazib berish" element={<Delevery />} />
+        </Route>
         <Route path="/profillar" element={<ProfilesLayout />}>
           <Route index element={<Profiles />} />
           <Route path="/profillar/:title" element={<ProfilesDetail />} />

@@ -34,6 +34,9 @@ export default {
         '38': '38px',
         '44': '44px',
       },
+      spacing: {
+        '3%': '3%',
+      },
       backgroundImage: {
         'sobaka': "url('/src/assets/img/sobaka.jpg')",
         'koshka': "url('/src/assets/img/koshka.jpg')",

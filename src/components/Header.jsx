@@ -40,7 +40,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 500) {
+      if (window.scrollY > 400) {
         setShowButton(true);
       } else {
         setShowButton(false);
@@ -203,7 +203,7 @@ const Header = () => {
                       Yetkazib berish
                     </NavLink>
                     <NavLink to='/To&apos;lov/to&apos;lov usullari' className='inline-block py-1 active:text-lightGreen transition-all active:translate-x-3 ease-in-out duration-300'>
-                      To'lov usullari
+                      To&apos;lov usullari
                     </NavLink>
                   </AccordionBody>
                 </Accordion>
@@ -212,7 +212,7 @@ const Header = () => {
 
                 <NavLink onClick={handleLinkClick} to='/sertifikatlar' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Sertifikatlar</NavLink>
 
-                <NavLink onClick={handleLinkClick} to='/registratsiya' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Ro'yxatdan o'tish</NavLink>
+                <NavLink onClick={handleLinkClick} to='/registratsiya' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Ro&apos;yxatdan o&apos;tish</NavLink>
 
                 <NavLink onClick={handleLinkClick} to='/aksiyalar' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Aksiya</NavLink>
 
@@ -284,16 +284,16 @@ const Header = () => {
               <img width={25} height={25} src={dropdown2} alt="dropdown" />
             </Link>
             <Link to="/xizmat ko'rsatish" className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
-              <span>Xizmat ko'rsatish</span>
+              <span>Xizmat ko&apos;rsatish</span>
               <img width={25} height={25} src={dropdown2} alt="dropdown" />
             </Link>
-            <Link to='/payment' className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:flex'>
-              <span>To'lov</span>
+            <Link to='/to&apos;lov' className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:flex'>
+              <span>To&apos;lov</span>
               <img width={25} height={25} src={dropdown2} alt="dropdown" />
             </Link>
             <Link to='/narxlar' className='pt-5 pb-6 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:block'>Narxlar</Link>
             <Link to='/sertifikatlar' className='pt-5 pb-6 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:block'>Sertifikatlar</Link>
-            <Link to='/registratsiya' className='pt-5 pb-6 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:block'>Ro'yxatdan o'tish</Link>
+            <Link to='/registratsiya' className='pt-5 pb-6 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:block'>Ro&apos;yxatdan o&apos;tish</Link>
 
           </div>
 
@@ -313,7 +313,7 @@ const Header = () => {
           <div className='flex flex-col items-center justify-center'>
             <div className="fixed top-20 w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] p-4 md:p-6 md:pt-10 xl:p-10 rounded-xl h-auto bg-white z-50 mx-5 xl:top-10">
               <div className="py-1 md:py-2 text-mainBlack mb-1 md:mb-5 mt-5 flex items-center justify-between">
-                <h3 className='font-semibold font-montserrat text-lg md:text-xl xl:text-2xl'>Bog'lanish uchun ma'lumot</h3>
+                <h3 className='font-semibold font-montserrat text-lg md:text-xl xl:text-2xl'>Bog&apos;lanish uchun ma&apos;lumot</h3>
                 <button onClick={() => setShowModal(false)} className="absolute top-5 right-4 opacity-30 transition-all duration-500 hover:opacity-100">
                   <img src={xmark} alt="Exit icon" width={40} className='w-6 lg:w-10' />
                 </button>
@@ -324,7 +324,7 @@ const Header = () => {
                   <p className='text-sm md:text-base'>Dushanba-Yakshanba: <strong>Kechayu-kunduz</strong></p>
                 </div>
                 <div className='space-y-1 mb-2 md:mb-5'>
-                  <h4 className='font-medium font-montserrat text-textGrey text-sm md:text-base'>Raqamga qo'ng'iroq qiling:</h4>
+                  <h4 className='font-medium font-montserrat text-textGrey text-sm md:text-base'>Raqamga qo&apos;ng&apos;iroq qiling:</h4>
                   <a className='font-semibold text-lg md:text-xl font-montserrat' href="tel:+998999999999">+998 (99) 999 99 99</a>
                   <div className='flex items-center space-x-1 md:space-x-2'>
                     <Link to='/' className='font-semibold underline text-sm md:text-base text-mainGrey hover:text-mainBlack transition-all duration-500'>WhatsApp</Link>
@@ -353,8 +353,8 @@ const Header = () => {
             <div className="fixed top-14 w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] p-4 md:p-6 md:pt-10 xl:p-10 rounded-xl h-auto bg-white z-50 xl:top-10">
               <div className="py-2 text-mainBlack mb-2 md:mb-5 mt-5 md:mt-10 flex flex-col">
                 <h3 className='font-extrabold text-lg md:text-xl lg:text-2xl font-raleway text-center'>Savollaringiz qoldimi?</h3>
-                <h4 className='font-extrabold text-lg md:text-xl lg:text-2xl font-raleway text-center'>So'rov qoldiring</h4>
-                <p className='text-sm text-textGrey mt-2 font-medium text-center'>va bizning mutaxassislarimiz imkon qadar tezroq siz bilan bog'lanadi</p>
+                <h4 className='font-extrabold text-lg md:text-xl lg:text-2xl font-raleway text-center'>So&apos;rov qoldiring</h4>
+                <p className='text-sm text-textGrey mt-2 font-medium text-center'>va bizning mutaxassislarimiz imkon qadar tezroq siz bilan bog&apos;lanadi</p>
                 <button onClick={() => setShowContactModal(false)} className="absolute top-5 right-4 opacity-30 transition-all duration-500 hover:opacity-100">
                   <img src={xmark} alt="Exit icon" width={40} className='w-6 md:w-10' />
                 </button>
@@ -365,9 +365,9 @@ const Header = () => {
                   <input id='changeContent' className='bg-transparent py-2 md:py-4 text-sm md:text-base font-montserrat outline-none border-b-2 my-2 placeholder:text-mainBlack focus:border-mainBlack' placeholder='Telefon raqamingiz' pattern="(\+998|8)[\- ]?\d{2}[\- ]?\d{3}[\- ]?\d{2}[\- ]?\d{2}" type="tel" required />
                   <div className='my-1 sm:my-2 flex items-center justify-between pb-4'>
                     <input onChange={() => setChecked(true)} width={20} height={20} className='w-6 md:w-10 h-5 mr-4 cursor-pointer outline-none focus:outline-none checked:bg-lightGreen ' id='check' type="checkbox" />
-                    <label className='font-medium text-textGrey text-sm md:text-base' htmlFor='check'>Men shaxsiy ma'lumotlarni qayta ishlash va <a className='underline' target='_blank' href="#">maxfiylik siyosatiga roziman.</a></label>
+                    <label className='font-medium text-textGrey text-sm md:text-base' htmlFor='check'>Men shaxsiy ma&apos;lumotlarni qayta ishlash va <a className='underline' target='_blank' href="#">maxfiylik siyosatiga roziman.</a></label>
                   </div>
-                  <button type='submit' onSubmit={() => alert('Xat ketti')} className='py-2 px-5 md:py-4 md:px-7 lg:py-7 lg:px-9 text-sm md:text-base bg-lightGreen border-2 border-lightGreen w-full font-bold font-raleway overflow-hidden rounded-md text-white active:hover:bg-white active:text-mainBlack lg:hover:bg-white lg:hover:text-mainBlack transition-all duration-500'>So'rov qoldirish</button>
+                  <button type='submit' onSubmit={() => alert('Xat ketti')} className='py-2 px-5 md:py-4 md:px-7 lg:py-7 lg:px-9 text-sm md:text-base bg-lightGreen border-2 border-lightGreen w-full font-bold font-raleway overflow-hidden rounded-md text-white active:hover:bg-white active:text-mainBlack lg:hover:bg-white lg:hover:text-mainBlack transition-all duration-500'>So&apos;rov qoldirish</button>
                 </form>
               </div>
             </div>

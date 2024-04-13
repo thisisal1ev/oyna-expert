@@ -5,7 +5,7 @@ const Prices = () => {
   return (
     <div className='py-9'>
       <div className="w-full max-w-base mx-auto px-5">
-        <h1 className='mb-6 font-extrabold text-22 sm:text-2xl md:3xl lg:text-4xl xl:text-5xl sm:mb-8 lg:mb-9 xl:mb-11'>Narxlar</h1>
+        <h1 className='mb-6 font-extrabold text-22 sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:mb-8 lg:mb-9 xl:mb-11'>Narxlar</h1>
         <ul className="grid gap-y-5 gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {
             priceList.map((priceListItem) => {

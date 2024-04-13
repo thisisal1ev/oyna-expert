@@ -25,8 +25,8 @@ const Footer = () => {
       <div data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="800">
 
         <div className='w-full mx-auto max-w-base px-5 flex flex-col items-center sm:block'>
-          <h2 className='mb-3 font-bold text-center sm:text-left text-22 sm:text-4xl'>Bog'lanish uchun ma'lumot</h2>
-          <p className='font-montserrat text-center sm:text-left font-medium text-textGrey mb-5 text-sm sm:text-base'>Siz uchun qulay usulda biz bilan bog'laning</p>
+          <h2 className='mb-3 font-bold text-center sm:text-left text-22 sm:text-4xl'>Bog&apos;lanish uchun ma&apos;lumot</h2>
+          <p className='font-montserrat text-center sm:text-left font-medium text-textGrey mb-5 text-sm sm:text-base'>Siz uchun qulay usulda biz bilan bog&apos;laning</p>
         </div>
 
         <div className='flex flex-col items-center text-center w-full mx-auto max-w-base px-5 lg:space-x-2 sm:items-start sm:text-left lg:flex-row lg:items-center justify-between mb-5'>
@@ -47,7 +47,7 @@ const Footer = () => {
 
           <div className='space-y-5 mb-5 lg:mb-0'>
             <div className='space-y-2'>
-              <h4 className='font-medium font-montserrat text-mainGrey'>Qong'roq qilish:</h4>
+              <h4 className='font-medium font-montserrat text-mainGrey'>Qong&apos;roq qilish:</h4>
               <a href="tel:+998900000000" className='font-semibold whitespace-nowrap text-2xl font-montserrat'>{'+998 (90) 000 00 00'}</a>
               <div className='flex items-center justify-center sm:justify-normal space-x-2'>
                 <Link to='/' className='font-semibold text-mainGrey hover:text-mainBlack transition-all duration-500'>WhatsApp</Link>
@@ -63,7 +63,7 @@ const Footer = () => {
 
           <div className='space-y-5'>
             <div className='space-y-2'>
-              <h4 className='font-medium font-montserrat text-mainGrey'>Ijtimoiy tarmoqlarga obuna bo'ling:</h4>
+              <h4 className='font-medium font-montserrat text-mainGrey'>Ijtimoiy tarmoqlarga obuna bo&apos;ling:</h4>
               <div className='flex items-center justify-center space-x-3 sm:justify-normal'>
                 <Link to='/' className='opacity-50 hover:opacity-100 transition-all duration-500'>
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 100 100" data-prefix="itqrqc1c6"><path fill="none" d="M0 0h100v100H0z">
@@ -95,7 +95,7 @@ const Footer = () => {
 
       <div className="py-5 border-b border-t">
         <div className='w-full mx-auto max-w-base px-5'>
-          <h4 className='mb-2 font-medium text-sm text-center font-montserrat text-textGrey sm:text-left'>Qulay to'lov:</h4>
+          <h4 className='mb-2 font-medium text-sm text-center font-montserrat text-textGrey sm:text-left'>Qulay to&apos;lov:</h4>
           <div className='flex items-start justify-center sm:justify-normal'>
             <div className='flex items-center py-2 space-x-5 mb-3'>
               <Link to='/' className='grayscale hover:grayscale-0 transition-all duration-500'>
@@ -122,7 +122,7 @@ const Footer = () => {
         <div className='w-full mx-auto max-w-base px-5'>
           <div className="w-full max-w-base mx-auto px-5 flex items-center flex-col justify-between sm:flex-row">
             <p className='font-medium font-montserrat text-sm mr-3 mb-2 sm:mb-0'>Copyright © 2022 - 2024 Kompaniya nomi</p>
-            <p className='font-medium font-montserrat text-sm'>Qo'llab-quvvatlash. <Link to='https://t.me/thisisal1ev' target='_blank' className='underline'>thisisa1ev veb-saytlarni ishlab chiqish.</Link></p>
+            <p className='font-medium font-montserrat text-sm'>Qo&apos;llab-quvvatlash. <Link to='https://t.me/thisisal1ev' target='_blank' className='underline'>thisisa1ev veb-saytlarni ishlab chiqish.</Link></p>
           </div>
         </div>
       </div>

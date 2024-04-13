@@ -10,9 +10,9 @@ const Prices = () => {
           {
             priceList.map((priceListItem) => {
               return (
-                <li className="flex flex-col" key={priceListItem.id}>
+                <li className="flex flex-col h-auto" key={priceListItem.id}>
                   <img className="mb-5" src={priceListItem.img} alt={priceListItem.title} />
-                  <div className="text-textGrey flex-auto font-montserrat mb-3 space-y-4 lg:space-y-5 xl:space-y-6">
+                  <div className="text-textGrey grow font-montserrat mb-3 space-y-4 lg:space-y-5 xl:space-y-6">
                     <h3 className="font-bold text-xl sm:text-22 xl:text-26">{priceListItem.title}</h3>
                     <p>{priceListItem.context}</p>
                     <ul className="list-disc ml-4">

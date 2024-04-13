@@ -1,6 +1,11 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
 
 //photo
 import location from '../assets/img/location.svg'
@@ -10,7 +15,9 @@ import dropdown2 from '../assets/img/dropdown2.svg'
 import logo from '../assets/img/logo.svg'
 import phone from '../assets/img/phone.svg'
 import xmark from '../assets/img/xmark.svg'
-import HamburgerMenu from './HamburgerMenu';
+
+//data
+import { windows, balconies, servicesPage } from '../data'
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(true)
@@ -18,6 +25,13 @@ const Header = () => {
   const [showContactModal, setShowContactModal] = useState(false);
   const [checked, setChecked] = useState(false);
   const [showButton, setShowButton] = useState(false);
+  const [open, setOpen] = React.useState(0);
+
+  const handleOpen = (value) => setOpen(open === value ? 0 : value);
+
+  const handleLinkClick = () => {
+    setOpenMenu(true);
+  };
 
   const closeModal = (e) => {
     if (e.target.classList.contains('overlay')) setShowModal(false), setShowContactModal(false);
@@ -40,12 +54,35 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (!openMenu) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [openMenu])
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
   };
+
+  function Icon({ id, open }) {
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={2}
+        stroke="currentColor"
+        className={`${id === open ? "rotate-180" : ""} h-5 w-5 transition-transform`}
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+      </svg>
+    );
+  }
 
 
   return (
@@ -66,7 +103,10 @@ const Header = () => {
             </button>
           }
 
-          {!openMenu && <div onClick={() => setOpenMenu(true)} className='fixed top-0 left-0 z-10 w-full h-full opacity-70 bg-black lg:hidden'></div>}
+          {
+            !openMenu && <div onClick={() => setOpenMenu(true)} className='fixed top-0 left-0 z-10 w-full h-full opacity-70 bg-black lg:hidden'></div>
+          }
+
           <div className="block fixed top-0 right-0 w-full h-full z-30 bg-white translate-x-full duration-300 max-w-none lg:hidden">
             <div className="flex flex-col h-full px-6 py-5 overflow-y-auto">
 
@@ -75,8 +115,112 @@ const Header = () => {
                   <img src={xmark} alt="Exit icon" width={50} height={50} className='w-[30px] h-[35px]' />
                 </button>
 
-                <HamburgerMenu />
 
+                <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
+                  <AccordionHeader className="border-none py-0" onClick={() => handleOpen(1)}>
+                    <NavLink onClick={handleLinkClick} to='/plastik oynalar' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>
+                      Plastik oynalar
+                    </NavLink>
+                  </AccordionHeader>
+                  <AccordionBody onClick={handleLinkClick} className='flex flex-col py-[4.4%] pl-[7%] font-bold font-montserrat text-textGrey'>
+                    {
+                      windows.map((window, index) => {
+                        return (
+                          <NavLink key={index} to={`/plastik oynalar/${window.title}`} className='inline-block py-1 active:text-lightGreen transition-all active:translate-x-3 ease-in-out duration-300'>
+                            {window.title}
+                          </NavLink>
+                        )
+                      })
+                    }
+                  </AccordionBody>
+                </Accordion>
+
+                <Accordion open={open === 2} icon={<Icon id={2} open={open} />}>
+                  <AccordionHeader className="border-none py-0" onClick={() => handleOpen(2)}>
+                    <NavLink onClick={handleLinkClick} to='/Profillar' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>
+                      Profillar
+                    </NavLink>
+                  </AccordionHeader>
+                  <AccordionBody onClick={handleLinkClick} className='flex flex-col py-[4.4%] pl-[7%] font-bold font-montserrat text-textGrey'>
+                    <NavLink to='/profillar/Rehau Thermo' className='inline-block py-1 active:text-lightGreen transition-all active:translate-x-3 ease-in-out duration-300'>
+                      Rehau Thermo
+                    </NavLink>
+                    <NavLink to='/profillar/Rehau Grazio' className='inline-block py-1 active:text-lightGreen transition-all active:translate-x-3 ease-in-out duration-300'>
+                      Rehau Grazio
+                    </NavLink>
+                    <NavLink to='/profillar/Rehau Delight' className='inline-block py-1 active:text-lightGreen transition-all active:translate-x-3 ease-in-out duration-300'>
+                      Rehau Delight
+                    </NavLink>
+                  </AccordionBody>
+                </Accordion>
+
+                <Accordion open={open === 3} icon={<Icon id={3} open={open} />}>
+                  <AccordionHeader className="border-none py-0" onClick={() => handleOpen(3)}>
+                    <NavLink onClick={handleLinkClick} to='/balkonlar' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>
+                      Balkonlar
+                    </NavLink>
+                  </AccordionHeader>
+                  <AccordionBody onClick={handleLinkClick} className='flex flex-col py-[4.4%] pl-[7%] font-bold font-montserrat text-textGrey'>
+                    {
+                      balconies.map((balcony, index) => {
+                        return (
+                          <NavLink key={index} to={`/balkonlar/${balcony.title}`} className='inline-block py-1 active:text-lightGreen active:translate-x-3 transition-all ease-in-out duration-300'>
+                            {balcony.title}
+                          </NavLink>
+                        )
+                      })
+                    }
+                  </AccordionBody>
+                </Accordion>
+
+                <Accordion open={open === 4} icon={<Icon id={4} open={open} />}>
+                  <AccordionHeader className="border-none py-0" onClick={() => handleOpen(4)}>
+                    <NavLink onClick={handleLinkClick} to='/plastik oynalar' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>
+                      Xizmat ko&apos;rsatish
+                    </NavLink>
+                  </AccordionHeader>
+                  <AccordionBody onClick={handleLinkClick} className='flex flex-col py-[4.4%] pl-[7%] font-bold font-montserrat text-textGrey'>
+                    {
+                      servicesPage.map((service, index) => {
+                        return (
+                          <NavLink key={index} to={`/xizmat ko'rsatish/${service.title}`} className='inline-block py-1 active:text-lightGreen transition-all active:translate-x-3 ease-in-out duration-300'>
+                            {service.title}
+                          </NavLink>
+                        )
+                      })
+                    }
+                  </AccordionBody>
+                </Accordion>
+
+                <Accordion open={open === 5} icon={<Icon id={5} open={open} />}>
+                  <AccordionHeader className="border-none py-0" onClick={() => handleOpen(5)}>
+                    <NavLink onClick={handleLinkClick} to='/To&apos;lov' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>
+                      To&apos;lov
+                    </NavLink>
+                  </AccordionHeader>
+                  <AccordionBody onClick={handleLinkClick} className='flex flex-col py-[4.4%] pl-[7%] font-bold font-montserrat text-textGrey'>
+                    <NavLink to='/To&apos;lov/yetkazib berish' className='inline-block py-1 active:text-lightGreen transition-all active:translate-x-3 ease-in-out duration-300'>
+                      Yetkazib berish
+                    </NavLink>
+                    <NavLink to='/To&apos;lov/to&apos;lov usullari' className='inline-block py-1 active:text-lightGreen transition-all active:translate-x-3 ease-in-out duration-300'>
+                      To'lov usullari
+                    </NavLink>
+                  </AccordionBody>
+                </Accordion>
+
+                <NavLink onClick={handleLinkClick} to='/narxlar' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Narxlar</NavLink>
+
+                <NavLink onClick={handleLinkClick} to='/sertifikatlar' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Sertifikatlar</NavLink>
+
+                <NavLink onClick={handleLinkClick} to='/registratsiya' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Ro'yxatdan o'tish</NavLink>
+
+                <NavLink onClick={handleLinkClick} to='/aksiyalar' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Aksiya</NavLink>
+
+                <NavLink onClick={handleLinkClick} to='/about' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Kompaniya haqida</NavLink>
+
+                <NavLink onClick={handleLinkClick} to='/news' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Yangiliklar</NavLink>
+
+                <NavLink onClick={handleLinkClick} to='/kontaktlar' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Kontaktlar</NavLink>
               </nav>
 
             </div>

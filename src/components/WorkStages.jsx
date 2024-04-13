@@ -7,7 +7,7 @@ const WorkStages = () => {
       <div className="w-full max-w-base mx-auto px-5">
         <div className='mb-5 md:mb-8' data-aos="fade-up" data-aos-anchor-placement="center" data-aos-easing="ease-in" data-aos-duration="800">
           <h2 className='mb-3 font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-44'>Ish bosqichlari</h2>
-          <p className='font-medium text-base text-textGrey'>Muvaffaqiyatli hamkorlik qilish uchun atigi 6 qadam!</p>
+          <p className='font-medium font-montserrat text-base text-textGrey'>Muvaffaqiyatli hamkorlik qilish uchun atigi 6 qadam!</p>
         </div>
         <ul className='grid gap-3 grid-cols-1 lg:grid-cols-3'>
           {

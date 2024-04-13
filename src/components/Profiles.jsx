@@ -13,7 +13,7 @@ const Profiles = () => {
 
         <div className='mb-6' data-aos="fade-up" data-aos-anchor-placement="center" data-aos-easing="ease-in" data-aos-duration="800">
           <h2 className='text-22 font-bold sm:text-26 md:text-3xl mb-2 lg:text-4xl xl:text-44'>Rehau profillaridan birini tanlang</h2>
-          <p className='text-sm font-medium text-textGrey sm:text-base'>Dizayn va issiqlik izolyatsiyasi, tejamkor narxda yuqori sifatli derazalar</p>
+          <p className='text-sm font-montserrat font-medium text-textGrey sm:text-base'>Dizayn va issiqlik izolyatsiyasi, tejamkor narxda yuqori sifatli derazalar</p>
         </div>
 
         <div className='grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3'>

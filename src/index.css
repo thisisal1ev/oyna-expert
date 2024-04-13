@@ -12,6 +12,10 @@
     transition: all 0.5s ease;
   }
 
+  .content-container{
+    @apply w-full max-w-base mx-auto px-5
+  }
+
   .overlay {
     background-color: rgba(0, 0, 0, 0.5);
     @apply fixed top-0 left-0 w-full h-full

@@ -20,7 +20,8 @@ export default {
         'primaryBlue': '#4285F4',
         'skyblue': '#a2c3fa',
         'royaleBlue': '#15c',
-        'btnBlue': '#3b7cef;'
+        'btnBlue': '#3b7cef',
+        'red': '#e84c47',
       },
       maxWidth: {
         'base': '1440px',

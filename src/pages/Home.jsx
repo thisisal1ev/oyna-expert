@@ -10,6 +10,8 @@ import WorkStages from '../components/WorkStages'
 import About from '../components/About'
 import PostComponent from '../components/PostComponent'
 import Stocks from '../components/Stocks'
+import Gallery from '../components/Gallery'
+import Reviews from '../components/Reviews'
 
 const Home = () => {
   return (
@@ -29,9 +31,13 @@ const Home = () => {
 
       <WorkStages />
 
+      <Gallery />
+
       <Complement />
 
       <PostComponent />
+
+      <Reviews/>
 
       <About />
 

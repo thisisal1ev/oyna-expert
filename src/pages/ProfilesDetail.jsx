@@ -13,13 +13,13 @@ const ProfilesDetail = () => {
         <div>
           <h1 className="mb-5 text-22 font-extrabold sm:mb-6 md:text-2xl lg:mb-8 lg:text-3xl">{detailProfiles.title}</h1>
           <div className="text-textGrey font-montserrat">
-            <p className="text-base leading-normal mb-4 lg:mb-6 md:text-lg">{detailProfiles.mainText}</p>
+            <p className="text-base leading-normal mb-4 lg:mb-6 md:text-lg xl:text-xl">{detailProfiles.mainText}</p>
             <h3 className="text-base pt-4 mb-4 lg:mb-6 md:text-lg">{detailProfiles.sectionTitle}</h3>
             <ul className="list-disc pb-4 ml-4">
               {
                 detailProfiles.context.map((text,index) => {
                   return (
-                    <li className="md:text-lg" key={index}>{text}</li>
+                    <li className="md:text-lg xl:text-xl" key={index}>{text}</li>
                   )
                 })
               }

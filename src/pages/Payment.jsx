@@ -11,8 +11,8 @@ const Payment = () => {
 
         <div className='text-textGrey font-montserrat space-y-4 lg:space-y-6'>
           <p className='lg:text-lg xl:text-xl'>Ushbu blokda siz taqdim etayotgan xizmatlar haqida kirish maqolasini ham, takliflarning to&apos;liq katalogini ham joylashtirishingiz mumkin.</p>
-          <p className='lg:text-lg xl:text-xl'>Xizmatlarni tematik toifalarga ajratish foydali bo'lishi mumkin.</p>
-          <p className='lg:text-lg xl:text-xl'>Xizmat haqida batafsil ma'lumot, turli xarakteristikalar, rasmlar, narxlar, qo'llaniladigan chegirmalar va joriy aktsiyalar va boshqalar haqida ma'lumotni o'z ichiga olgan xizmat kartalari bo'lishi mumkin. batafsil tavsif va buyurtma berish imkoniyati bilan xizmat sahifasiga o'tish imkoniyati bilan.</p>
+          <p className='lg:text-lg xl:text-xl'>Xizmatlarni tematik toifalarga ajratish foydali bo&apos;lishi mumkin.</p>
+          <p className='lg:text-lg xl:text-xl'>Xizmat haqida batafsil ma&apos;lumot, turli xarakteristikalar, rasmlar, narxlar, qo&apos;llaniladigan chegirmalar va joriy aktsiyalar va boshqalar haqida ma&apos;lumotni o&apos;z ichiga olgan xizmat kartalari bo&apos;lishi mumkin. batafsil tavsif va buyurtma berish imkoniyati bilan xizmat sahifasiga o&apos;tish imkoniyati bilan.</p>
         </div>
 
         <div className='text-textGrey font-montserrat'>
@@ -21,7 +21,7 @@ const Payment = () => {
 
           <div className='space-y-4 lg:space-y-6'>
 
-            <p className='lg:text-lg xl:text-xl'>Bizning mutaxassislarimiz sizga har doim keng ko'lamli xizmatlarni taklif qilishdan mamnun. Bizning xodimlarimiz sizga hamrohlik qilishga va yo'l-yo'riq ko'rsatishga tayyor bo'lgan faqat yuqori malakali, tajribali xodimlardan iborat.</p>
+            <p className='lg:text-lg xl:text-xl'>Bizning mutaxassislarimiz sizga har doim keng ko&apos;lamli xizmatlarni taklif qilishdan mamnun. Bizning xodimlarimiz sizga hamrohlik qilishga va yo&apos;l-yo&apos;riq ko&apos;rsatishga tayyor bo&apos;lgan faqat yuqori malakali, tajribali xodimlardan iborat.</p>
             <p className='lg:text-lg xl:text-xl'>Taqdim etilgan xizmatlar orasida sizga quyidagilar taqdim etilishi mumkin:</p>
 
           </div>
@@ -29,15 +29,15 @@ const Payment = () => {
           <ul className='my-3 md:my-5 list-disc space-y-2'>
 
             <li className='ml-4 lg:text-lg xl:text-xl'>
-              <strong>Kredit berish va maslahat</strong> . Bizning xodimlarimiz sizga eng qulay kredit shartlarini tanlashda yordam beradi, sizga barcha nozikliklar va nuanslar haqida aytib beradi va agar kerak bo'lsa, barcha kerakli hujjatlarni to'plashda yordam beradi. Kredit olish uchun tezda bizning ofisimizga murojaat qilish mumkin.
+              <strong>Kredit berish va maslahat</strong>. Bizning xodimlarimiz sizga eng qulay kredit shartlarini tanlashda yordam beradi, sizga barcha nozikliklar va nuanslar haqida aytib beradi va agar kerak bo&apos;lsa, barcha kerakli hujjatlarni to&apos;plashda yordam beradi. Kredit olish uchun tezda bizning ofisimizga murojaat qilish mumkin.
             </li>
 
             <li className='ml-4 lg:text-lg xl:text-xl'>
-              <strong>Kafolat xizmati</strong> . Har qanday mahsulotimiz bepul kafolatli xizmat va kafolatdan keyingi pullik yordam bilan ta'minlanadi.
+              <strong>Kafolat xizmati</strong> . Har qanday mahsulotimiz bepul kafolatli xizmat va kafolatdan keyingi pullik yordam bilan ta&apos;minlanadi.
             </li>
 
             <li className='ml-4 lg:text-lg xl:text-xl'>
-              <strong>Komponentlar , aksessuarlar va boshqa ko'p narsalarni</strong> buyurtma qiling . Bizning do'konlarimizda siz har doim o'zingizni qiziqtirgan mahsulotga buyurtma berishingiz mumkin. Agar siz izlayotgan mahsulot omborda yoki hatto katalogda bo'lmasa ham, siz har doim bizning xodimlarimizga so'rov qoldirishingiz va so'rovingizga yaqin vaqt ichida javob olishingiz mumkin.
+              <strong>Komponentlar , aksessuarlar va boshqa ko&apos;p narsalarni</strong> buyurtma qiling . Bizning do&apos;konlarimizda siz har doim o&apos;zingizni qiziqtirgan mahsulotga buyurtma berishingiz mumkin. Agar siz izlayotgan mahsulot omborda yoki hatto katalogda bo&apos;lmasa ham, siz har doim bizning xodimlarimizga so&apos;rov qoldirishingiz va so&apos;rovingizga yaqin vaqt ichida javob olishingiz mumkin.
             </li>
 
             <li className='ml-4 lg:text-lg xl:text-xl'>

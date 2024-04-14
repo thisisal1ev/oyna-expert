@@ -11,7 +11,7 @@ const PlasticWindows = () => {
     <div className='py-9'>
       <div className="w-full max-w-base mx-auto px-5">
         <h1 className="mb-5 text-22 font-extrabold sm:mb-6 sm:text-2xl md:text-3xl lg:mb-8 lg:text-32 xl:text-5xl">Plastik oynalar</h1>
-        <p className='mb-6 text-base font-montserrat text-textGrey lg:text-lg lg:mb-10'>Oyna texnologiyalari - Andijondagi REHAU oynalarining rasmiy yetkazib beruvchisi. Biz original plastik profillardan deraza va eshiklarni ishlab chiqaramiz: Blitz, Delight, Brillant-Design, Geneo, Intelio, Grazio. Biz ishlab chiqarishda Germaniyaning Siegenia va Roto armaturalaridan foydalanamiz. Biz ishlab chiqarilgan tuzilmalar va bajarilgan oynalash ishlariga 5 yil kafolat beramiz. Biz 5 kun ichida o'lchash, ishlab chiqarish va o'rnatishni amalga oshiramiz.</p>
+        <p className='mb-6 text-base font-montserrat text-textGrey lg:text-lg xl:text-xl lg:mb-10'>Oyna texnologiyalari - Andijondagi REHAU oynalarining rasmiy yetkazib beruvchisi. Biz original plastik profillardan deraza va eshiklarni ishlab chiqaramiz: Blitz, Delight, Brillant-Design, Geneo, Intelio, Grazio. Biz ishlab chiqarishda Germaniyaning Siegenia va Roto armaturalaridan foydalanamiz. Biz ishlab chiqarilgan tuzilmalar va bajarilgan oynalash ishlariga 5 yil kafolat beramiz. Biz 5 kun ichida o&apos;lchash, ishlab chiqarish va o&apos;rnatishni amalga oshiramiz.</p>
         <div className='space-y-3 py-6 flex flex-col items-start flex-wrap'>
           {
             windows.map((window)=>{

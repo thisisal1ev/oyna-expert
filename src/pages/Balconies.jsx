@@ -11,11 +11,11 @@ const Balconies = () => {
         <h1 className="mb-5 text-22 font-extrabold sm:mb-6 sm:text-2xl md:text-3xl lg:mb-8 lg:text-32 xl:text-5xl">Balkonlar</h1>
         <div className='font-montserrat text-textGrey mb-6 space-y-4 lg:mb-8 lg:space-y-6'>
           <p className='text-base lg:text-lg xl:text-xl'>Bizning kompaniyamiz har qanday shakl va o'lchamdagi balkonlar va lojikalarni sirlaydi. Biz issiq rehau plastik profilidan yoki provedal sovuq alyuminiydan oynalar yasaymiz va o'rnatamiz. Biz parapetni mustahkamlash, masofadan turib va  panoramali oynalar, pardozlash, lojikalarni xona bilan birlashtirishni amalga oshiramiz. Biz bajarilgan ishlarga kafolat beramiz, kafolatdan keyingi va xizmat ko'rsatishni amalga oshiramiz.</p>
-          <h2 className='font-bold text-lg xl:text-xl'>Issiq oynalash</h2>
+          <h2 className='font-bold text-lg xl:text-2xl'>Issiq oynalash</h2>
           <p className='text-base lg:text-lg xl:text-xl'>Plastik derazalar balkonni sovuqdan, ko'cha shovqinidan himoya qiladi. Issiqlik izolatsiyasi yuqori bo'lgan Profil tizimlari mavjud. PVX oynali loggiada qo'shimcha izolyatsiya bilan, hatto qishda ham iliq bo'ladi. U yashash xonasi, bolalar bog'chasi, ish xonasi yoki yotoqxona sifatida bezatilishi mumkin.</p>
-          <h2 className='font-bold text-lg xl:text-xl'>Sovuq oynalash</h2>
+          <h2 className='font-bold text-lg xl:text-2xl'>Sovuq oynalash</h2>
           <p className='text-base lg:text-lg xl:text-xl'>Suruladigon alyuminiy derazalar joyni tejaydi, balkonni yog'ingarchilik, qoralama, changdan himoya qiladi. Bunday tuzilmalar ozgina vaznga ega, poydevorga yuklamaydi. Bu balkonni yashash maydonining bir qismiga aylantirishni rejalashtirmaganlar uchun iqtisodiy variant.</p>
-          <h2 className='font-bold text-lg xl:text-xl'>Poldan shiftgacha oynalash</h2>
+          <h2 className='font-bold text-lg xl:text-2xl'>Poldan shiftgacha oynalash</h2>
           <p className='text-base lg:text-lg xl:text-xl'>Butun devorga sirlangan balkonlar maksimal quyosh nuri tushishiga imkon beradi, atrofni ko'rish imkoniyatini beradi. Panoramik derazalar yuqori issiqlik izolatsiyasiga ega profillardan tayyorlanadi, energiya tejaydigan stelkopaket bilan to'ldiriladi.</p>
         </div>
         <div className='space-y-3 py-6 flex flex-col items-start flex-wrap'>

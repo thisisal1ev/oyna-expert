@@ -1,3 +1,5 @@
+import React from 'react'
+
 //photo
 import whatsapp from '../assets/img/whatsapp-contact-img.svg'
 import telegram from '../assets/img/telegram-contact-img.svg'

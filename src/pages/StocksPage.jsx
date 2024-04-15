@@ -1,10 +1,14 @@
+import React from "react"
+
 //data
 import { stocks } from "../data"
 
 const StocksPage = () => {
   return (
     <div className='py-9'>
+
       <div className="w-full max-w-base mx-auto px-5">
+
         <h1 className='mb-5 text-22 font-extrabold sm:mb-6 sm:text-2xl md:text-3xl lg:mb-8 lg:text-32 xl:text-5xl'>Aksiyalar</h1>
         <ul className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {
@@ -23,7 +27,9 @@ const StocksPage = () => {
             })
           }
         </ul>
+
       </div>
+
     </div>
   )
 }

@@ -23,6 +23,22 @@ import delyuks from './assets/img/delyuks.webp'
 import review1 from './assets/img/yakovlev.webp'
 import review2 from './assets/img/somonova.webp'
 import review3 from './assets/img/yagudin.webp'
+import news1 from './assets/img/profisiaonal.jpg'
+import news2 from './assets/img/yordam.png'
+import news3 from './assets/img/shartnoma.jpg'
+import news4 from './assets/img/maslahat.jpg'
+import news5 from './assets/img/Jami.jpg'
+import news6 from './assets/img/tashabbus.jpg'
+import news7 from './assets/img/reklama.jpg'
+import news8 from './assets/img/banner.jpg'
+
+// factory function
+const news = function (id, title, dateOfPublication, path, img, excerptFromThePost, sectionTitle, shortAboutTheNews, text, mainText, conText, excerptFromThePost2) {
+  return {
+    id, title, path, img, excerptFromThePost, sectionTitle, shortAboutTheNews, text, mainText, conText, excerptFromThePost2,
+    dateOfPublication: `02.04.2020`,
+  };
+};
 
 export const services = [
   {
@@ -462,4 +478,15 @@ export const reviews = [
     reviewer: `Aleksandr Yagudin`,
     reviewContext: `Menga iliq va professional yondashuv uchun juda minnatdorman. Mas'uliyatingiz, ochiqligingiz va yordam berishga tayyorligingiz uchun tashakkur. Men sizni har doim do'stlarim va tanishlarimga tavsiya qilaman`,
   },
+];
+
+export const newsData = [
+  news(1, `Mijozlarga professional xizmat ko'rsatish`, ``, `/yangiliklar/mehmonlar uchun/mijozlarga professional xizmat ko'rsatish`, news1, `Yangilik yaratishda sarlavha va mazmunga qo'shimcha ravishda bir qator parametrlarni o'rnatishingiz mumkin. Bu yerda siz yangiliklar e'lonini to'ldirish misolini ko'rishingiz mumkin. "Batafsil o'qing" havolasi orqali siz yangiliklarning to'liq matni va uni to'ldirish namunasini o'qishingiz mumkin.`, `Misol yangiliklari:`, `Ushbu bo'limda kompaniyangiz faoliyatiga u yoki bu tarzda bog'liq bo'lgan yangiliklar, ma'lumotlar, ma'lumotnomalar va boshqa maqolalarni joylashtirishingizni tavsiya qilamiz.`, `Yangiliklar tasmada qanday ko'rsatilishini sozlashingiz mumkin: e'lon (to'liq matnga havola bilan) yoki butun yangiliklar. Bundan tashqari, saralash sozlamalari, sahifadagi yangiliklar soni va yangiliklarga biriktirilgan tasvirlar formati mavjud.`, `Kompaniyamiz veb-saytiga xush kelibsiz. Endi, butun shahar bo'ylab filiallar tarmog'iga qo'shimcha ravishda, bizda kichik Internet vakolatxonasi ham mavjud bo'lib, u erda siz har doim taqdim etilayotgan mahsulotlar ro'yxati, shuningdek, joriy aktsiyalar va chegirmalar bilan tanishishingiz, tanlash va buyurtma berishingiz mumkin. har qanday ma'lumotnoma va aloqa ma'lumotlari va har doim kompaniyamizning so'nggi yangiliklaridan xabardor bo'ling.`, `Ushbu bo'limda siz har doim taqdim etilgan mahsulotlar, so'nggi kelganlar, mahsulot yangilanishlari va boshqa ko'p narsalar haqida eng so'nggi va foydali ma'lumotlarni topishingiz mumkin.`, ``,),
+  news(2, `Texnik yordam kuniga 24 soat`, ``, `/yangiliklar/kompaniya yangiliklari/texnik yordam kuniga 24 soat`, news2, `Yangilik yaratishda sarlavha va mazmunga qo'shimcha ravishda bir qator parametrlarni o'rnatishingiz mumkin. Bu yerda siz yangiliklar e'lonini to'ldirish misolini ko'rishingiz mumkin. "Batafsil o'qing" havolasi orqali siz yangiliklarning to'liq matni va uni to'ldirish namunasini o'qishingiz mumkin.`, ``,),
+  news(3, `Shartnomalar tuzishda yordam berish`, ``, `/yangiliklar/kompaniya yangiliklari/shartnomalar tuzishda yordam berish`, news3, `Yangilik yaratishda sarlavha va mazmunga qo'shimcha ravishda bir qator parametrlarni o'rnatishingiz mumkin. Bu yerda siz yangiliklar e'lonini to'ldirish misolini ko'rishingiz mumkin. "Batafsil o'qing" havolasi orqali siz yangiliklarning to'liq matni va uni to'ldirish namunasini o'qishingiz mumkin.`, ``,),
+  news(4, `Sotib olish bo'yicha maslahatlar`, ``, `/yangiliklar/mehmonlar uchun/sotib olish bo'yicha maslahatlar`, news4, `Yangilik yaratishda sarlavha va mazmunga qo'shimcha ravishda bir qator parametrlarni o'rnatishingiz mumkin. Bu yerda siz yangiliklar e'lonini to'ldirish misolini ko'rishingiz mumkin. "Batafsil o'qing" havolasi orqali siz yangiliklarning to'liq matni va uni to'ldirish namunasini o'qishingiz mumkin.`, ``,),
+  news(5, `JAMI uslubi va brending`, ``, `/yangiliklar/mehmonlar uchun/JAMI uslubi va brending`, news5, `Yangilik yaratishda sarlavha va mazmunga qo'shimcha ravishda bir qator parametrlarni o'rnatishingiz mumkin. Bu yerda siz yangiliklar e'lonini to'ldirish misolini ko'rishingiz mumkin. "Batafsil o'qing" havolasi orqali siz yangiliklarning to'liq matni va uni to'ldirish namunasini o'qishingiz mumkin.`, ``,),
+  news(6, `Tashabbus auditi`, ``, `/yangiliklar/ishlab chiqarish/tashabbus auditi`, news6, `Ushbu blokda mahsulot/xizmatlaringiz tavsifi, taklif etilayotgan mahsulotlarning xarakteristikalari haqida gapiradigan va biznesingizning vazifalariga mos keladigan har qanday qulay katalog tuzilmasini yaratishni o'z ichiga olgan to'liq katalogni joylashtirishni tavsiya qilamiz.`, ``, ``, ``, ``, ``, `Eslatma. Shuni esda tutingki, saytdagi matn ma'lumotlari individual bo'lishi kerak, boshqa Internet-resurslardan ko'chirilmasligi kerak, bu Yandex tavsiyalarida ta'kidlangan: "Biz boshqa manbalardan ma'lumotlarni nusxa ko'chiruvchi va original kontent yaratmaydigan yoki yuqori darajadagi saytlarni indekslamaslikka yoki reyting qilmaslikka harakat qilamiz. xizmat."`),
+  news(7, `Reklamani ko'rsatish`, ``, `/yangiliklar/ishlab chiqarish/reklamani ko'rsatish`, news7, `Ushbu blokda mahsulot/xizmatlaringiz tavsifi, taklif etilayotgan mahsulotlarning xarakteristikalari haqida gapiradigan va biznesingizning vazifalariga mos keladigan har qanday qulay katalog tuzilmasini yaratishni o'z ichiga olgan to'liq katalogni joylashtirishni tavsiya qilamiz.`, ``, ``, ``, ``, ``, `Eslatma. Shuni esda tutingki, saytdagi matn ma'lumotlari individual bo'lishi kerak, boshqa Internet-resurslardan ko'chirilmasligi kerak, bu Yandex tavsiyalarida ta'kidlangan: "Biz boshqa manbalardan ma'lumotlarni nusxa ko'chiruvchi va original kontent yaratmaydigan yoki yuqori darajadagi saytlarni indekslamaslikka yoki reyting qilmaslikka harakat qilamiz. xizmat."`),
+  news(8, `Banner ishlab chiqarish`, ``, `/yangiliklar/kompaniya yangiliklari/banner ishlab chiqarish`, news8, `Ushbu blokda mahsulot/xizmatlaringiz tavsifi, taklif etilayotgan mahsulotlarning xarakteristikalari haqida gapiradigan va biznesingizning vazifalariga mos keladigan har qanday qulay katalog tuzilmasini yaratishni o'z ichiga olgan to'liq katalogni joylashtirishni tavsiya qilamiz.`, ``, ``, ``, ``, ``, `Eslatma. Shuni esda tutingki, saytdagi matn ma'lumotlari individual bo'lishi kerak, boshqa Internet-resurslardan ko'chirilmasligi kerak, bu Yandex tavsiyalarida ta'kidlangan: "Biz boshqa manbalardan ma'lumotlarni nusxa ko'chiruvchi va original kontent yaratmaydigan yoki yuqori darajadagi saytlarni indekslamaslikka yoki reyting qilmaslikka harakat qilamiz. xizmat."`,),
 ];

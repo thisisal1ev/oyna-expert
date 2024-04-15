@@ -15,7 +15,7 @@ const MainLayout = () => {
 
   return (
     <div className="flex flex-col w-full min-h-screen">
-      <Header />
+      <Header/>
       <main className="grow">
         <div>
           {!home && <Breadcrumbs />}

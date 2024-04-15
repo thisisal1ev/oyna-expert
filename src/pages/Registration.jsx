@@ -1,3 +1,5 @@
+import React from 'react'
+
 //photo
 import vkkontakte from '../assets/img/vkkontakte.svg'
 import odnoklasniki from '../assets/img/odnoklasniki.svg'
@@ -7,14 +9,14 @@ import yandex from '../assets/img/yandex-icon.png'
 const Registration = () => {
   return (
     <div className='py-9'>
+
       <div className="w-full max-w-base mx-auto px-5">
+
         <h1 className='mb-6 font-extrabold text-22 sm:text-2xl md:3xl lg:text-4xl xl:text-5xl sm:mb-8 lg:mb-9 xl:mb-11'>Ro'yhatdan o'tish</h1>
         <form name='user-profile' className='border px-5 py-8 rounded-md font-montserrat text-textGrey flex flex-col md:flex-row md:items-center' action="#">
           <div className='space-y-3 text-sm mb-10 md:mb-0 md:mr-[10%] w-full'>
-            <label className='flex flex-col space-y-2 font-bold'>
-              E-mail:
-              <input className='border p-2 outline-none rounded-md text-mainBlack font-normal focus:border-mainBlack focus:shadow-lg shadow-royaleBlue' type="email" placeholder='example@gmail.com' />
-            </label>
+
+
             <label className='flex flex-col space-y-2 font-bold'>
               Parol:
               <a href="#" className='inline-block text-primaryBlue hover:underline font-normal'>Parollingizni unuttingizmi?</a>
@@ -47,7 +49,9 @@ const Registration = () => {
             <p>Tizimga kirish va ro'yxatdan o'tish orqali siz <a className='text-royaleBlue underline underline-offset-2 hover:no-underline' href="#">foydalanuvchi shartnomasini qabul qilasiz</a></p>
           </div>
         </form>
+
       </div>
+
     </div>
   )
 }

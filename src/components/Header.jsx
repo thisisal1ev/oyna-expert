@@ -28,6 +28,24 @@ const Header = () => {
   const [open, setOpen] = React.useState(0);
   const [openDropMenu, setOpenDropMenu] = React.useState(0);
   const [openDropMenu2, setOpenDropMenu2] = React.useState(0);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 185) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
@@ -86,7 +104,6 @@ const Header = () => {
     );
   }
 
-
   return (
     <header onClick={closeModal} onKeyDown={closeModal}>
 
@@ -115,7 +132,7 @@ const Header = () => {
           <div className="block fixed top-0 right-0 outline-none w-full h-full z-30 bg-white translate-x-full duration-1000 max-w-none lg:hidden">
             <div className="flex flex-col h-full px-6 py-5 overflow-y-auto">
 
-              <nav className={`absolute top-0 left-0 h-full w-[255px] flex flex-col space-y-3 px-7 pt-14 pb-8 grow bg-white transform ${openMenu ? '-translate-x-0' : `-translate-x-full `} duration-500 sm:w-[325px] sm:px-9 sm:pt-[60px] sm:pb-11 md:w-[360px] md:px-10 md:py-12 lg:hidden`}>
+              <nav className={`absolute top-0 left-0 h-full w-[255px] overflow-y-scroll flex flex-col space-y-3 px-7 pt-14 pb-8 grow bg-white transform ${openMenu ? '-translate-x-0' : `-translate-x-full `} duration-500 sm:w-[325px] sm:px-9 sm:pt-[60px] sm:pb-11 md:w-[360px] md:px-10 md:py-12 lg:hidden`}>
                 <button className='absolute top-4 right-2 text-textGrey transition-all duration-500 sm:right-4 md:top-2 md:right-2' onClick={() => setOpenMenu(true)}>
                   <img src={xmark} alt="Exit icon" width={50} height={50} className='w-[30px] h-[35px]' />
                 </button>
@@ -223,7 +240,7 @@ const Header = () => {
 
                 <NavLink onClick={handleLinkClick} to='/kompaniya haqida' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Kompaniya haqida</NavLink>
 
-                <NavLink onClick={handleLinkClick} to='/news' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Yangiliklar</NavLink>
+                <NavLink onClick={handleLinkClick} to='/yangiliklar' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Yangiliklar</NavLink>
 
                 <NavLink onClick={handleLinkClick} to='/kontaktlar' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Kontaktlar</NavLink>
               </nav>
@@ -235,7 +252,7 @@ const Header = () => {
 
             <NavLink to='/aksiyalar' className='font-semibold text-sm text-mainBlack hover:text-lightGreen transition-all duration-500'>Aksiyalar</NavLink>
             <NavLink to='/kompaniya haqida' className='font-semibold text-sm text-mainBlack hover:text-lightGreen transition-all duration-500'>Kompaniya haqida</NavLink>
-            <NavLink to='/news' className='font-semibold text-sm text-mainBlack hover:text-lightGreen transition-all duration-500'>Yangiliklar</NavLink>
+            <NavLink to='/yangiliklar' className='font-semibold text-sm text-mainBlack hover:text-lightGreen transition-all duration-500'>Yangiliklar</NavLink>
             <NavLink to='/kontaktlar' className='font-semibold text-sm text-mainBlack hover:text-lightGreen transition-all duration-500'>Kontaktlar</NavLink>
 
           </nav>
@@ -244,7 +261,7 @@ const Header = () => {
 
       </div>
 
-      <div className='max-w-base mx-auto w-full px-5'>
+      <div className={`max-w-base mx-auto w-full px-5`}>
         <div className='pt-5 pb-2 flex flex-col lg:flex-row lg:items-center lg:justify-between'>
           <div className='flex items-center flex-col mb-5 md:flex-row md:mb-0'>
             <Link to='/'>
@@ -275,7 +292,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className={`hidden lg:block bg-grey`}>
+      <div className={`hidden lg:block bg-grey ${isSticky ? 'fixed w-full z-50 top-0 left-0' : ''}`}>
 
         <div className="w-full max-w-base mx-auto px-5 flex items-center justify-between">
 

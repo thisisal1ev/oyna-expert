@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  body{
+    @apply overflow-x-hidden
+  }
+
   header .top:hover svg path {
     fill: #fff;
   }

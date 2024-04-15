@@ -30,6 +30,8 @@ import AboutCompanyLayout from "./layouts/AboutCompanyLayout"
 import AboutCompany from "./pages/AboutCompany"
 import OurTeam from "./pages/OurTeam"
 import ReviewsAboutTheCompany from "./pages/ReviewsAboutTheCompany"
+import NewsLayout from './layouts/NewsLayout'
+import News from "./pages/News"
 
 const App = () => {
   const router = createBrowserRouter(
@@ -41,6 +43,9 @@ const App = () => {
         <Route path="/narxlar" element={<Prices />} />
         <Route path="/sertifikatlar" element={<Sertific />} />
         <Route path="/registratsiya" element={<Registration />} />
+        <Route path="Yangiliklar" element={<NewsLayout/>}>
+          <Route index element={<News/>}/>
+        </Route>
         <Route path="/to&apos;lov" element={<PaymentLayout />}>
           <Route index element={<Payment />} />
           <Route path="/to&apos;lov/to&apos;lov usullari" element={<PaymentMethods />} />

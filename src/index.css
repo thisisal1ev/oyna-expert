@@ -16,6 +16,10 @@
     transition: all 0.5s ease;
   }
 
+  .news-btn-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
   [data-aos^=fade][data-aos^=fade] {
     @apply opacity-100
   }

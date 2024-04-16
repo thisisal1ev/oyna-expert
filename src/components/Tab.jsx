@@ -21,7 +21,7 @@ const Home = () => {
 
       <div className="w-full max-w-base mx-auto px-5">
 
-        <div className="mb-6" data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-easing="ease-in" data-aos-duration="800">
+        <div className="mb-6" data-aos="fade-up">
 
           <h2 className="mb-3 text-22 sm:text-2xl md:text-30 lg:text-4xl xl:text-44 font-extrabold">Standart o'lchamdagi derazalar uchun narxlar</h2>
 

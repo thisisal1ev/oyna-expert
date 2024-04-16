@@ -15,7 +15,7 @@ const About = () => {
         </div>
         <Link to='/kompaniya haqida' className='inline-block font-montserrat font-semibold text-base underline underline-offset-8 text-textGrey transition-all duration-300 hover:no-underline hover:text-mainBlack'>Batafsil</Link>
       </div>
-    </div>  )
+    </div>)
 }
 
 export default About

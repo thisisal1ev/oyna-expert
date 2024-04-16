@@ -10,11 +10,11 @@ const Service = () => {
 
       <div className="w-full max-w-base mx-auto px-5">
 
-        <div className='mb-[7%]' data-aos="fade-up" data-aos-anchor-placement="center" data-aos-easing="ease-in" data-aos-duration="800">
+        <div className='mb-[7%]' data-aos="fade-up">
 
           <h2 className='text-2xl font-extrabold mb-3 md:text-3xl lg:text-4xl xl:text-44'>Yaxshi derazalar uchun-yaxshi xizmat!</h2>
           <h3 className='text-base font-medium font-montserrat text-textGrey'>Biz sifatni kafolatlaymiz, chunki bizning derazalarimiz sizning qulayligingiz uchun yaratilgan</h3>
-          
+
         </div>
 
         <div className='flex'>

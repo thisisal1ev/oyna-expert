@@ -16,13 +16,14 @@ const Footer = () => {
       duration: 800,
       delay: 0,
       once: true,
+      easing: 'ease-in-out',
     })
   }, []);
 
   return (
-    <footer className='bg-grey pt-10'>
+    <footer className='bg-grey border-t'>
 
-      <div data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="800">
+      <div className='py-8 lg:py-[4%]' data-aos="fade-up" data-aos-duration="800">
 
         <div className='w-full mx-auto max-w-base px-5 flex flex-col items-center sm:block'>
           <h2 className='mb-3 font-bold text-center sm:text-left text-22 sm:text-4xl'>Bog&apos;lanish uchun ma&apos;lumot</h2>
@@ -93,7 +94,7 @@ const Footer = () => {
 
       </div>
 
-      <div className="py-5 border-b border-t">
+      <div className="py-6 border-b border-t">
         <div className='w-full mx-auto max-w-base px-5'>
           <h4 className='mb-2 font-medium text-sm text-center font-montserrat text-textGrey sm:text-left'>Qulay to&apos;lov:</h4>
           <div className='flex items-start justify-center sm:justify-normal'>
@@ -118,7 +119,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='py-5'>
+      <div className='py-8'>
         <div className='w-full mx-auto max-w-base px-5'>
           <div className="w-full max-w-base mx-auto px-5 flex items-center flex-col justify-between sm:flex-row">
             <p className='font-medium font-montserrat text-sm mr-3 mb-2 sm:mb-0'>Copyright © 2022 - 2024 Kompaniya nomi</p>

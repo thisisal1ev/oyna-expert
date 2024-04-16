@@ -105,7 +105,7 @@ const Header = () => {
   }
 
   return (
-    <header onClick={closeModal} onKeyDown={closeModal}>
+    <header className={`${isSticky ? 'lg:pb-16' : ''}`} onClick={closeModal} onKeyDown={closeModal}>
 
       <div className='py-4 border-b-2'>
 
@@ -132,7 +132,7 @@ const Header = () => {
           <div className="block fixed top-0 right-0 outline-none w-full h-full z-30 bg-white translate-x-full duration-1000 max-w-none lg:hidden">
             <div className="flex flex-col h-full px-6 py-5 overflow-y-auto">
 
-              <nav className={`absolute top-0 left-0 h-full w-[255px] overflow-y-scroll flex flex-col space-y-3 px-7 pt-14 pb-8 grow bg-white transform ${openMenu ? '-translate-x-0' : `-translate-x-full `} duration-500 sm:w-[325px] sm:px-9 sm:pt-[60px] sm:pb-11 md:w-[360px] md:px-10 md:py-12 lg:hidden`}>
+              <nav className={`absolute top-0 left-0 h-full w-[255px] overflow-y-scroll flex flex-col space-y-3 px-7 pt-14 pb-8 grow bg-white transform ${openMenu ? '-translate-x-0' : `-translate-x-full `} duration-500 sm:w-[325px] sm:px-9 sm:pt-[60px] sm:pb-11 md:w-[360px] md:px-10 md:py-12 lg:hidden outline-none`}>
                 <button className='absolute top-4 right-2 text-textGrey transition-all duration-500 sm:right-4 md:top-2 md:right-2' onClick={() => setOpenMenu(true)}>
                   <img src={xmark} alt="Exit icon" width={50} height={50} className='w-[30px] h-[35px]' />
                 </button>
@@ -292,14 +292,14 @@ const Header = () => {
         </div>
       </div>
 
-      <div className={`hidden lg:block bg-grey ${isSticky ? 'fixed w-full z-50 top-0 left-0' : ''}`}>
+      <div className={`hidden lg:block bg-grey border-y ${isSticky ? 'fixed w-full z-50 top-0 left-0' : ''}`}>
 
         <div className="w-full max-w-base mx-auto px-5 flex items-center justify-between">
 
 
           <div className='dropdown'>
 
-            <Link to='/plastik oynalar' className='dropdown flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
+            <Link to='/plastik oynalar' className='dropdown inline-flex py-6 space-x-2 font-bold transition-all duration-500 hover:text-lightGreen'>
               <span>Plastik oynalar</span>
               <img className='dropdown-icon transition-all duration-300' width={25} height={25} src={dropdown2} alt="dropdown" />
             </Link>
@@ -320,7 +320,7 @@ const Header = () => {
 
           <div className="dropdown">
 
-            <Link to='/profillar' className='dropdown flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
+            <Link to='/profillar' className='dropdown inline-flex py-6 space-x-2 font-bold transition-all duration-500 hover:text-lightGreen'>
               <span>Profillar</span>
               <img className='dropdown-icon transition-all duration-300' width={25} height={25} src={dropdown2} alt="dropdown" />
             </Link>
@@ -342,7 +342,7 @@ const Header = () => {
 
           <div className="dropdown">
 
-            <Link to='/balkonlar' className='dropdown flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
+            <Link to='/balkonlar' className='dropdown inline-flex py-6 space-x-2 font-bold transition-all duration-500 hover:text-lightGreen'>
               <span>Balkonlar</span>
               <img className='dropdown-icon transition-all duration-300' width={25} height={25} src={dropdown2} alt="dropdown" />
             </Link>
@@ -364,7 +364,7 @@ const Header = () => {
 
           <div className="dropdown">
 
-            <Link to="/xizmat ko'rsatish" className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen'>
+            <Link to="/xizmat ko'rsatish" className='inline-flex py-6 space-x-2 font-bold transition-all duration-500 hover:text-lightGreen'>
               <span>Xizmat ko&apos;rsatish</span>
               <img className='dropdown-icon transition-all duration-300' width={25} height={25} src={dropdown2} alt="dropdown" />
             </Link>
@@ -386,7 +386,7 @@ const Header = () => {
 
           <div className="dropdown">
 
-            <Link to='/to&apos;lov' className='flex pt-5 pb-6 space-x-2 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:flex'>
+            <Link to='/to&apos;lov' className='inline-flex py-6 space-x-2 font-bold transition-all duration-500 hover:text-lightGreen lg:hidden xl:flex'>
               <span>To&apos;lov</span>
               <img className='dropdown-icon transition-all duration-300' width={25} height={25} src={dropdown2} alt="dropdown" />
             </Link>
@@ -401,11 +401,11 @@ const Header = () => {
 
           </div>
 
-          <Link to='/narxlar' className='pt-5 pb-6 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:block'>Narxlar</Link>
+          <Link to='/narxlar' className='py-6 font-bold transition-all duration-500 hover:text-lightGreen lg:hidden xl:block'>Narxlar</Link>
 
-          <Link to='/sertifikatlar' className='pt-5 pb-6 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:block'>Sertifikatlar</Link>
+          <Link to='/sertifikatlar' className='py-6 font-bold transition-all duration-500 hover:text-lightGreen lg:hidden xl:block'>Sertifikatlar</Link>
 
-          <Link to='/registratsiya' className='pt-5 pb-6 font-bold transition-all duration-500 text-textGrey hover:text-lightGreen lg:hidden xl:block'>Ro&apos;yxatdan o&apos;tish</Link>
+          <Link to='/registratsiya' className='py-6 font-bold transition-all duration-500 hover:text-lightGreen lg:hidden xl:block'>Ro&apos;yxatdan o&apos;tish</Link>
 
 
 
@@ -532,9 +532,9 @@ const Header = () => {
 
       {
         !showModal && !showContactModal && openMenu && showButton && <>
-          <button onClick={scrollToTop} className={`top fixed bottom-10 right-10 z-10 px-5 py-5 outline-none border-2 rounded-full bg-white  transition-all duration-500 hover:bg-lightGreen hover:border-lightGreen`}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 26 32.969" data-prefix="i9ikc8dfi">
-              <path d="M12.565.069a1.2 1.2 0 0 1 .865 0 213.326 213.326 0 0 0 .291.151l11.775 9.7a1.264 1.264 0 0 1 .272 1.746 1.216 1.216 0 0 1-1.719.276l-9.821-8.254v28.028a1.231 1.231 0 1 1-2.462 0V3.688l-9.821 8.254a1.216 1.216 0 0 1-1.719-.276A1.264 1.264 0 0 1 .498 9.92L12.273.22a1.194 1.194 0 0 1 .156-.081 1.16 1.16 0 0 1 .136-.07z" fill='currentColor' fillRule="evenodd" className="path-i3cr1n271">
+          <button onClick={scrollToTop} className={`top fixed bottom-28 right-16 z-10 w-[65px] h-[65px] px-5 py-5 outline-none border-2 rounded-full bg-grey transition-all duration-500 hover:bg-lightGreen hover:border-lightGreen inline-flex justify-center`}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 26 32.969" data-prefix="i9ikc8dfi">
+              <path d="M12.565.069a1.2 1.2 0 0 1 .865 0 213.326 213.326 0 0 0 .291.151l11.775 9.7a1.264 1.264 0 0 1 .272 1.746 1.216 1.216 0 0 1-1.719.276l-9.821-8.254v28.028a1.231 1.231 0 1 1-2.462 0V3.688l-9.821 8.254a1.216 1.216 0 0 1-1.719-.276A1.264 1.264 0 0 1 .498 9.92L12.273.22a1.194 1.194 0 0 1 .156-.081 1.16 1.16 0 0 1 .136-.07z" fill='#7f7f7f' fillRule="evenodd" className="path-i3cr1n271">
               </path>
             </svg>
           </button>

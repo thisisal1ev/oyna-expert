@@ -6,7 +6,7 @@ const CTA = () => {
   return (
     <div className="py-9">
 
-      <div className="w-full max-w-base mx-auto px-5" data-aos="fade-up" data-aos-anchor-placement="center" data-aos-easing="ease-in" data-aos-duration="800">
+      <div className="w-full max-w-base mx-auto px-5" data-aos="fade-up">
 
         <form onSubmit={() => { checked && alert('Xat ketti'), !checked && alert('Iltimos bizning siyosatimiz qabul qiling!') }} className='px-8 py-10 w-full bg-lightGreen rounded-xl text-white xl:flex items-center justify-between xl:p-10'>
 
@@ -55,7 +55,7 @@ const CTA = () => {
                 <button type='submit' onSubmit={() => alert('Xat ketti')} className='inline-block py-7 px-9 w-52 bg-white text-mainBlack border-2 border-lightGreen font-bold font-raleway rounded-md hover:bg-lightGreen hover:text-white hover:border-white transition-all duration-500'>So'rov qoldirish</button>
 
               </div>
-              
+
             </div>
 
           </div>

@@ -16,7 +16,7 @@ const Complement = () => {
               return (
                 <li key={komplekt.id}>
                   <Link to='/xizmat ko&apos;rsatish'>
-                    <div className="rounded-xl overflow-hidden w-auto h-40 mb-6 sm:h-60 md:h-auto lg:mb-8">
+                    <div className="rounded-xl overflow-hidden w-auto object-cover h-60 mb-6 sm:h-80 md:h-auto lg:mb-8">
                       <img className="w-full h-full" src={komplekt.img} alt={komplekt.title} />
                     </div>
                     <div>

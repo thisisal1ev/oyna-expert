@@ -48,7 +48,7 @@ const App = () => {
         <Route path="/narxlar" element={<Prices />} />
         <Route path="/sertifikatlar" element={<Sertific />} />
         <Route path="/registratsiya" element={<Registration />} />
-        <Route path="yangiliklar" element={<NewsLayout />}>
+        <Route path="yangiliklar" element={<NewsLayout />}>b
           <Route index element={<News />} />
           <Route path="/yangiliklar/:uniqueName" element={<NewsSections />} />
           <Route path="/yangiliklar/:uniqueName/:title" element={<NewsDetail />} />

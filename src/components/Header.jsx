@@ -198,7 +198,7 @@ const Header = () => {
 
                 <Accordion open={open === 4} icon={<Icon id={4} open={open} />}>
                   <AccordionHeader className="border-none py-0" onClick={() => handleOpen(4)}>
-                    <NavLink onClick={handleLinkClick} to='/plastik oynalar' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>
+                    <NavLink onClick={handleLinkClick} to={`/xizmat ko'rsatish`} className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>
                       Xizmat ko&apos;rsatish
                     </NavLink>
                   </AccordionHeader>
@@ -453,8 +453,8 @@ const Header = () => {
       </div>
 
       {
-        showModal && <div className='relative max-w-base mx-auto px-5 w-full'>
-          <div className="overlay"></div>
+        showModal && <>
+          <div className="overlay z-50"></div>
           <div className='flex flex-col items-center justify-center'>
             <div className="fixed top-20 w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] p-4 md:p-6 md:pt-10 xl:p-10 rounded-xl h-auto bg-white z-50 mx-5 xl:top-10">
               <div className="py-1 md:py-2 text-mainBlack mb-1 md:mb-5 mt-5 flex items-center justify-between">
@@ -470,7 +470,7 @@ const Header = () => {
                 </div>
                 <div className='space-y-1 mb-2 md:mb-5'>
                   <h4 className='font-medium font-montserrat text-textGrey text-sm md:text-base'>Raqamga qo&apos;ng&apos;iroq qiling:</h4>
-                  <a className='font-semibold text-lg md:text-xl font-montserrat' href="tel:+998999999999">+998 (99) 999 99 99</a>
+                  <a className='font-semibold text-lg md:text-xl font-montserrat' href="tel:+998900000000">+998 (90) 000 00 00</a>
                   <div className='flex items-center space-x-1 md:space-x-2'>
                     <Link to='/' className='font-semibold underline text-sm md:text-base text-mainGrey hover:text-mainBlack transition-all duration-500'>WhatsApp</Link>
                     <Link to='https://t.me/thisisal1ev' className='font-semibold underline text-sm md:text-base text-mainGrey hover:text-mainBlack transition-all duration-500'>Telegram</Link>
@@ -478,7 +478,7 @@ const Header = () => {
                 </div>
                 <div className="space-y-1 mb-5">
                   <h4 className='font-medium font-montserrat text-textGrey text-sm md:text-base'>Xatlar va takliflar uchun:</h4>
-                  <Link to='https://aaalievvv1@gmail.com' className='font-semibold text-base md:text-lg text-lightGreen underline underline-offset-1 hover:no-underline'>aaalievvv1@gmail.com
+                  <Link to='mail:aaalievvv1@gmail.com' className='font-semibold text-base md:text-lg text-lightGreen underline underline-offset-1 hover:no-underline'>aaalievvv1@gmail.com
                   </Link>
                 </div>
                 <div className="space-y-1">
@@ -488,12 +488,12 @@ const Header = () => {
               </div>
             </div>
           </div>
-        </div>
+        </>
       }
 
       {
         showContactModal && <>
-          <div className="overlay"></div>
+          <div className="overlay z-50"></div>
           <div className='flex flex-col items-center justify-center'>
             <div className="fixed top-14 w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] p-4 md:p-6 md:pt-10 xl:p-10 rounded-xl h-auto bg-white z-50 xl:top-10">
               <div className="py-2 text-mainBlack mb-2 md:mb-5 mt-5 md:mt-10 flex flex-col">

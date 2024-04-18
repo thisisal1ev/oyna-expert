@@ -84,8 +84,8 @@ const News = () => {
                   <time className='text-textGrey text-sm'>{newsItem.dateOfPublication}</time>
                   <Link className='text-lightGreen underline text-xl md:text-22 hover:no-underline' to={`/yangiliklar/${newsItem.uniqueName}/${newsItem.title}`}>{newsItem.title}</Link>
                   <div className='my-2'>
-                    <Link className='inline-block float-left mr-5' to={newsItem.path}>
-                      <img width={120} height={80} src={newsItem.img} alt={newsItem.title} />
+                    <Link className='inline-block w-full md:w-auto md:float-left md:mr-5 mb-5' to={`/yangiliklar/${newsItem.uniqueName}/${newsItem.title}`}>
+                      <img className='w-full' height={80} src={newsItem.img} alt={newsItem.title} />
                     </Link>
                     <p>{newsItem.excerptFromThePost}</p>
                   </div>

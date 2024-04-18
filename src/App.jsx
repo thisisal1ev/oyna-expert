@@ -34,6 +34,9 @@ import NewsLayout from './layouts/NewsLayout'
 import News from "./pages/News"
 import NewsDetail from "./pages/NewsDetail"
 import NewsSections from "./pages/NewsSections"
+import BlogLayout from "./layouts/BlogLayout"
+import Blog from "./pages/Blog"
+import BlogDetail from "./pages/BlogDetail"
 
 const App = () => {
   const router = createBrowserRouter(
@@ -49,6 +52,10 @@ const App = () => {
           <Route index element={<News />} />
           <Route path="/yangiliklar/:uniqueName" element={<NewsSections />} />
           <Route path="/yangiliklar/:uniqueName/:title" element={<NewsDetail />} />
+        </Route>
+        <Route path="/blog" element={<BlogLayout />}>
+          <Route index element={<Blog />} />
+          <Route path="/blog/:title" element={<BlogDetail />} />
         </Route>
         <Route path="/to&apos;lov" element={<PaymentLayout />}>
           <Route index element={<Payment />} />

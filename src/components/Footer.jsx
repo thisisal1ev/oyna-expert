@@ -17,6 +17,7 @@ const Footer = () => {
       delay: 0,
       once: true,
       easing: 'ease-in-out',
+      anchorPlacement: 'bottom',
     })
   }, []);
 

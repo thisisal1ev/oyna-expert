@@ -133,6 +133,7 @@ const Header = () => {
             <div className="flex flex-col h-full px-6 py-5 overflow-y-auto">
 
               <nav className={`absolute top-0 left-0 h-full w-[255px] overflow-y-scroll flex flex-col space-y-3 px-7 pt-14 pb-8 grow bg-white transform ${openMenu ? '-translate-x-0' : `-translate-x-full `} duration-500 sm:w-[325px] sm:px-9 sm:pt-[60px] sm:pb-11 md:w-[360px] md:px-10 md:py-12 lg:hidden outline-none`}>
+
                 <button className='absolute top-4 right-2 text-textGrey transition-all duration-500 sm:right-4 md:top-2 md:right-2' onClick={() => setOpenMenu(true)}>
                   <img src={xmark} alt="Exit icon" width={50} height={50} className='w-[30px] h-[35px]' />
                 </button>
@@ -242,17 +243,20 @@ const Header = () => {
 
                 <NavLink onClick={handleLinkClick} to='/yangiliklar' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Yangiliklar</NavLink>
 
+                <NavLink onClick={handleLinkClick} to='/blog' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Blog</NavLink>
+
                 <NavLink onClick={handleLinkClick} to='/kontaktlar' className='font-bold text-base inline-block py-1 active:text-lightGreen transition-all ease-in-out duration-500 md:text-lg'>Kontaktlar</NavLink>
               </nav>
 
             </div>
           </div>
 
-          <nav className='hidden lg:block space-x-4'>
+          <nav className='hidden lg:block space-x-5'>
 
             <NavLink to='/aksiyalar' className='font-semibold text-sm text-mainBlack hover:text-lightGreen transition-all duration-500'>Aksiyalar</NavLink>
             <NavLink to='/kompaniya haqida' className='font-semibold text-sm text-mainBlack hover:text-lightGreen transition-all duration-500'>Kompaniya haqida</NavLink>
             <NavLink to='/yangiliklar' className='font-semibold text-sm text-mainBlack hover:text-lightGreen transition-all duration-500'>Yangiliklar</NavLink>
+            <NavLink to='/blog' className='font-semibold text-sm text-mainBlack hover:text-lightGreen transition-all duration-500'>Blog</NavLink>
             <NavLink to='/kontaktlar' className='font-semibold text-sm text-mainBlack hover:text-lightGreen transition-all duration-500'>Kontaktlar</NavLink>
 
           </nav>

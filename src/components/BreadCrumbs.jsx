@@ -4,6 +4,7 @@ const PageNotFound = () => {
   const location = useLocation();
   const gotoviy = location.pathname.split('/').filter(path => path !== '');
   const path = gotoviy.map(path => path.replace(/%20/g, " "));
+  const isCatalogPath = location.pathname.startsWith('/yangiliklar/');
 
   return (
     <>
@@ -12,11 +13,11 @@ const PageNotFound = () => {
           <Link className="inline-block text-lightGreen" to='/'><span>Bosh sahifa</span></Link>
         </li>
         {
-          path.map((gotov, index) => {
+          path.map((path, index) => {
             return (
               <li className='capitalize' key={index}>
                 {
-                  index !== gotoviy.length - 1 ? <Link to={gotov} className="inline-block text-lightGreen">{gotov}</Link> : <span className='inline-block text-mainGrey'>{gotov}</span>
+                  index !== gotoviy.length - 1 ? <Link to={`${isCatalogPath && index === 1 ? '/yangiliklar' : ''}/${path}`} className="inline-block text-lightGreen">{path}</Link> : <span className='inline-block text-mainGrey'>{path}</span>
                 }
               </li>
             )

@@ -19,13 +19,13 @@ const Profiles = () => {
         <div className='grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3'>
 
           {/* 1 */}
-          <div className='p-[30px] my-3 border border-opacity-70 rounded-xl'>
+          <div className='p-[30px] my-3 border border-opacity-70 rounded-xl flex flex-col h-auto'>
             <img className='overflow-hidden w-full h-full max-w-36 max-h-44 mb-5' src={profile1} alt="Rehau profili" />
-            <Link to='/profillar/Rehau Thermo' className='inline-flex flex-col mb-4'>
+            <Link to='/profillar/Rehau Thermo' className='inline-flex flex-col mb-4 grow h-auto'>
               <span className='inline-block mb-2 font-bold text-[22px] sm:text-[22px] md:text-2xl lg:text-[28px]'>Rehau Thermo</span>
               <span className='inline-block font-medium'>An'anaviy chuqurligi 60 mm bo'lgan derazalar 4 kamerali profil tufayli energiya samaradorligini oshadi.</span>
             </Link>
-            <ul className='font-montserrat'>
+            <ul className='font-montserrat grow h-auto'>
               <li className='py-2 border-b-2 flex flex-col xl:flex-row xl:items-center xl:justify-between xl:space-x-1'>
                 <p className='font-medium text-textGrey mb-2 xl:mb-0'>Profil</p>
                 <p className='font-medium text-sm sm:text-base'>REHAU Thermo 60, 4 kamerali</p>
@@ -50,13 +50,13 @@ const Profiles = () => {
           </div>
 
           {/* 2 */}
-          <div className='p-[30px] my-3 border border-opacity-70 rounded-xl'>
+          <div className='p-[30px] my-3 border border-opacity-70 rounded-xl flex flex-col h-auto'>
             <img className='overflow-hidden w-full h-full max-w-36 max-h-44 mb-5' src={profile2} alt="Rehau profili" />
-            <Link to='/profillar/Rehau Grazio' className='inline-flex flex-col mb-4'>
+            <Link to='/profillar/Rehau Grazio' className='inline-flex flex-col grow h-auto mb-4'>
               <span className='inline-block mb-2 font-bold text-[22px] sm:text-[22px] md:text-2xl lg:text-[28px]'>Rehau Grazio</span>
               <span className='inline-block font-medium'>Hali ham arzon variant, lekin yuqori issiqlik va ovoz o'tkazmaydigan.</span>
             </Link>
-            <ul className='font-montserrat pt-5'>
+            <ul className='font-montserrat grow h-auto pt-5'>
               <li className='py-2 border-b-2 flex flex-col xl:flex-row xl:items-center xl:justify-between xl:space-x-1'>
                 <p className='font-medium text-textGrey mb-2 xl:mb-0'>Profil</p>
                 <p className='font-medium text-sm sm:text-base'>REHAU Grazio 70, 5 kamerali</p>
@@ -81,13 +81,13 @@ const Profiles = () => {
           </div>
 
           {/* 3 */}
-          <div className='p-[30px] my-3 border border-opacity-70 rounded-xl'>
+          <div className='p-[30px] my-3 border border-opacity-70 rounded-xl flex flex-col h-auto'>
             <img className='overflow-hidden w-full h-full max-w-36 max-h-44 mb-5' src={profile3} alt="Rehau profili" />
-            <Link to='/profillar/Rehau Delight' className='inline-flex flex-col mb-4'>
+            <Link to='/profillar/Rehau Delight' className='inline-flex flex-col grow h-auto mb-4'>
               <span className='inline-block mb-2 font-bold text-[22px] sm:text-[22px] md:text-2xl lg:text-[28px]'>Rehau Delight</span>
-              <span className='inline-block font-medium'>Rehau Delight oynalari bilan xonaga 10% ko'proq yorug'lik kiradi - bu profil balandligining pasayishi tufayli.</span>
+              <span className='inline-block font-medium'>Rehau Delight oynalari bilan xonaga 10% ko&apos;proq yorug&apos;lik kiradi - bu profil balandligining pasayishi tufayli.</span>
             </Link>
-            <ul className='font-montserrat'>
+            <ul className='font-montserrat grow h-auto'>
               <li className='py-2 border-b-2 flex flex-col xl:flex-row xl:items-center xl:justify-between xl:space-x-1'>
                 <p className='font-medium text-textGrey mb-2 xl:mb-0'>Profil</p>
                 <p className='font-medium text-sm sm:text-base'>REHAU Delight 60, 5 kamerali</p>

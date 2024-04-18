@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply font-raleway text-mainBlack text-base font-normal
+  }
+}
+
 @layer components {
   body {
     @apply overflow-x-hidden

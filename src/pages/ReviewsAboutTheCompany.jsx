@@ -146,7 +146,7 @@ const ReviewsAboutTheCompany = () => {
 
                     </div>
 
-                    <label className='font-normal text-textGrey text-sm md:text-base hover:text-royaleBlue transition-all duration-300' htmlFor='ripple-on'><a className='underline text-royaleBlue' target='_blank' href="#">Shaxsiy ma&apos;lumotlarimni</a> qayta ishlash shartlarini qabul qilaman *</label>
+                    <label className='font-normal text-textGrey text-sm md:text-base hover:text-royaleBlue transition-all duration-300' htmlFor='ripple-on'><a className='underline text-royaleBlue' target='_blank' href="#">Shaxsiy ma&apos;lumotlarimni</a> qayta ishlash shartlarini qabul qilaman</label>
                   </div>
 
                   <button type='submit' className='max-w-44 text-left font-montserrat py-2 px-5 md:px-7 text-sm bg-royaleBlue border-2 border-royaleBlue font-medium rounded-md text-white hover:opacity-70 transition-all duration-300'>Sharx qoldirish</button>

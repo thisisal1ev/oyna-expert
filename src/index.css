@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-raleway text-mainBlack text-base font-normal overflow-x-hidden
+    @apply font-raleway text-mainBlack text-base font-normal
   }
 }
 
@@ -20,10 +20,6 @@
 
   .news-btn-shadow {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-
-  [data-aos^=fade][data-aos^=fade] {
-    @apply opacity-100
   }
 
   [data-aos=fade-up] {

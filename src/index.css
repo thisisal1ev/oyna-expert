@@ -4,15 +4,11 @@
 
 @layer base {
   body {
-    @apply font-raleway text-mainBlack text-base font-normal
+    @apply font-raleway text-mainBlack text-base font-normal overflow-x-hidden
   }
 }
 
 @layer components {
-  body {
-    @apply overflow-x-hidden
-  }
-
   header .top:hover svg path {
     fill: #fff;
   }

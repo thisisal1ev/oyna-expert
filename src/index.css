@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    @apply overflow-x-hidden
-  }
-
   body {
     @apply font-raleway text-mainBlack text-base font-normal
   }

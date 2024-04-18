@@ -33,9 +33,6 @@ import ReviewsAboutTheCompany from "./pages/ReviewsAboutTheCompany"
 import NewsLayout from './layouts/NewsLayout'
 import News from "./pages/News"
 import NewsDetail from "./pages/NewsDetail"
-import ProductionWorkshops from "./pages/ProductionWorkshops"
-import ForVisitors from "./pages/ForVisitors"
-import CompanysNews from "./pages/CompanysNews"
 import NewsSections from "./pages/NewsSections"
 
 const App = () => {
@@ -50,9 +47,6 @@ const App = () => {
         <Route path="/registratsiya" element={<Registration />} />
         <Route path="yangiliklar" element={<NewsLayout />}>
           <Route index element={<News />} />
-          {/* <Route path="/yangiliklar/ishlab chiqarish" element={<ProductionWorkshops />} />
-          <Route path="/yangiliklar/mehmonlar uchun" element={<ForVisitors />} />
-          <Route path="/yangiliklar/kompaniya yangiliklari" element={<CompanysNews />} /> */}
           <Route path="/yangiliklar/:uniqueName" element={<NewsSections />} />
           <Route path="/yangiliklar/:uniqueName/:title" element={<NewsDetail />} />
         </Route>

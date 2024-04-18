@@ -46,7 +46,7 @@ const CTA = () => {
 
                 </div>
 
-                <label className='font-normal text-sm font-montserrat' htmlFor='ripple-on'>Men shaxsiy ma'lumotlarni qayta ishlash va <a className='underline' target='_blank' href="#">maxfiylik siyosatiga roziman.</a></label>
+                <label className='font-normal text-sm font-montserrat' htmlFor='ripple-on'>Men shaxsiy ma&apos;lumotlarni qayta ishlash va <a className='underline' target='_blank' href="#">maxfiylik siyosatiga roziman.</a></label>
 
               </div>
 

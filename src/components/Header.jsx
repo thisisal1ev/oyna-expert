@@ -532,7 +532,7 @@ const Header = () => {
 
       {
         !showModal && !showContactModal && openMenu && showButton && <>
-          <button onClick={scrollToTop} className={`top fixed bottom-28 right-16 z-10 w-[65px] h-[65px] px-5 py-5 outline-none border-2 rounded-full bg-grey transition-all duration-500 hover:bg-lightGreen hover:border-lightGreen inline-flex justify-center`}>
+          <button onClick={scrollToTop} className={`top fixed bottom-12 right-6 lg:bottom-14 xl:bottom-16 lg:right-16 z-10 w-[65px] h-[65px] px-5 py-5 outline-none border-2 rounded-full bg-grey transition-all duration-500 hover:bg-lightGreen hover:border-lightGreen inline-flex justify-center`}>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 26 32.969" data-prefix="i9ikc8dfi">
               <path d="M12.565.069a1.2 1.2 0 0 1 .865 0 213.326 213.326 0 0 0 .291.151l11.775 9.7a1.264 1.264 0 0 1 .272 1.746 1.216 1.216 0 0 1-1.719.276l-9.821-8.254v28.028a1.231 1.231 0 1 1-2.462 0V3.688l-9.821 8.254a1.216 1.216 0 0 1-1.719-.276A1.264 1.264 0 0 1 .498 9.92L12.273.22a1.194 1.194 0 0 1 .156-.081 1.16 1.16 0 0 1 .136-.07z" fill='#7f7f7f' fillRule="evenodd" className="path-i3cr1n271">
               </path>

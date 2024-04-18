@@ -39,7 +39,7 @@ const Reviews = () => {
 
               <div className='w-5 h-5 bg-white absolute mr-4 left-auto right-auto rounded-md rotate-45 -bottom-2'></div>
 
-              <div className='absolute right-3 -bottom-6' data-aos="fade-left" data-aos-duration="800">
+              <div className='absolute right-3 -bottom-6' data-aos="fade-left">
 
                 <svg className='z-0' xmlns="http://www.w3.org/2000/svg" fill='#f7f7f7' viewBox="0 0 46.86 34.64" width="170" height="100" data-prefix="itycfuwok">
                   <g data-name="Слой 2">
@@ -82,7 +82,7 @@ const Reviews = () => {
 
               <div className='w-5 h-5 bg-white absolute mr-4 left-auto right-auto rounded-md rotate-45 -bottom-2'></div>
 
-              <div className='absolute right-3 -bottom-6' data-aos="fade-left" data-aos-duration="800">
+              <div className='absolute right-3 -bottom-6' data-aos="fade-left">
 
                 <svg className='z-0' xmlns="http://www.w3.org/2000/svg" fill='#f7f7f7' viewBox="0 0 46.86 34.64" width="170" height="100" data-prefix="itycfuwok">
                   <g data-name="Слой 2">
@@ -128,7 +128,7 @@ const Reviews = () => {
 
               <div className='w-5 h-5 bg-white absolute mr-4 left-auto right-auto rounded-md rotate-45 -bottom-2'></div>
 
-              <div className='absolute right-3 -bottom-6' data-aos="fade-left" data-aos-duration="800">
+              <div className='absolute right-3 -bottom-6' data-aos="fade-left">
 
                 <svg className='z-0' xmlns="http://www.w3.org/2000/svg" fill='#f7f7f7' viewBox="0 0 46.86 34.64" width="170" height="100" data-prefix="itycfuwok">
                   <g data-name="Слой 2">
@@ -158,7 +158,7 @@ const Reviews = () => {
 
         </ul>
 
-        <Link to='/kompaniya haqida/Biz haqimizda sharhlar' className='inline-block font-semibold text-base underline underline-offset-8 text-textGrey transition-all duration-300 hover:no-underline hover:text-mainBlack'>barcha sharhlarni o'qing</Link>
+        <Link to='/kompaniya haqida/Biz haqimizda sharhlar' className='inline-block font-semibold text-base underline underline-offset-8 text-textGrey transition-all duration-300 hover:no-underline hover:text-mainBlack'>barcha sharhlarni o&apos;qing</Link>
 
       </div>
 

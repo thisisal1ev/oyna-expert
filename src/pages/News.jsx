@@ -16,7 +16,7 @@ const News = () => {
 
       <div className="content-container">
 
-        <h1 className='mb-6 font-extrabold text-22 sm:text-2xl md:3xl lg:text-4xl xl:text-5xl sm:mb-8 lg:mb-9 xl:mb-11'>Yangiliklar</h1>
+        <h1 className='mb-6 pb-6 font-extrabold text-22 sm:text-2xl md:3xl lg:text-4xl xl:text-5xl sm:mb-8 lg:mb-9 xl:mb-11'>Yangiliklar</h1>
 
         <div className='font-montserrat relative sm:mb-8 lg:mb-9 xl:mb-11'>
 
@@ -71,7 +71,7 @@ const News = () => {
                 })
               }
             </ul>
-            
+
           </div>
 
         </div>

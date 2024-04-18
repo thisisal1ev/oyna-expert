@@ -40,6 +40,8 @@ export default {
       backgroundImage: {
         'sobaka': "url('/src/assets/img/sobaka.jpg')",
         'koshka': "url('/src/assets/img/koshka.jpg')",
+        'devushka':"url(/src/assets/img/swiper-first-img.jpg)",
+        'mishka':"url(/src/assets/img/swiper-second-img.jpg)",
       },
       zIndex: {
         1: '1'

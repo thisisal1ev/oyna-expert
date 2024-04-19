@@ -37,7 +37,7 @@ const Home = () => {
 
       <PostComponent />
 
-      <Reviews/>
+      <Reviews />
 
       <About />
 

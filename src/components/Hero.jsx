@@ -14,12 +14,13 @@ const Hero = () => {
   return (
     <div className='py-9'>
 
-      <div className="w-full max-w-base mx-auto px-5 flex items-center justify-between flex-col xl:flex-row xl:space-x-8">
+      <div className="w-full max-w-base mx-auto px-5 flex items-start justify-between flex-col xl:flex-row xl:space-x-8">
 
         <Swiper
           spaceBetween={30}
           effect={'fade'}
           navigation={{
+            navigationDisabledClass: 'false',
             prevEl: '.prev',
             nextEl: '.next',
           }}
@@ -32,7 +33,7 @@ const Hero = () => {
           className="mySwiper slide rounded-xl w-full h-auto mb-10 xl:w-auto xl:mb-0"
         >
 
-          <SwiperSlide navigation={true} className='sm:overflow-hidden'>
+          <SwiperSlide className='sm:overflow-hidden'>
             <Link to='/balkonlar/Issiq oynalash'>
               <div className='bg-devushka w-full bg-no-repeat bg-cover h-72 md:min-h-[470px]'>
                 <div className='bg-rgba w-full min-h-[550px] absolute'></div>

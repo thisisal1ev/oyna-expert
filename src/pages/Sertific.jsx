@@ -11,7 +11,6 @@ const Sertific = () => {
     zoom: true,
     close: true,
     counter: true,
-    gallery: '#gallery--with-download-button',
   }
 
   return (

@@ -13,7 +13,7 @@ const CTA = () => {
           <div className='xl:mr-12'>
 
             <h2 className='mb-2 text-2xl font-extrabold text-center md:text-3xl lg:text-32 lg:text-left xl:text-4xl'>Aniq hisob-kitob qilishni xohlaysizmi?</h2>
-            <p className='text-sm text-center font-medium text-white lg:text-left'>So'rov qoldiring va biz 10 daqiqa ichida qayta qo'ng'iroq qilamiz va buyurtmangizni hisoblaymiz</p>
+            <p className='text-sm text-center font-medium text-white lg:text-left'>So&apos;rov qoldiring va biz 10 daqiqa ichida qayta qo&apos;ng&apos;iroq qilamiz va buyurtmangizni hisoblaymiz</p>
 
           </div>
 
@@ -32,7 +32,7 @@ const CTA = () => {
 
                 <div className="relative flex items-center p-3 rounded-full cursor-pointer mr-1">
 
-                  <input onChange={() => setChecked(true)} id="ripple-on" type="checkbox"
+                  <input onChange={() => setChecked(true)} id="ripple-on on" type="checkbox"
                     className="before:content[''] peer relative h-5 w-5 outline-none cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-textGrey before:opacity-0 before:transition-opacity checked:border-white checked:bg-white checked:before:bg-lightGreen hover:before:opacity-10" />
                   <span
                     className="absolute text-lightGreen transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
@@ -46,7 +46,7 @@ const CTA = () => {
 
                 </div>
 
-                <label className='font-normal text-sm font-montserrat' htmlFor='ripple-on'>Men shaxsiy ma&apos;lumotlarni qayta ishlash va <a className='underline' target='_blank' href="#">maxfiylik siyosatiga roziman.</a></label>
+                <label className='font-normal text-sm font-montserrat' htmlFor='ripple-on on'>Men shaxsiy ma&apos;lumotlarni qayta ishlash va <a className='underline' target='_blank' href="#">maxfiylik siyosatiga roziman.</a></label>
 
               </div>
 

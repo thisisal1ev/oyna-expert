@@ -93,7 +93,7 @@ const GalleryPage = () => {
 
         </div>
 
-        <Link to='/' className='inline-block font-montserrat pt-6 font-semibold text-base underline underline-offset-8 text-textGrey transition-all duration-300 hover:no-underline hover:text-mainBlack'>barcha fotosuratlarni ko&apos;ring</Link>
+        <Link to='/blog' className='inline-block font-montserrat pt-6 font-semibold text-base underline underline-offset-8 text-textGrey transition-all duration-300 hover:no-underline hover:text-mainBlack'>barcha fotosuratlarni ko&apos;rish</Link>
 
       </div>
 

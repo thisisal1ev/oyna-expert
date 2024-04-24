@@ -35,7 +35,7 @@ const Hero = () => {
 
           <SwiperSlide className='sm:overflow-hidden'>
             <Link to='/balkonlar/Issiq oynalash'>
-              <div className='bg-devushka w-full bg-no-repeat bg-cover h-72 md:min-h-[470px]'>
+              <div className='bg-devushka w-full bg-no-repeat bg-cover h-72 md:min-h-[500px]'>
                 <div className='bg-rgba w-full min-h-[550px] absolute'></div>
                 <div className='w-[60%] relative pl-12 pt-[20%] md:pt-[20%] xl:pt-[25%] sm:pl-24 space-y-3 select-none' data-aos="fade-up">
                   <h2 className='text-white text-22 sm:text-28 md:text-4xl lg:text-44 font-extrabold'>Balkonlarni oynalash 30% chegirma bilan</h2>
@@ -47,7 +47,7 @@ const Hero = () => {
 
           <SwiperSlide className='overflow-hidden'>
             <Link to="xizmat ko'rsatish/Oyna o'rnatish">
-              <div className='bg-mishka w-full bg-no-repeat bg-cover h-72 md:min-h-[470px]'>
+              <div className='bg-mishka w-full bg-no-repeat bg-cover h-72 md:min-h-[500px]'>
                 <div className='bg-rgba w-full min-h-[550px] absolute'></div>
                 <div className='w-[60%] relative pl-12 pt-[20%] md:pt-[20%] xl:pt-[25%] sm:pl-24 space-y-3 select-none' data-aos="fade-up">
                   <h2 className='text-white text-22 sm:text-28 md:text-4xl lg:text-44 font-extrabold'>Balkonlarni oynalash 30% chegirma bilan</h2>
@@ -63,7 +63,7 @@ const Hero = () => {
 
         </Swiper>
 
-        <form onSubmit={() => { checked && alert('Xat ketti'), !checked && alert('Iltimos bizning siyosatimiz qabul qiling!') }} className='w-full h-auto xl:w-[750px] xl:min-h-[470px] p-9 rounded-xl bg-lightGreen space-y-3'>
+        <form onSubmit={() => { checked && alert('Xat ketti'), !checked && alert('Iltimos bizning siyosatimiz qabul qiling!') }} className='w-full h-auto xl:w-[750px] xl:min-h-[500px] p-9 rounded-xl bg-lightGreen space-y-3'>
 
           <div>
 

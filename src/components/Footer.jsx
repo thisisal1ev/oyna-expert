@@ -58,7 +58,7 @@ const Footer = () => {
             </div>
             <div className='space-y-2'>
               <h4 className='font-medium font-montserrat text-mainGrey'>Xat va takliflar uchun:</h4>
-              <a href='email:aaalievvv1@gmail.com' target='_blank' className='font-semibold text-lg text-lightGreen underline underline-offset-1 hover:no-underline'>aaalievvv1@gmail.com
+              <a href='mailto:aaalievvv1@gmail.com' target='_blank' className='font-semibold text-lg text-lightGreen underline underline-offset-1 hover:no-underline'>aaalievvv1@gmail.com
               </a>
             </div>
           </div>

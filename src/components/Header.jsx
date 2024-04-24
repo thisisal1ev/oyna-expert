@@ -478,7 +478,7 @@ const Header = () => {
                 </div>
                 <div className="space-y-1 mb-5">
                   <h4 className='font-medium font-montserrat text-textGrey text-sm md:text-base'>Xatlar va takliflar uchun:</h4>
-                  <Link to='mail:aaalievvv1@gmail.com' className='font-semibold text-base md:text-lg text-lightGreen underline underline-offset-1 hover:no-underline'>aaalievvv1@gmail.com
+                  <Link to='mailto:aaalievvv1@gmail.com' className='font-semibold text-base md:text-lg text-lightGreen underline underline-offset-1 hover:no-underline'>aaalievvv1@gmail.com
                   </Link>
                 </div>
                 <div className="space-y-1">

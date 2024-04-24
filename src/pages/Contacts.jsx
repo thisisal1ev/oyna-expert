@@ -38,7 +38,7 @@ const Contacts = () => {
             <li className='text-textGrey text-lg'>Andijon viloyati, Baliqchi tumani, Chinobod shaharchasi</li>
 
             <li className='text-primaryBlue text-lg'>
-              <a href="#">mail@company.uz</a>
+              <a href="mailto:aaalievvv1">aaalievvv1@gmail.com</a>
             </li>
 
             <li className='text-textGrey text-lg'>ИНН 000000000 ОГРН 000000000</li>

@@ -5,12 +5,6 @@ import { Link } from 'react-router-dom'
 import xmark from '../assets/img/xmark.svg'
 
 const ConnectModal = ({ setShowModal }) => {
-  React.useEffect(() => {
-    document.body.style.overflow = 'hidden'
-    return () => {
-      document.body.style.overflow = 'unset'
-    }
-  })
 
   return (
     <>

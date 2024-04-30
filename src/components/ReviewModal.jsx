@@ -28,6 +28,7 @@ const ReviewModal = ({ setReviewModal }) => {
           </div>
 
           <div className="py-1 md:py-3 text-textGrey">
+
             <form
               onSubmit={() => alert("Sharx uchun rahmat")}
               name="modal-question"
@@ -105,13 +106,17 @@ const ReviewModal = ({ setReviewModal }) => {
 
               <button
                 type="submit"
-                className="max-w-44 text-left font-montserrat py-2 px-5 md:px-7 text-sm bg-royaleBlue border-2 border-royaleBlue font-medium rounded-md text-white hover:opacity-70 transition-all duration-300">
+                className="max-w-40 text-center font-montserrat py-2 px-5 md:px-7 text-sm bg-royaleBlue border-2 border-royaleBlue font-medium rounded-md text-white hover:opacity-70 transition-all duration-300">
                 Sharx qoldirish
               </button>
             </form>
+
           </div>
+
         </div>
+
       </div>
+
     </>
   );
 };

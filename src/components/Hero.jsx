@@ -75,7 +75,7 @@ const Hero = () => {
             checked && alert("Xat ketti"),
               !checked && alert("Iltimos bizning siyosatimiz qabul qiling!");
           }}
-          className="w-full h-auto xl:w-[750px] xl:min-h-[500px] p-9 rounded-xl bg-lightGreen space-y-4 lg:space-y-8">
+          className="w-full h-auto xl:w-[750px] xl:min-h-[500px] p-9 rounded-xl bg-lightGreen space-y-3 xl:space-y-8">
           <div>
             <h3 className="text-white font-extrabold text-2xl md:text-3xl xl:text-26">
               O&apos;lchov uchun ro&apos;yxatdan o&apos;tishni xohlaysizmi?

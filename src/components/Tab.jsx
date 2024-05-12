@@ -67,12 +67,6 @@ const Home = () => {
     if (e.key === "Escape") setShowContactModal(false);
   };
 
-  if (showContactModal) {
-    document.body.classList.add("overflow-y-hidden");
-  } else {
-    document.body.classList.remove("overflow-y-hidden");
-  }
-
   return (
     <div className="py-9" onClick={closeModal} onKeyDown={closeModal}>
       <div className="w-full max-w-base mx-auto px-5">

@@ -10,8 +10,8 @@ const ReviewModal = ({ setReviewModal }) => {
       <div className="overlay z-50"></div>
 
       <div className="flex flex-col items-center justify-center">
-        <div className="fixed top-14 w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] p-4 md:px-5  rounded-xl h-auto bg-white z-50 xl:top-10">
-          <div className="py-2 text-textGrey mb-2 md:mb-5 mt-5 md:mt-10 flex flex-col">
+        <div className="fixed top-40 w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] p-4 md:px-5  rounded-xl h-auto bg-white z-50 xl:top-10">
+          <div className="py-2 text-mainBlack mb-2 md:mb-5 mt-5 md:mt-10 flex flex-col">
             <h3 className="font-extrabold text-lg md:text-xl lg:text-2xl font-raleway">
               Sharx qoldirish
             </h3>
@@ -27,7 +27,7 @@ const ReviewModal = ({ setReviewModal }) => {
             </button>
           </div>
 
-          <div className="py-1 md:py-3 text-textGrey">
+          <div className="py-1 md:py-3 text-mainBlack">
 
             <form
               onSubmit={() => alert("Sharx uchun rahmat")}
@@ -36,7 +36,7 @@ const ReviewModal = ({ setReviewModal }) => {
               <label className="flex flex-col space-y-2 font-bold">
                 Ismingiz:
                 <input
-                  className="border p-2 outline-none rounded-md text-textGrey font-normal focus:border-royaleBlue focus:shadow-lg shadow-royaleBlue font-montserrat hover:border-royaleBlue hover:shadow-lg"
+                  className="border p-2 outline-none rounded-md text-mainBlack font-normal focus:border-royaleBlue focus:shadow-lg shadow-royaleBlue font-montserrat hover:border-royaleBlue hover:shadow-lg"
                   type="text"
                   placeholder="Ismingiz"
                   required
@@ -46,7 +46,7 @@ const ReviewModal = ({ setReviewModal }) => {
               <label className="flex flex-col space-y-2 font-bold">
                 Telefon raqamingiz:
                 <input
-                  className="border p-2 outline-none rounded-md text-textGrey font-normal focus:border-royaleBlue focus:shadow-lg shadow-royaleBlue font-montserrat hover:border-royaleBlue hover:shadow-lg"
+                  className="border p-2 outline-none rounded-md text-mainBlack font-normal focus:border-royaleBlue focus:shadow-lg shadow-royaleBlue font-montserrat hover:border-royaleBlue hover:shadow-lg"
                   type="tel"
                   placeholder="+998 90 000 00 00"
                   pattern="(\+998|8)[\- ]?\d{2}[\- ]?\d{3}[\- ]?\d{2}[\- ]?\d{2}"
@@ -57,7 +57,7 @@ const ReviewModal = ({ setReviewModal }) => {
               <label className="flex flex-col space-y-2 font-bold">
                 Sharx matnni:
                 <textarea
-                  className="border p-2 outline-none rounded-md text-textGrey font-normal focus:border-royaleBlue focus:shadow-lg shadow-royaleBlue font-montserrat hover:border-royaleBlue hover:shadow-lg resize-none"
+                  className="border p-2 outline-none rounded-md text-mainBlack font-normal focus:border-royaleBlue focus:shadow-lg shadow-royaleBlue font-montserrat hover:border-royaleBlue hover:shadow-lg resize-none"
                   name="review"
                   cols="10"
                   rows="3"
@@ -92,7 +92,7 @@ const ReviewModal = ({ setReviewModal }) => {
                 </div>
 
                 <label
-                  className="font-normal text-textGrey text-sm md:text-base hover:text-royaleBlue transition-all duration-300"
+                  className="font-normal text-mainBlack text-sm md:text-base hover:text-royaleBlue transition-all duration-300"
                   htmlFor="ripple-on">
                   <a
                     className="underline text-royaleBlue"
@@ -106,7 +106,7 @@ const ReviewModal = ({ setReviewModal }) => {
 
               <button
                 type="submit"
-                className="max-w-40 text-center font-montserrat py-2 px-5 md:px-7 text-sm bg-royaleBlue border-2 border-royaleBlue font-medium rounded-md text-white hover:opacity-70 transition-all duration-300">
+                className="max-w-44 text-center font-montserrat py-2 px-5 md:px-7 text-sm bg-royaleBlue border-2 border-royaleBlue font-medium rounded-md text-white hover:opacity-70 transition-all duration-300">
                 Sharx qoldirish
               </button>
             </form>

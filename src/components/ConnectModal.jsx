@@ -10,7 +10,7 @@ const ConnectModal = ({ setShowModal }) => {
       <div className="overlay z-50"></div>
 
       <div className="flex flex-col items-center justify-center">
-        <div className="fixed top-20 w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] p-4 md:p-6 md:pt-10 xl:p-10 rounded-xl h-auto bg-white z-50 mx-5 xl:top-10">
+        <div className="fixed top-40 w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] p-4 md:p-6 md:pt-10 xl:p-10 rounded-xl h-auto bg-white z-50 mx-5 xl:top-10">
           <div className="py-1 md:py-2 text-mainBlack mb-1 md:mb-5 mt-5 flex items-center justify-between">
             <h3 className="font-semibold font-montserrat text-lg md:text-xl xl:text-2xl">
               Bog&apos;lanish uchun ma&apos;lumot

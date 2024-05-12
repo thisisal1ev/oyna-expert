@@ -10,7 +10,7 @@ const QuizModal = ({ setShowContactModal }) => {
     <>
       <div className="overlay z-50"></div>
       <div className="flex flex-col items-center justify-center">
-        <div className="fixed top-14 w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] p-4 md:p-6 md:pt-10 xl:p-10 rounded-xl h-auto bg-white z-50 xl:top-10">
+        <div className="fixed top-40 w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] p-4 md:p-6 md:pt-10 xl:p-10 rounded-xl bg-white z-50 xl:top-10">
           <div className="py-2 text-mainBlack mb-2 md:mb-5 mt-5 md:mt-10 flex flex-col">
             <h3 className="font-extrabold text-lg md:text-xl lg:text-2xl font-raleway text-center">
               Savollaringiz qoldimi?
@@ -42,7 +42,7 @@ const QuizModal = ({ setShowContactModal }) => {
                   checked && alert("Xat ketti"),
                   checked && setShowContactModal(false),
                   !checked &&
-                    alert("Iltimos bizning siyosatimiz qabul qiling!");
+                  alert("Iltimos bizning siyosatimiz qabul qiling!");
               }}
               className="w-full flex flex-col">
               <input

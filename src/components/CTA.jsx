@@ -6,7 +6,7 @@ const CTA = () => {
   return (
     <div className="py-9">
 
-      <div className="w-full max-w-base mx-auto px-5" data-aos="fade-up">
+      <div className="w-full max-w-base mx-auto px-5">
 
         <form onSubmit={() => { checked && alert('Xat ketti'), !checked && alert('Iltimos bizning siyosatimiz qabul qiling!') }} className='px-8 py-10 w-full bg-lightGreen rounded-xl text-white xl:flex items-center justify-between xl:p-10'>
 

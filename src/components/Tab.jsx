@@ -67,16 +67,16 @@ const Home = () => {
     if (e.key === "Escape") setShowContactModal(false);
   };
 
-  if(showContactModal){
+  if (showContactModal) {
     document.body.classList.add("overflow-y-hidden");
-  }else{
+  } else {
     document.body.classList.remove("overflow-y-hidden");
   }
 
   return (
     <div className="py-9" onClick={closeModal} onKeyDown={closeModal}>
       <div className="w-full max-w-base mx-auto px-5">
-        <div className="mb-6" data-aos="fade-up">
+        <div className="mb-6">
           <h2 className="mb-3 text-22 sm:text-2xl md:text-30 lg:text-4xl xl:text-44 font-extrabold">
             Standart o&apos;lchamdagi derazalar uchun narxlar
           </h2>
@@ -92,11 +92,10 @@ const Home = () => {
               <li
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`py-2 px-4 rounded-lg text-base font-bold transition-all duration-300 ease-linear cursor-pointer ${
-                  activeTab === tab.id
-                    ? "bg-orange text-white border-2 border-white"
-                    : "bg-white  border-2 hover:opacity-70"
-                }`}>
+                className={`py-2 px-4 rounded-lg text-base font-bold transition-all duration-300 ease-linear cursor-pointer ${activeTab === tab.id
+                  ? "bg-orange text-white border-2 border-white"
+                  : "bg-white  border-2 hover:opacity-70"
+                  }`}>
                 {tab.tabTitle}
               </li>
             );
@@ -108,9 +107,8 @@ const Home = () => {
             return (
               <li
                 key={tab.id}
-                className={`grid grid-cols-1 gap-y-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-4 ${
-                  activeTab === tab.id ? "bg-white" : "hidden"
-                }`}>
+                className={`grid grid-cols-1 gap-y-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-4 ${activeTab === tab.id ? "bg-white" : "hidden"
+                  }`}>
                 {/* 1 */}
                 <div>
                   <img
@@ -210,7 +208,7 @@ const Home = () => {
         </ul>
       </div>
 
-      {showContactModal && <QuizModal />}
+      {showContactModal && <QuizModal setShowContactModal={setShowContactModal} />}
     </div>
   );
 };

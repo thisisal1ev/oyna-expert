@@ -34,8 +34,7 @@ const Hero = () => {
               <div className="bg-devushka w-full bg-no-repeat bg-cover h-72 md:min-h-[500px]">
                 <div className="bg-rgba w-full min-h-[550px] absolute"></div>
                 <div
-                  className="w-[60%] relative pl-12 pt-[20%] md:pt-[20%] xl:pt-[25%] sm:pl-24 space-y-3 select-none"
-                  data-aos="fade-up">
+                  className="w-[60%] relative pl-12 pt-[20%] md:pt-[20%] xl:pt-[25%] sm:pl-24 space-y-3 select-none">
                   <h2 className="text-white text-22 sm:text-28 md:text-4xl lg:text-44 font-extrabold">
                     Balkonlarni oynalash 30% chegirma bilan
                   </h2>
@@ -52,8 +51,7 @@ const Hero = () => {
               <div className="bg-mishka w-full bg-no-repeat bg-cover h-72 md:min-h-[500px]">
                 <div className="bg-rgba w-full min-h-[550px] absolute"></div>
                 <div
-                  className="w-[60%] relative pl-12 pt-[20%] md:pt-[20%] xl:pt-[25%] sm:pl-24 space-y-3 select-none"
-                  data-aos="fade-up">
+                  className="w-[60%] relative pl-12 pt-[20%] md:pt-[20%] xl:pt-[25%] sm:pl-24 space-y-3 select-none">
                   <h2 className="text-white text-22 sm:text-28 md:text-4xl lg:text-44 font-extrabold">
                     Balkonlarni oynalash 30% chegirma bilan
                   </h2>

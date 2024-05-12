@@ -22,7 +22,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-grey border-t">
-      <div className="py-8 lg:py-[4%]" data-aos="fade-up">
+      <div className="py-8 lg:py-[4%]">
         <div className="w-full mx-auto max-w-base px-5 flex flex-col items-center sm:block">
           <h2 className="mb-3 font-bold text-center sm:text-left text-22 sm:text-4xl">
             Bog&apos;lanish uchun ma&apos;lumot

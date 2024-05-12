@@ -6,8 +6,8 @@ const Complement = () => {
   return (
     <div className="py-9 bg-grey">
       <div className="w-full max-w-base mx-auto px-5">
-        <div className="mb-3 sm:mb-5 md:mb-6 lg:mb-8" data-aos="fade-up">
-          <h2 className="font-extrabold text-22 sm:text-2xl md:text-3xl lg:text-4xl xl:text-44">Biz derazalarni kerakli narsalar bilan to'ldiramiz</h2>
+        <div className="mb-3 sm:mb-5 md:mb-6 lg:mb-8">
+          <h2 className="font-extrabold text-22 sm:text-2xl md:text-3xl lg:text-4xl xl:text-44">Biz derazalarni kerakli narsalar bilan to&apos;ldiramiz</h2>
         </div>
 
         <ul className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">

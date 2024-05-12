@@ -13,7 +13,7 @@ const Reviews = () => {
 
       <div className="content-container">
 
-        <div className='mb-5 md:mb-6 lg:mb-8 xl:mb-10' data-aos="fade-up">
+        <div className='mb-5 md:mb-6 lg:mb-8 xl:mb-10'>
 
           <h2 className='text-22 font-extrabold sm:text-26 md:text-3xl mb-3 lg:text-4xl xl:text-44'>Faqat halol sharhlar</h2>
 

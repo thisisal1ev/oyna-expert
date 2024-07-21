@@ -6,6 +6,8 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
+
+//components
 import ConnectModal from "./ConnectModal";
 import QuizModal from "./QuizModal";
 
@@ -99,9 +101,8 @@ const Header = () => {
         viewBox="0 0 24 24"
         strokeWidth={2}
         stroke="#323232"
-        className={`${
-          id === open ? "rotate-180" : ""
-        } h-5 w-5 transition-transform`}>
+        className={`${id === open ? "rotate-180" : ""
+          } h-5 w-5 transition-transform`}>
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -132,9 +133,8 @@ const Header = () => {
           {
             <button
               onClick={() => setOpenMenu(false)}
-              className={`inline-flex items-center space-x-2 text-white px-5 rounded-es-md h-[56px] bg-lightGreen top-0 right-0 fixed lg:hidden ${
-                showModal || showContactModal ? "-z-0" : "z-10"
-              }`}>
+              className={`inline-flex items-center space-x-2 text-white px-5 rounded-es-md h-[56px] bg-lightGreen top-0 right-0 fixed lg:hidden ${showModal || showContactModal ? "-z-0" : "z-10"
+                }`}>
               <p className="uppercase font-medium">Menyu</p>
               <img width={28} height={28} src={menu} alt="cross icon" />
             </button>
@@ -149,9 +149,8 @@ const Header = () => {
           <div className="block fixed top-0 right-0 outline-none w-full h-full z-30 bg-white translate-x-full duration-1000 max-w-none lg:hidden">
             <div className="flex flex-col h-full px-6 py-5 overflow-y-auto">
               <nav
-                className={`absolute top-0 left-0 h-full w-[255px] overflow-y-scroll flex flex-col space-y-3 px-7 pt-14 pb-8 grow bg-white transform ${
-                  openMenu ? "-translate-x-0" : `-translate-x-full `
-                } duration-500 sm:w-[325px] sm:px-9 sm:pt-[60px] sm:pb-11 md:w-[360px] md:px-10 md:py-12 lg:hidden outline-none`}>
+                className={`absolute top-0 left-0 h-full w-[255px] overflow-y-scroll flex flex-col space-y-3 px-7 pt-14 pb-8 grow bg-white transform ${openMenu ? "-translate-x-0" : `-translate-x-full `
+                  } duration-500 sm:w-[325px] sm:px-9 sm:pt-[60px] sm:pb-11 md:w-[360px] md:px-10 md:py-12 lg:hidden outline-none`}>
                 <button
                   className="absolute top-4 right-2 text-textGrey transition-all duration-500 sm:right-4 md:top-2 md:right-2"
                   onClick={() => setOpenMenu(true)}>
@@ -451,9 +450,8 @@ const Header = () => {
       </div>
 
       <div
-        className={`hidden lg:block bg-grey border-y ${
-          isSticky ? "fixed w-full z-50 top-0 left-0" : ""
-        }`}>
+        className={`hidden lg:block bg-grey border-y ${isSticky ? "fixed w-full z-50 top-0 left-0" : ""
+          }`}>
         <div className="w-full max-w-base mx-auto px-5 flex items-center justify-between">
           <div className="dropdown">
             <Link
@@ -470,9 +468,8 @@ const Header = () => {
             </Link>
 
             <div
-              className={`dropdown_menu absolute max-w-72 z-10 border bg-white font-medium focus:outline-none ${
-                openDropMenu ? "block" : "hidden"
-              }`}>
+              className={`dropdown_menu absolute max-w-72 z-10 border bg-white font-medium focus:outline-none ${openDropMenu ? "block" : "hidden"
+                }`}>
               {windows.map((window, index) => {
                 return (
                   <Link
@@ -501,9 +498,8 @@ const Header = () => {
             </Link>
 
             <div
-              className={`dropdown_menu absolute max-w-72 z-10 border bg-white font-medium focus:outline-none ${
-                openDropMenu ? "block" : "hidden"
-              }`}>
+              className={`dropdown_menu absolute max-w-72 z-10 border bg-white font-medium focus:outline-none ${openDropMenu ? "block" : "hidden"
+                }`}>
               {profiles.map((profile, index) => {
                 return (
                   <Link
@@ -532,9 +528,8 @@ const Header = () => {
             </Link>
 
             <div
-              className={`dropdown_menu absolute max-w-72 z-10 border bg-white font-medium focus:outline-none ${
-                openDropMenu ? "block" : "hidden"
-              }`}>
+              className={`dropdown_menu absolute max-w-72 z-10 border bg-white font-medium focus:outline-none ${openDropMenu ? "block" : "hidden"
+                }`}>
               {balconies.map((balcony, index) => {
                 return (
                   <Link
@@ -563,9 +558,8 @@ const Header = () => {
             </Link>
 
             <div
-              className={`dropdown_menu absolute max-w-72 z-10 border bg-white font-medium focus:outline-none ${
-                openDropMenu ? "block" : "hidden"
-              }`}>
+              className={`dropdown_menu absolute max-w-72 z-10 border bg-white font-medium focus:outline-none ${openDropMenu ? "block" : "hidden"
+                }`}>
               {servicesPage.map((service, index) => {
                 return (
                   <Link
@@ -594,9 +588,8 @@ const Header = () => {
             </Link>
 
             <div
-              className={`dropdown_menu absolute max-w-72 z-10 border bg-white font-medium focus:outline-none ${
-                openDropMenu ? "block" : "hidden"
-              }`}>
+              className={`dropdown_menu absolute max-w-72 z-10 border bg-white font-medium focus:outline-none ${openDropMenu ? "block" : "hidden"
+                }`}>
               <Link
                 to="/to'lov/yetkazib berish"
                 className="inline-flex px-7 py-4 ease-in border-b w-full transition-all duration-300 hover:text-lightGreen">
@@ -644,9 +637,8 @@ const Header = () => {
             </button>
 
             <div
-              className={`dropdown_menu absolute right-5 max-w-60 z-10 border bg-white font-medium focus:outline-none ${
-                openDropMenu ? "block" : "hidden"
-              }`}>
+              className={`dropdown_menu absolute right-5 max-w-60 z-10 border bg-white font-medium focus:outline-none ${openDropMenu ? "block" : "hidden"
+                }`}>
               <Link
                 onMouseEnter={() => setOpenDropMenu2(1)}
                 onMouseLeave={() => setOpenDropMenu2(0)}
@@ -659,9 +651,8 @@ const Header = () => {
               <div
                 onMouseEnter={() => setOpenDropMenu2(1)}
                 onMouseLeave={() => setOpenDropMenu2(0)}
-                className={`dropdown_menu_item absolute top-0 right-[239px] max-w- z-10 border bg-white font-medium focus:outline-none ${
-                  openDropMenu2 ? "block" : "hidden"
-                }`}>
+                className={`dropdown_menu_item absolute top-0 right-[239px] max-w- z-10 border bg-white font-medium focus:outline-none ${openDropMenu2 ? "block" : "hidden"
+                  }`}>
                 <Link
                   to="/to'lov/Yetkazib berish"
                   className="inline-block text-end px-7 py-4 ease-in border-b w-full transition-all duration-300 hover:text-lightGreen whitespace-nowrap">

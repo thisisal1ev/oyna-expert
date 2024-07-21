@@ -20,6 +20,8 @@ const Footer = () => {
     });
   }, []);
 
+  const date = new Date().getFullYear()
+
   return (
     <footer className="bg-grey border-t">
       <div className="py-8 lg:py-[4%]">
@@ -236,10 +238,10 @@ const Footer = () => {
         <div className="w-full mx-auto max-w-base px-5">
           <div className="w-full max-w-base mx-auto px-5 flex items-center flex-col justify-between sm:flex-row">
             <p className="font-medium font-montserrat text-sm mr-3 mb-2 sm:mb-0">
-              Copyright © 2022 - 2024 Kompaniya nomi
+              Copyright © {date} Kompaniya nomi
             </p>
             <p className="font-medium font-montserrat text-sm">
-              Qo&apos;llab-quvvatlash.{" "}
+              Qo&apos;llab-quvvatlash.&nbsp;
               <a
                 href="https://t.me/thisisal1ev"
                 target="_blank"
